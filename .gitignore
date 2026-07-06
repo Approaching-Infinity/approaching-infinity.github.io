@@ -1,0 +1,18 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# environment
+.env
+.env.production
+
+# local design reference (not shipped)
+_mockup.html
+
+# os / editor
+.DS_Store
+*.log
+npm-debug.log*

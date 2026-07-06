@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+const episodes = (await getCollection('episodes'))
+  .sort((a, b) => b.data.episodeNumber - a.data.episodeNumber)
+  .slice(0, 4);
+---
+<section class="episodes" id="episodes">
+  <div class="wrap">
+    <div class="ep-top">
+      <div class="sec-head" style="margin:0">
+        <span class="eyebrow reveal">The conversations</span>
+        <h2 class="reveal">Latest episodes</h2>
+      </div>
+      <a class="btn btn-ghost reveal" href="#listen">All 25 episodes &nbsp;&rarr;</a>
+    </div>
+    <div class="ep-list reveal">
+      {episodes.map((ep) => (
+        <a class="ep" href={ep.data.spotifyUrl ?? '#listen'}>
+          <div class="ep-no">{ep.data.episodeNumber}</div>
+          <div><div class="ep-title">{ep.data.title}</div><div class="ep-guest">with {ep.data.guest}</div></div>
+          <div class="ep-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

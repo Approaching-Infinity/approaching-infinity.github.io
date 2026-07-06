@@ -36,10 +36,11 @@
   .eyebrow::before{content:"";width:26px;height:1px;background:var(--red);display:inline-block}
 
   /* ---------- header ---------- */
-  header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s ease,border-color .3s ease,backdrop-filter .3s}
-  header .bar{display:flex;align-items:center;justify-content:space-between;height:70px;border-bottom:1px solid transparent}
-  header.scrolled{background:rgba(10,10,10,.82);backdrop-filter:blur(14px) saturate(140%)}
-  header.scrolled .bar{border-bottom-color:var(--line)}
+  /* scoped to the site nav only — plain `header` would also pin in-page <header> blocks */
+  #header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s ease,border-color .3s ease,backdrop-filter .3s}
+  #header .bar{display:flex;align-items:center;justify-content:space-between;height:70px;border-bottom:1px solid transparent}
+  #header.scrolled{background:rgba(10,10,10,.82);backdrop-filter:blur(14px) saturate(140%)}
+  #header.scrolled .bar{border-bottom-color:var(--line)}
   .brand{display:flex;align-items:center;gap:.55rem;font-family:var(--display);font-weight:800;font-stretch:condensed;text-transform:uppercase;letter-spacing:.06em;font-size:1.18rem}
   .brand .inf{color:var(--red);font-size:1.5rem;line-height:1;transform:translateY(-1px)}
   nav.main{display:flex;align-items:center;gap:2rem}

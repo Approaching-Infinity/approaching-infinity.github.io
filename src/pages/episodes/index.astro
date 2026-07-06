@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const episodes = (await getCollection('episodes')).sort(
+  (a, b) => b.data.episodeNumber - a.data.episodeNumber,
+);
+---
+<Layout
+  title="Episodes — Approaching Infinity"
+  description="Every episode of Approaching Infinity: high-signal conversations on quantitative finance, volatility, options, AI in markets, and the veteran founder journey."
+>
+  <section class="ep-index wrap">
+    <a class="ep-back reveal" href="/">&larr; Home</a>
+    <header class="sec-head reveal">
+      <span class="eyebrow">The conversations</span>
+      <h2>All episodes</h2>
+      <p>High-signal conversations on markets, volatility, options, AI, and the people building what lasts.</p>
+    </header>
+    <div class="ep-list reveal">
+      {episodes.map((ep) => (
+        <a class="ep" href={`/episodes/${ep.id}/`}>
+          <div class="ep-no">{ep.data.episodeNumber}</div>
+          <div>
+            <div class="ep-title">{ep.data.title}</div>
+            <div class="ep-guest">with {ep.data.guest}</div>
+          </div>
+          <div class="ep-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

@@ -14,6 +14,9 @@ const episodes = defineCollection({
     spotifyUrl: z.string().url().optional(),
     appleUrl: z.string().url().optional(),
     youtubeUrl: z.string().url().optional(),
+    // Embed IDs (optional). When present, the episode page shows an inline player.
+    youtubeId: z.string().optional(),
+    spotifyEpisodeId: z.string().optional(),
     featured: z.boolean().default(false),
   }),
 });

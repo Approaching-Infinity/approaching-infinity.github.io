@@ -1,0 +1,68 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const eps = await getCollection('episodes');
+  return eps.map((ep) => ({ params: { slug: ep.id }, props: { ep } }));
+}
+
+const { ep } = Astro.props;
+const { Content } = await render(ep);
+const d = ep.data;
+const dateStr = d.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const pageTitle = `${d.title} — Approaching Infinity`;
+const num = String(d.episodeNumber).padStart(2, '0');
+---
+<Layout title={pageTitle} description={d.description}>
+  <article class="ep-page wrap">
+    <a class="ep-back reveal" href="/episodes/">&larr; All episodes</a>
+
+    <header class="ep-hero reveal">
+      <div class="ep-num-ghost" aria-hidden="true">{num}</div>
+      <span class="eyebrow">Episode {d.episodeNumber} &middot; {dateStr}{d.duration ? ` · ${d.duration}` : ''}</span>
+      <h1>{d.title}</h1>
+      <p class="ep-hero-guest">with {d.guest}</p>
+    </header>
+
+    {d.youtubeId ? (
+      <div class="player player-16x9 reveal">
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${d.youtubeId}`}
+          title={d.title}
+          loading="lazy"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    ) : d.spotifyEpisodeId ? (
+      <div class="player reveal">
+        <iframe
+          src={`https://open.spotify.com/embed/episode/${d.spotifyEpisodeId}`}
+          title={d.title}
+          loading="lazy"
+          height="232"
+          style="width:100%;border:0;display:block"
+          allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    ) : (
+      <div class="player-cta reveal">
+        <span class="eyebrow">Listen</span>
+        <p>New episodes everywhere you listen. Pick your platform.</p>
+        <div class="ep-listen">
+          {d.spotifyUrl && <a class="btn btn-red" href={d.spotifyUrl}>&#9654;&nbsp; Spotify</a>}
+          {d.appleUrl && <a class="btn btn-ghost" href={d.appleUrl}>Apple Podcasts</a>}
+          {d.youtubeUrl && <a class="btn btn-ghost" href={d.youtubeUrl}>YouTube</a>}
+        </div>
+      </div>
+    )}
+
+    <div class="prose reveal">
+      <Content />
+    </div>
+
+    <div class="ep-foot reveal">
+      <a class="btn btn-ghost" href="/episodes/">&larr; All episodes</a>
+      <a class="btn btn-red" href="https://linktr.ee/approachinginfinityshow">Listen everywhere</a>
+    </div>
+  </article>
+</Layout>

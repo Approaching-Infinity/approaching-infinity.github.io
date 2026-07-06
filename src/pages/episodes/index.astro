@@ -23,7 +23,7 @@ const episodes = (await getCollection('episodes')).sort(
           <div class="ep-no">{ep.data.episodeNumber}</div>
           <div>
             <div class="ep-title">{ep.data.title}</div>
-            <div class="ep-guest">with {ep.data.guest}</div>
+            {ep.data.guest && <div class="ep-guest">with {ep.data.guest}</div>}
           </div>
           <div class="ep-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
         </a>

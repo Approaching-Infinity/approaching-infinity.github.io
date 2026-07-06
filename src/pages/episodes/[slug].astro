@@ -22,7 +22,7 @@ const num = String(d.episodeNumber).padStart(2, '0');
       <div class="ep-num-ghost" aria-hidden="true">{num}</div>
       <span class="eyebrow">Episode {d.episodeNumber} &middot; {dateStr}{d.duration ? ` · ${d.duration}` : ''}</span>
       <h1>{d.title}</h1>
-      <p class="ep-hero-guest">with {d.guest}</p>
+      {d.guest && <p class="ep-hero-guest">with {d.guest}</p>}
     </header>
 
     {d.youtubeId ? (
@@ -34,6 +34,14 @@ const num = String(d.episodeNumber).padStart(2, '0');
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
+    ) : d.audioUrl ? (
+      <div class="player-audio reveal">
+        {d.artwork && <img class="player-art" src={d.artwork} alt="" width="96" height="96" loading="lazy" />}
+        <div class="player-audio-main">
+          <span class="eyebrow">Now playing &middot; Ep {d.episodeNumber}</span>
+          <audio class="ep-audio" controls preload="none" src={d.audioUrl}>Your browser does not support the audio element.</audio>
+        </div>
+      </div>
     ) : d.spotifyEpisodeId ? (
       <div class="player reveal">
         <iframe
@@ -44,17 +52,16 @@ const num = String(d.episodeNumber).padStart(2, '0');
           style="width:100%;border:0;display:block"
           allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
       </div>
-    ) : (
-      <div class="player-cta reveal">
-        <span class="eyebrow">Listen</span>
-        <p>New episodes everywhere you listen. Pick your platform.</p>
-        <div class="ep-listen">
-          {d.spotifyUrl && <a class="btn btn-red" href={d.spotifyUrl}>&#9654;&nbsp; Spotify</a>}
-          {d.appleUrl && <a class="btn btn-ghost" href={d.appleUrl}>Apple Podcasts</a>}
-          {d.youtubeUrl && <a class="btn btn-ghost" href={d.youtubeUrl}>YouTube</a>}
-        </div>
+    ) : null}
+
+    <div class="ep-listen-row reveal">
+      <span class="ep-listen-label">Listen &amp; follow</span>
+      <div class="ep-listen">
+        {d.appleUrl && <a class="btn btn-ghost" href={d.appleUrl} target="_blank" rel="noopener">Apple Podcasts</a>}
+        {d.spotifyUrl && <a class="btn btn-ghost" href={d.spotifyUrl} target="_blank" rel="noopener">Spotify</a>}
+        {d.youtubeUrl && <a class="btn btn-ghost" href={d.youtubeUrl} target="_blank" rel="noopener">YouTube</a>}
       </div>
-    )}
+    </div>
 
     <div class="prose reveal">
       <Content />

@@ -13,6 +13,24 @@ const d = ep.data;
 const dateStr = d.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const pageTitle = `${d.title} — Approaching Infinity`;
 const num = String(d.episodeNumber).padStart(2, '0');
+
+// Inline player sources. "Listen" (native audio) is the on-brand default; Apple is per-episode
+// (we hold the ids); Spotify falls back to the show player until per-episode ids are added;
+// "Watch" (YouTube) shows when a video is matched.
+const appleEmbed = d.appleUrl ? d.appleUrl.replace('podcasts.apple.com', 'embed.podcasts.apple.com') : null;
+const spotifyEmbed = d.spotifyEpisodeId
+  ? `https://open.spotify.com/embed/episode/${d.spotifyEpisodeId}`
+  : d.spotifyUrl
+    ? d.spotifyUrl.replace('open.spotify.com/', 'open.spotify.com/embed/')
+    : null;
+const ytEmbed = d.youtubeId ? `https://www.youtube-nocookie.com/embed/${d.youtubeId}` : null;
+
+const tabs = [];
+if (ytEmbed) tabs.push({ key: 'watch', label: 'Watch', kind: 'video', src: ytEmbed });
+if (d.audioUrl) tabs.push({ key: 'listen', label: 'Listen', kind: 'native', src: d.audioUrl });
+if (appleEmbed) tabs.push({ key: 'apple', label: 'Apple', kind: 'frame', src: appleEmbed, h: 175 });
+if (spotifyEmbed) tabs.push({ key: 'spotify', label: 'Spotify', kind: 'frame', src: spotifyEmbed, h: 152 });
+const defKey = tabs.length ? tabs[0].key : null;
 ---
 <Layout title={pageTitle} description={d.description}>
   <article class="ep-page wrap">
@@ -25,37 +43,59 @@ const num = String(d.episodeNumber).padStart(2, '0');
       {d.guest && <p class="ep-hero-guest">with {d.guest}</p>}
     </header>
 
-    {d.youtubeId ? (
-      <div class="player player-16x9 reveal">
-        <iframe
-          src={`https://www.youtube-nocookie.com/embed/${d.youtubeId}`}
-          title={d.title}
-          loading="lazy"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    ) : d.audioUrl ? (
-      <div class="player-audio reveal">
-        {d.artwork && <img class="player-art" src={d.artwork} alt="" width="96" height="96" loading="lazy" />}
-        <div class="player-audio-main">
-          <span class="eyebrow">Now playing &middot; Ep {d.episodeNumber}</span>
-          <audio class="ep-audio" controls preload="none" src={d.audioUrl}>Your browser does not support the audio element.</audio>
+    {tabs.length > 0 && (
+      <div class="player-tabs reveal" data-player>
+        {tabs.length > 1 && (
+          <div class="tab-bar" role="tablist" aria-label="Choose a player">
+            {tabs.map((t) => (
+              <button
+                class:list={['tab', { 'is-active': t.key === defKey }]}
+                data-tab={t.key}
+                role="tab"
+                type="button"
+                aria-selected={t.key === defKey ? 'true' : 'false'}>{t.label}</button>
+            ))}
+          </div>
+        )}
+        <div class="tab-panels">
+          {tabs.map((t) => (
+            <div
+              class:list={['tab-panel', t.kind === 'video' && 'player-16x9', { 'is-active': t.key === defKey }]}
+              data-panel={t.key}>
+              {t.kind === 'native' ? (
+                <div class="audio-inline">
+                  {d.artwork && <img class="player-art" src={d.artwork} alt="" width="88" height="88" loading="lazy" />}
+                  <div class="player-audio-main">
+                    <span class="eyebrow">Episode {d.episodeNumber}</span>
+                    <audio class="ep-audio" controls preload="none" src={t.src}>Your browser does not support the audio element.</audio>
+                  </div>
+                </div>
+              ) : t.kind === 'video' ? (
+                <iframe
+                  src={t.key === defKey ? t.src : undefined}
+                  data-src={t.src}
+                  title={d.title}
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              ) : (
+                <iframe
+                  src={t.key === defKey ? t.src : undefined}
+                  data-src={t.src}
+                  title={`${d.title} — ${t.label}`}
+                  loading="lazy"
+                  height={t.h}
+                  style="width:100%;border:0;display:block"
+                  allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              )}
+            </div>
+          ))}
         </div>
       </div>
-    ) : d.spotifyEpisodeId ? (
-      <div class="player reveal">
-        <iframe
-          src={`https://open.spotify.com/embed/episode/${d.spotifyEpisodeId}`}
-          title={d.title}
-          loading="lazy"
-          height="232"
-          style="width:100%;border:0;display:block"
-          allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      </div>
-    ) : null}
+    )}
 
     <div class="ep-listen-row reveal">
-      <span class="ep-listen-label">Listen &amp; follow</span>
+      <span class="ep-listen-label">Follow the show</span>
       <div class="ep-listen">
         {d.appleUrl && <a class="btn btn-ghost" href={d.appleUrl} target="_blank" rel="noopener">Apple Podcasts</a>}
         {d.spotifyUrl && <a class="btn btn-ghost" href={d.spotifyUrl} target="_blank" rel="noopener">Spotify</a>}
@@ -73,3 +113,28 @@ const num = String(d.episodeNumber).padStart(2, '0');
     </div>
   </article>
 </Layout>
+
+<script>
+  document.querySelectorAll('[data-player]').forEach(function (player) {
+    var tabs = player.querySelectorAll('.tab');
+    var panels = player.querySelectorAll('.tab-panel');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var key = tab.getAttribute('data-tab');
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        panels.forEach(function (panel) {
+          var on = panel.getAttribute('data-panel') === key;
+          panel.classList.toggle('is-active', on);
+          if (on) {
+            var frame = panel.querySelector('iframe');
+            if (frame && !frame.getAttribute('src') && frame.dataset.src) frame.src = frame.dataset.src;
+          }
+        });
+      });
+    });
+  });
+</script>

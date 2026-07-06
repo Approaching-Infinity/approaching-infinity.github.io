@@ -6,9 +6,9 @@ pubDate: 2026-06-30
 duration: "12 min"
 appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-show-understanding-investment/id1641001955?i=1000774803315
 spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
-youtubeUrl: https://www.youtube.com/watch?v=dAKmR7zlD4M
+youtubeUrl: https://www.youtube.com/watch?v=CRSrMx90X1g
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/122179478/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-30%2F427078603-44100-2-32cd1e4770c03.mp3
-youtubeId: dAKmR7zlD4M
+youtubeId: CRSrMx90X1g
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 featured: true
 ---

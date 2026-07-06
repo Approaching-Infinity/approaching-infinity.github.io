@@ -7,7 +7,8 @@ pubDate: 2024-12-15
 duration: "31 min"
 appleUrl: https://podcasts.apple.com/us/podcast/mastering-healthcare-real-estate-site-selection-strategy/id1641001955?i=1000680469668
 spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
-youtubeUrl: https://www.youtube.com/@approachinginfinityshow
+youtubeUrl: https://www.youtube.com/watch?v=8fJpKN-HwOE
+youtubeId: 8fJpKN-HwOE
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/95759656/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-15%2F391605490-44100-2-83bb255b9de5f.m4a
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 ---

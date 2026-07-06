@@ -7,7 +7,8 @@ pubDate: 2026-04-18
 duration: "33 min"
 appleUrl: https://podcasts.apple.com/us/podcast/from-chaos-to-clarity-rewiring-mindset-and-building/id1641001955?i=1000762157452
 spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
-youtubeUrl: https://www.youtube.com/@approachinginfinityshow
+youtubeUrl: https://www.youtube.com/watch?v=UVozsz4tRFA
+youtubeId: UVozsz4tRFA
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/118657860/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-18%2F422338949-44100-2-ed0a2ea7f6afb.mp3
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 ---

@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we sit down with Tom Cobi
 pubDate: 2025-06-28
 duration: "23 min"
 appleUrl: https://podcasts.apple.com/us/podcast/finding-your-voice-mastering-authentic-communication/id1641001955?i=1000714884802
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/0vTGFd9OOfVA402FlYVGwZ
+spotifyEpisodeId: 0vTGFd9OOfVA402FlYVGwZ
 youtubeUrl: https://www.youtube.com/watch?v=ilwQJBd7nGs
 youtubeId: ilwQJBd7nGs
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/104743661/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-28%2F402943537-44100-2-97131def330dc.mp3

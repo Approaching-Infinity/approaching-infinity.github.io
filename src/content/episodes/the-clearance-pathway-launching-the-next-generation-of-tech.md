@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we sit down with Devon St
 pubDate: 2025-08-02
 duration: "36 min"
 appleUrl: https://podcasts.apple.com/us/podcast/the-clearance-pathway-launching-the-next-generation/id1641001955?i=1000720418974
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/1BfsBOLEViftqDSTeqoPua
+spotifyEpisodeId: 1BfsBOLEViftqDSTeqoPua
 youtubeUrl: https://www.youtube.com/watch?v=QaADS_F8-m8
 youtubeId: QaADS_F8-m8
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/106348943/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-2%2F404999231-44100-2-acdef5bdb5c82.mp3

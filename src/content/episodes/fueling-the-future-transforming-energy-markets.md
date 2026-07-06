@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, Justin Roopnarine sits do
 pubDate: 2025-01-23
 duration: "28 min"
 appleUrl: https://podcasts.apple.com/us/podcast/fueling-the-future-transforming-energy-markets-with/id1641001955?i=1000685112405
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/1r43freY0gqJxtOE41TNv9
+spotifyEpisodeId: 1r43freY0gqJxtOE41TNv9
 youtubeUrl: https://www.youtube.com/watch?v=q8pS1Hzlcww
 youtubeId: q8pS1Hzlcww
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/97436308/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-0-23%2F393556829-44100-2-ebd98f8827e9e.m4a

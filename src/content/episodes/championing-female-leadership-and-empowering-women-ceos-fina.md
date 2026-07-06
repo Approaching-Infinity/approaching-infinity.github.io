@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we're joined by Patricia 
 pubDate: 2023-08-02
 duration: "24 min"
 appleUrl: https://podcasts.apple.com/us/podcast/championing-female-leadership-and-empowering-women/id1641001955?i=1000623220869
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/0oJCifoLu75AU5M2FYOFyM
+spotifyEpisodeId: 0oJCifoLu75AU5M2FYOFyM
 youtubeUrl: https://www.youtube.com/@approachinginfinityshow
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/74089950/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2Fexports%2Faaecdd08%2F74089950%2F727aec92d3594a153457144eec6272ab.m4a
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg

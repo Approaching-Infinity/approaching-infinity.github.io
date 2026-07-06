@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, join me, a seasoned engin
 pubDate: 2022-08-20
 duration: "15 min"
 appleUrl: https://podcasts.apple.com/us/podcast/the-journey-so-far/id1641001955?i=1000576785707
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/4wgAKuE9KqS5wW1OGvV2Lv
+spotifyEpisodeId: 4wgAKuE9KqS5wW1OGvV2Lv
 youtubeUrl: https://www.youtube.com/@approachinginfinityshow
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/56420743/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2Fexports%2Faaecdd08%2F56420743%2F948dedccf90e295342d600ced09d1fc2.m4a
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg

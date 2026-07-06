@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we're delighted to host A
 pubDate: 2024-12-15
 duration: "31 min"
 appleUrl: https://podcasts.apple.com/us/podcast/mastering-healthcare-real-estate-site-selection-strategy/id1641001955?i=1000680469668
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/6s20qldvCtgugohuiMJPQm
+spotifyEpisodeId: 6s20qldvCtgugohuiMJPQm
 youtubeUrl: https://www.youtube.com/watch?v=8fJpKN-HwOE
 youtubeId: 8fJpKN-HwOE
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/95759656/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-15%2F391605490-44100-2-83bb255b9de5f.m4a

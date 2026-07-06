@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we are honored to host Jo
 pubDate: 2025-01-01
 duration: "37 min"
 appleUrl: https://podcasts.apple.com/us/podcast/dream-big-act-bold-joe-rinderknecht-on-entrepreneurship/id1641001955?i=1000682294667
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/1jJQoFE0adCdyoH55jlzSo
+spotifyEpisodeId: 1jJQoFE0adCdyoH55jlzSo
 youtubeUrl: https://www.youtube.com/watch?v=XNCP2nC4OO0
 youtubeId: XNCP2nC4OO0
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/96430258/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-30%2F392306428-44100-2-5d7e0752dbcd6.m4a

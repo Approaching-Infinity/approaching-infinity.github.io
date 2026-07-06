@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we welcome Dr. Gaby Cora,
 pubDate: 2024-12-28
 duration: "51 min"
 appleUrl: https://podcasts.apple.com/us/podcast/living-with-love-empowering-emotional-awareness-with/id1641001955?i=1000681907299
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/13ZRAtkJw8iX80uu9UgEQF
+spotifyEpisodeId: 13ZRAtkJw8iX80uu9UgEQF
 youtubeUrl: https://www.youtube.com/watch?v=RkBbSNyte4c
 youtubeId: RkBbSNyte4c
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/96236305/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-24%2F392066549-44100-2-4f149fe355938.m4a

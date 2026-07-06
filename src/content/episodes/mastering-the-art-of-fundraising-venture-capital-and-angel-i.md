@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we delve into the entrepr
 pubDate: 2022-11-26
 duration: "20 min"
 appleUrl: https://podcasts.apple.com/us/podcast/mastering-the-art-of-fundraising-venture-capital/id1641001955?i=1000587567802
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/7foOg2wgDyf1T4QCA7WPJm
+spotifyEpisodeId: 7foOg2wgDyf1T4QCA7WPJm
 youtubeUrl: https://www.youtube.com/@approachinginfinityshow
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/61240913/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fproduction%2Fexports%2Faaecdd08%2F61240913%2F103886ec596d50851d263dddfc3a9685.m4a
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg

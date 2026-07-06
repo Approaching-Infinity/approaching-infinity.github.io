@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we sit down with Willard 
 pubDate: 2026-04-18
 duration: "33 min"
 appleUrl: https://podcasts.apple.com/us/podcast/from-chaos-to-clarity-rewiring-mindset-and-building/id1641001955?i=1000762157452
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/7D2zYsf8NNLLmTp4nseHWY
+spotifyEpisodeId: 7D2zYsf8NNLLmTp4nseHWY
 youtubeUrl: https://www.youtube.com/watch?v=UVozsz4tRFA
 youtubeId: UVozsz4tRFA
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/118657860/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-18%2F422338949-44100-2-ed0a2ea7f6afb.mp3

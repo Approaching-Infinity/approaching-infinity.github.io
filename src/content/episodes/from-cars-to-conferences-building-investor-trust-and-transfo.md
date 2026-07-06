@@ -6,7 +6,8 @@ description: "In this edition of Approaching Infinity, we sit down with Eric Rad
 pubDate: 2025-08-09
 duration: "32 min"
 appleUrl: https://podcasts.apple.com/us/podcast/from-cars-to-conferences-building-investor-trust-and/id1641001955?i=1000721310965
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/0Atov73Ed0d6WE6JwAPP0P
+spotifyEpisodeId: 0Atov73Ed0d6WE6JwAPP0P
 youtubeUrl: https://www.youtube.com/watch?v=XzrlBrx7WaI
 youtubeId: XzrlBrx7WaI
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/106653322/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-9%2F405389490-44100-2-813c2bd2a0d85.mp3

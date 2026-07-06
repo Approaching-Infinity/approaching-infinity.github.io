@@ -6,7 +6,8 @@ description: "In this episode of Approaching Infinity, we are honored to host Wa
 pubDate: 2024-12-22
 duration: "37 min"
 appleUrl: https://podcasts.apple.com/us/podcast/turning-legal-wins-into-wealth-how-warren-ross-makes/id1641001955?i=1000681276266
-spotifyUrl: https://open.spotify.com/show/32jOxQ8WhZElwk4c3RjkmD
+spotifyUrl: https://open.spotify.com/episode/5cjny2bypT31iQ6IWj9eby
+spotifyEpisodeId: 5cjny2bypT31iQ6IWj9eby
 youtubeUrl: https://www.youtube.com/watch?v=0gQyPzzeEqE
 youtubeId: 0gQyPzzeEqE
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/95968016/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-17%2F391729023-44100-2-246a8c4f5590e.m4a

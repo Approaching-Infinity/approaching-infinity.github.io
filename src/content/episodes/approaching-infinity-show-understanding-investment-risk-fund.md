@@ -1,6 +1,7 @@
 ---
 title: "Approaching Infinity Show | Understanding Investment Risk & Fund Management Style"
-episodeNumber: 26
+episodeNumber: 0
+bonus: true
 description: "In this episode of Approaching Infinity, a candid conversation between Justin Roopnarine and Josh Elledge, you'll discover how the firm refines its investment thesis to meet investor needs, the significance of risk-reward balance, and the..."
 pubDate: 2026-06-30
 duration: "12 min"

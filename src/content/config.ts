@@ -20,6 +20,9 @@ const episodes = defineCollection({
     audioUrl: z.string().url().optional(),
     artwork: z.string().url().optional(),
     featured: z.boolean().default(false),
+    // A cross-post / special that the podcast feed does not give a mainline number to
+    // (e.g. a guest-hosted feature). Shown as "Bonus" instead of "Episode N".
+    bonus: z.boolean().default(false),
   }),
 });
 

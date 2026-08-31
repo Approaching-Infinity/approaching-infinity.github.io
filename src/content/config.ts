@@ -19,6 +19,9 @@ const episodes = defineCollection({
     spotifyEpisodeId: z.string().optional(),
     audioUrl: z.string().url().optional(),
     artwork: z.string().url().optional(),
+    // RSS <guid>. Written by scripts/sync-episodes.mjs so a synced episode is
+    // matched exactly on later runs and never duplicated.
+    guid: z.string().optional(),
     featured: z.boolean().default(false),
     // A cross-post / special that the podcast feed does not give a mainline number to
     // (e.g. a guest-hosted feature). Shown as "Bonus" instead of "Episode N".

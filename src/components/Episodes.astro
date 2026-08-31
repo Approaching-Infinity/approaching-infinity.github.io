@@ -1,8 +1,6 @@
 ---
-import { getCollection } from 'astro:content';
-const episodes = (await getCollection('episodes'))
-  .sort((a, b) => b.data.episodeNumber - a.data.episodeNumber)
-  .slice(0, 4);
+import { getEpisodesNewestFirst } from '../lib/episodes';
+const episodes = (await getEpisodesNewestFirst()).slice(0, 4);
 ---
 <section class="episodes" id="episodes">
   <div class="wrap">

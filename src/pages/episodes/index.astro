@@ -1,10 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getEpisodesNewestFirst } from '../../lib/episodes';
 
-const episodes = (await getCollection('episodes')).sort(
-  (a, b) => b.data.episodeNumber - a.data.episodeNumber,
-);
+const episodes = await getEpisodesNewestFirst();
 ---
 <Layout
   title="Episodes — Approaching Infinity"

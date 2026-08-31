@@ -12,5 +12,8 @@
   },
   "dependencies": {
     "astro": "^5.6.0"
+  },
+  "devDependencies": {
+    "fast-xml-parser": "^5.11.1"
   }
 }

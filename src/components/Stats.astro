@@ -2,14 +2,13 @@
 import { getCollection } from 'astro:content';
 const eps = await getCollection('episodes');
 const epCount = eps.length;
-const guestCount = eps.filter((e) => e.data.guest).length;
 ---
 <section class="stats">
   <div class="wrap">
     <div class="stats-grid reveal">
-      <div class="stat"><div class="stat-num" data-target={epCount}>0</div><div class="stat-label">Episodes released</div></div>
-      <div class="stat"><div class="stat-num" data-target={guestCount}>0</div><div class="stat-label">Guests &amp; voices</div></div>
-      <div class="stat"><div class="stat-num" data-target="3">0</div><div class="stat-label">Mission pillars</div></div>
+      <div class="stat"><div class="stat-num" data-target={epCount}>{epCount}</div><div class="stat-label">Episodes &amp; appearances</div></div>
+      <div class="stat"><div class="stat-num stat-word">Free</div><div class="stat-label">Resources &amp; public learning</div></div>
+      <div class="stat"><div class="stat-num" data-target="3">3</div><div class="stat-label">Mission pillars</div></div>
       <div class="stat"><div class="stat-num inf">&#8734;</div><div class="stat-label">The compounding upside</div></div>
     </div>
   </div>

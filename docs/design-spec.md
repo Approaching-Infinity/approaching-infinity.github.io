@@ -3,37 +3,23 @@
 Approved design specification for the Approaching Infinity website at
 <https://approaching-infinity.github.io>.
 
-## Purpose
+## Purpose and current implementation
 
-A podcast landing page that ALSO seeds a forthcoming charitable mission. The site has a dual goal:
+This local review extends the existing podcast site into a useful front door for finance, technology and innovation conversations, practical free resources, open learning and connections. It preserves the existing design rather than redesigning it. The October 30 changes await owner review and are not deployed.
 
-1. **Listen & grow** — get visitors into the show (episodes, platforms, newsletter).
-2. **Seed the nonprofit** — introduce the charitable mission early so the audience grows up with it.
-
-## Mission
-
-Three pillars:
-
-1. **Ending Poverty**
-2. **Veteran Initiatives**
-3. **Financial Literacy**
-
-The charitable initiative is **in formation**. It is not yet a registered nonprofit, and the site does NOT solicit donations.
+Mission areas remain **Ending Poverty**, **Veteran Initiatives** and **Financial Literacy**. Initiatives are in development. No charitable status, audience impact, confirmed events or active payments are claimed.
 
 ## Information architecture
 
-A single long-scroll page, in this order:
+- Homepage: existing hero, ticker, content-derived episode counts, episodes, mission, new resource/progress section, host, listen links and separate newsletter.
+- `/contact/`: general, guest/collaboration, sponsorship and mission inquiry categories. Intended dual recipients; no auto-subscription.
+- `/newsletter/` and `/notes/`: voluntary signup/status and honest empty issue archive.
+- `/resources/`: first financial literacy review draft and blank printable worksheet, with dated official sources.
+- `/events/`: unscheduled free public learning; no personal calendar.
+- `/privacy/`: collection boundaries and direct contact.
+- `/support/`: **local review build only**, excluded from default production output. No checkout.
 
-1. **Header** — sticky nav
-2. **Hero** — show identity + primary CTA
-3. **Ticker** — scrolling marquee strip
-4. **Stats** — headline numbers
-5. **Episodes** — rendered dynamically from the `episodes` content collection (4 highest-numbered)
-6. **Mission** — the 3 charitable pillars
-7. **About the host**
-8. **Listen** — platform links + Linktree hub
-9. **Newsletter** — signup form
-10. **Footer** — the canonical disclaimer home
+Contact and newsletter forms are native HTML POSTs only when approved hosted endpoints are configured. Unconfigured production mode shows truthful status and direct email for contact. Local review uses an explicitly labeled loopback-only demo, never a fake delivery success.
 
 ## Brand tokens
 
@@ -74,11 +60,13 @@ The full disclaimer lives verbatim in the footer (the canonical disclaimer home)
 
 Justin Roopnarine — U.S. Air Force veteran, Managing Partner of Limitless Capital.
 
-## Open items / next steps
+## Remaining activation gates
 
-- [ ] Replace placeholder episodes and guest roles with real bookings
-- [ ] Add a real Open Graph share image
-- [ ] Wire real platform and social URLs (currently the Linktree hub placeholder)
-- [ ] Optional: custom domain (e.g. a `.org` for the nonprofit) via a `public/CNAME` file
-- [ ] Optional: light theme
-- [ ] Real newsletter form backend
+- Owner review of public copy, first resource and blank worksheet.
+- Existing form/ESP account, exact routing, consent and service/privacy settings identified and approved.
+- Authorized real contact test received in both exact inboxes with working Reply-To; separate newsletter confirmed-opt-in, unsubscribe, duplicate and suppression evidence.
+- Exact privacy provider/retention details reviewed before collection opens.
+- Existing Stripe business/account charge/payout and receipt/refund readiness verified before any payment request.
+- Owner release approval before main merge/deployment; post-deploy readback and operator acceptance remain separate.
+
+See `docs/pips/PIP-001-website-front-door.md` and README for local setup and actual validation evidence.

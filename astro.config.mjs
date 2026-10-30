@@ -6,4 +6,6 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://approaching-infinity.github.io',
   build: { format: 'directory' },
+  // Preserve the existing HTML whitespace behavior across Astro 7's JSX default.
+  compressHTML: true,
 });

@@ -1,0 +1,29 @@
+---
+import { siteForms } from '../config/site';
+const config = siteForms();
+const contactRecipients = 'service@limitlesslp.com,msison@limitlesslp.com';
+const formSubmit = !config.review && config.contact && new URL(config.contact).hostname === 'formsubmit.co';
+---
+{config.contact ? (
+  <form action={config.contact} method="POST" class="contact-form">
+    {formSubmit && <>
+      <input type="hidden" name="_subject" value="Approaching Infinity — contact inquiry" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_cc" value="msison@limitlesslp.com" />
+    </>}
+    {config.review && <p class="review-inline">Demo form: use fictional details only. Nothing is stored or sent.</p>}
+    <div class="form-grid">
+      <div class="field"><label for="contact-name">Name</label><input id="contact-name" name="name" autocomplete="name" required maxlength="100" /></div>
+      <div class="field"><label for="contact-email">Reply email</label><input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254" /></div>
+    </div>
+    <div class="field"><label for="contact-category">What would you like to discuss?</label><select id="contact-category" name="category" required><option value="">Choose a topic</option><option value="general">General inquiry</option><option value="guest">Guest or collaboration</option><option value="sponsor">Sponsorship</option><option value="mission">Mission participation</option></select></div>
+    <div class="field"><label for="contact-organization">Organization <span>(optional)</span></label><input id="contact-organization" name="organization" autocomplete="organization" maxlength="150" /></div>
+    <div class="field"><label for="contact-url">Relevant website <span>(optional)</span></label><input id="contact-url" name="url" type="url" placeholder="https://" maxlength="500" /></div>
+    <div class="field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="6" required minlength="10" maxlength="3000" aria-describedby="message-help"></textarea><small id="message-help">10–3,000 characters. Please leave out account numbers, financial records, service records and other sensitive details.</small></div>
+    <div class="form-trap" aria-hidden="true"><label for="contact-website-check">Leave this blank</label><input id="contact-website-check" name={formSubmit ? '_honey' : 'website_check'} tabindex="-1" autocomplete="off" /></div>
+    <p class="form-help">We use your details to review and reply to your inquiry. Contacting us does not subscribe you to the newsletter. <a href="/privacy/">Read our privacy notice</a>.</p>
+    <button class="btn btn-red" type="submit">{config.review ? 'Test contact form' : 'Send inquiry'}</button>
+    {!config.review && <p class="form-help">Our form provider will show the result. If an error appears, return here to retry or email us below. Do not assume delivery without confirmation.</p>}
+  </form>
+) : <div class="status-panel"><h2>Email the team</h2><p>Online inquiries are not open yet. Use the email link below to contact us; sending an inquiry does not subscribe you to the newsletter.</p></div>}
+<p class="direct-contact"><a href={`mailto:${contactRecipients}`}>Email the team</a><br /><small>service@limitlesslp.com · msison@limitlesslp.com</small></p>

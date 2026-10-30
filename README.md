@@ -23,7 +23,7 @@ The review server binds only `127.0.0.1`: static site on 4321 and demo native fo
 
 Default `npm run build` has no contact collection form and no newsletter collection form. It shows a truthful contact status with a direct email link, and a newsletter-not-open status. Email links open the visitor's mail client; they are not evidence of delivered mail. Destinations are intended to be Justin `jroopnarine@limitlesslp.com` and Maria `msison@limitlesslp.com`; dual receipt remains unverified.
 
-Once an existing hosted provider and costs are approved, configure shell/CI build-time environment variables (the server-only reader uses `process.env`; it does not load an `.env` file). **These are public HTML POST URLs, never secret API keys.** Astro/GitHub Pages is static; the provider must accept native `application/x-www-form-urlencoded` POSTs and perform its own validation, spam controls and result/confirmation flow.
+Once an existing hosted provider and costs are approved, configure shell/CI build-time environment variables (the server-only reader uses `process.env`; it does not load an `.env` file). **These are public HTML POST URLs, never secret API keys.** Astro/GitHub Pages is static. Generic hosted providers must accept native `application/x-www-form-urlencoded` POSTs. The owned contact relay documented below uses a reviewed JSON client and exact-origin CORS instead.
 
 | Variable | Use |
 | --- | --- |
@@ -61,6 +61,14 @@ Owner approval remains required before merge/push to main, production deployment
 
 The owner approved publishing the reviewed website and first resource. The default release keeps collection off until owned mailbox routing, provider approval, activation and delivery evidence are complete. No newsletter send or Stripe activation is part of this release.
 
-A prepared optional FormSubmit adapter uses the provider's native subject/table/CC/honeypot fields and preserves its default CAPTCHA. Intended contact routing is service@limitlesslp.com with msison@limitlesslp.com copied, as confirmed by the owner. Never enable the approval variable just because this code exists: Google Workspace confirms the service account Active; new-provider consent, activation and dual receipt remain pending. No activation or external form test has been performed.
+Contact routing is service@limitlesslp.com with msison@limitlesslp.com copied, as confirmed by the owner. A FormSubmit trial activated its local-test origin, but its CAPTCHA did not render reliably and no message delivery was confirmed. It was never enabled publicly. The owned relay below replaces that proposed integration.
 
 Deployment reads public hosted-form URLs and approval flags from GitHub Actions repository variables. None were configured during release preparation. With no variables, production offers direct email to the existing Justin/Maria inboxes. This fallback is a mail link, not an active automated form.
+
+## Owned contact relay
+
+Set `CONTACT_FORM_URL=https://limitlesslp.com/contact-approaching-infinity.php` and `CONTACT_FORM_APPROVED=true` only after the backend release and observed test receipt. The dedicated PHP endpoint lives in the Limitless monorepo; the existing firm contact.php is unchanged. Its exact-origin CORS permits https://approaching-infinity.github.io and no browser credentials. Fixed recipients are service and Maria; visitors cannot supply routing headers.
+
+The contact form loads a small JavaScript client, captures a render timestamp and sends JSON with name, email, category, organization, url, message, website_check and ts. It retains the message on failure, handles timeout/bad response without a success claim, and provides a direct email fallback for JavaScript-disabled browsers. Server-side validation, a honeypot, minimum fill time, body limits and header-injection guards remain mandatory; client checks alone are insufficient. An accepted response means the host accepted the email for sending. Actual inbox receipt is separately verified before release.
+
+No contact-form submission database, new SaaS account, Gmail API credentials or newsletter enrollment. Hostinger web hosting and existing Workspace mail process inquiries; privacy text identifies them. See PIP-004 for integration and release evidence.

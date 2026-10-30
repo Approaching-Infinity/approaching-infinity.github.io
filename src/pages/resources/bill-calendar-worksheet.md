@@ -6,7 +6,7 @@ description: "A free blank bill calendar worksheet. Keep your details private an
 
 # Bill calendar worksheet
 
-**Review Draft · Free · Updated October 30, 2026**
+**Free · Updated October 30, 2026**
 
 Use this original Approaching Infinity worksheet privately. Start with three bills; add more if useful. Use short labels and leave out account numbers, passwords and identifying details. You do not need to send this page to anyone.
 

@@ -6,7 +6,7 @@ description: "A free 15-minute bill-calendar exercise with a fictional example a
 
 # A clearer picture of the month ahead
 
-**Review Draft · Financial literacy · Updated October 30, 2026 · Free resource**
+**Financial literacy · Updated October 30, 2026 · Free resource**
 
 A bill calendar puts two everyday questions on one page: what is coming due, and when? This 15-minute exercise is a starting point for seeing the month ahead. You can try it privately with paper, a calendar you already use, or the accompanying blank worksheet.
 
@@ -52,7 +52,7 @@ If the picture shows bills you cannot pay, that calls for more than rearranging 
 
 At your next weekly check, revisit the item you marked “check” and update the page. You can add more bills when ready. Keep the worksheet private; there is no need to send it to Approaching Infinity.
 
-**Optional anonymous feedback question:** After trying the exercise, was the difference between a due date and a planned payment date clear? Choose “yes,” “partly,” or “no.” No financial details are needed. A feedback collection route is not yet open in this review draft.
+**Optional anonymous feedback question:** After trying the exercise, was the difference between a due date and a planned payment date clear? Choose “yes,” “partly,” or “no.” No financial details are needed. A feedback collection route is not yet open.
 
 General education only; this resource does not provide advice for your individual financial circumstances. Approaching Infinity’s explanation and worksheet are independently prepared and are not CFPB-approved or endorsed.
 

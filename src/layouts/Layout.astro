@@ -2,7 +2,10 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-const { title = 'Approaching Infinity — Conversations with founders, investors, operators & veterans', description = 'An independent podcast on finance, business, and building things that last — conversations with founders, investors, operators, and veterans, in service of a charitable mission: ending poverty, veteran initiatives, and financial literacy.' } = Astro.props;
+import { siteForms } from '../config/site';
+const { review } = siteForms();
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const { title = 'Approaching Infinity — Finance, technology and innovation', description = 'Thoughtful conversations on finance, technology and innovation, turned into practical resources, free learning and connections. Building toward financial literacy, veteran initiatives and ending poverty.', noindex = false } = Astro.props;
 ---
 <html lang="en">
   <head>
@@ -11,11 +14,12 @@ const { title = 'Approaching Infinity — Conversations with founders, investors
     <title>{title}</title>
     <meta name="description" content={description}>
     <meta name="theme-color" content="#0A0A0A">
-    <link rel="canonical" href="https://approaching-infinity.github.io/">
+    <link rel="canonical" href={canonical}>
+    {(review || noindex) && <meta name="robots" content="noindex,nofollow">}
     <meta property="og:type" content="website">
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
-    <meta property="og:url" content="https://approaching-infinity.github.io/">
+    <meta property="og:url" content={canonical}>
     <meta property="og:site_name" content="Approaching Infinity">
     <meta property="og:image" content="https://approaching-infinity.github.io/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -28,6 +32,9 @@ const { title = 'Approaching Infinity — Conversations with founders, investors
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   </head>
   <body>
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    <a class="skip-link" href="#top">Skip to content</a>
+    {review && <aside class="review-banner" aria-label="Internal review notice"><div class="wrap"><strong>Local review preview.</strong> Draft content; demo forms use fictional data and send nothing. <a href="/support/">Review support draft</a></div></aside>}
     <Header />
     <main id="top"><slot /></main>
     <Footer />
@@ -45,9 +52,13 @@ const { title = 'Approaching Infinity — Conversations with founders, investors
     toggle.addEventListener('click', function(){
       var open = nav.classList.toggle('open');
       toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
       toggle.innerHTML = open ? '&#10005;' : '&#9776;';
     });
-    nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); toggle.innerHTML='&#9776;'; toggle.setAttribute('aria-expanded',false); }); });
+    nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); toggle.innerHTML='&#9776;'; toggle.setAttribute('aria-expanded',false); toggle.setAttribute('aria-label','Open navigation'); }); });
+
+    toggle.setAttribute('aria-controls', 'nav');
+    addEventListener('keydown', function(e){ if(e.key === 'Escape' && nav.classList.contains('open')){ nav.classList.remove('open'); toggle.innerHTML='&#9776;'; toggle.setAttribute('aria-expanded','false'); toggle.setAttribute('aria-label','Open navigation'); toggle.focus(); } });
 
     // reveals
     var revs = document.querySelectorAll('.reveal');

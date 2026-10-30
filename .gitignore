@@ -1,5 +1,6 @@
 # build output
 dist/
+dist-review/
 .astro/
 
 # dependencies
@@ -16,3 +17,7 @@ _mockup.html
 .DS_Store
 *.log
 npm-debug.log*
+
+# local browser review artifacts
+output/playwright/
+.playwright-cli/

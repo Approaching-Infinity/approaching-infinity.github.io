@@ -8,7 +8,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "node --test tests/*.test.mjs",
+    "build:review": "SITE_REVIEW_MODE=true astro build --outDir dist-review",
+    "review": "npm run build:review && node scripts/review-server.mjs",
+    "check:builds": "node scripts/check-builds.mjs"
   },
   "dependencies": {
     "astro": "^5.6.0"

@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { siteForms } from '../config/site';
+const { review, contact, newsletter } = siteForms();
+---
+<Layout title="Privacy — Approaching Infinity" description="How Approaching Infinity handles contact inquiries and voluntary newsletter signup."><section class="page-shell"><div class="wrap"><div class="page-heading"><h1>Keep your details private.</h1><p>Contact and newsletter signup are separate choices.</p></div><div class="prose">
+  <h2>Contact</h2><p>Use only the details needed to explain your inquiry. Do not send account numbers, financial records, benefit records, passwords or attachments. Inquiries are intended for Justin Roopnarine and Maria Sison so the team can review and reply.</p><p>{contact ? 'The form collects your name, reply email, topic, message and any optional organization or website you provide.' : 'The online contact form is not open. If you email the team, your email service and ours process that correspondence.'} Contacting us does not subscribe you to any newsletter.</p>
+  <h2>Newsletter</h2><p>{newsletter ? 'Signup asks for your email and voluntary consent. Follow the provider’s confirmation instructions; submitting the form alone does not confirm a subscription.' : 'Newsletter collection is not open yet.'} Newsletter signup will remain separate from guest, sponsor and event participation.</p>
+  <h2>Your financial worksheet</h2><p>Use a blank copy privately on your own device or on paper. We do not ask you to upload or send a completed financial worksheet.</p>
+  {review && <><h2>Local review only</h2><p>Demo forms send fictional test values to a server on this computer only. The handler validates them in memory, does not log request bodies, saves no submissions and sends no email. Closing the demo server ends the test. This is not a live collection service.</p></>}
+  <h2>Questions and deletion requests</h2><p>To ask about correspondence you sent or request deletion, <a href="mailto:jroopnarine@limitlesslp.com,msison@limitlesslp.com">email Justin and Maria</a>. Please identify the inquiry without adding sensitive records.</p>
+  {(!contact && !newsletter) && <p>Before opening online collection, we will identify the service provider, explain its processing, and publish the applicable retention and unsubscribe details here.</p>}
+</div></div></section></Layout>

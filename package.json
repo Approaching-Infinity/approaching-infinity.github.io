@@ -15,9 +15,12 @@
     "check:builds": "node scripts/check-builds.mjs"
   },
   "dependencies": {
-    "astro": "^5.6.0"
+    "astro": "7.4.4"
   },
   "devDependencies": {
     "fast-xml-parser": "^5.11.1"
+  },
+  "engines": {
+    "node": ">=22.23.4"
   }
 }

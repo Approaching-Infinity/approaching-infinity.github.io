@@ -4,7 +4,7 @@ Static Astro site for thoughtful conversations on finance, technology and innova
 
 ## Local preview
 
-Use Node 22, matching CI. Main pushes automatically deploy to GitHub Pages; keep this work local until release approval.
+Use Node 22.23.4 or newer, matching the minimum in `package.json`; CI pins 22.23.4. Main pushes automatically deploy to GitHub Pages; keep this work local until release approval.
 
 ```bash
 npm ci
@@ -41,7 +41,7 @@ Before setting approval flags, update `/privacy/` with the exact provider, appli
 
 ## Content and review
 
-- `/resources/month-ahead/`: first financial literacy article, **Review Draft**; publication date unset.
+- `/resources/month-ahead/`: first financial literacy article, approved for the October 30 release; actual publication requires deployment readback.
 - `/resources/bill-calendar-worksheet/`: blank original worksheet; browser Print / save as PDF supported. It sends no financial data.
 - `/events/`: public event status only, no fabricated date or personal booking calendar.
 - `/notes/`: honest empty archive; add real issues after publication.
@@ -51,8 +51,8 @@ Draft article/worksheet source was copied from the October 30 editorial reports.
 
 ## Build and release
 
-`npm run build` creates static output in `dist/`; no server or API keys ship. Shared canonical and Open Graph URLs derive from the current route and configured `site` URL. Node 22 PR workflow runs install, behavior tests and production build. Episode RSS synchronization remains unchanged. Refresh from current main and rebuild before any approved merge because automated episode additions may advance it.
+`npm run build` creates static output in `dist/`; no server or API keys ship. Shared canonical and Open Graph URLs derive from the current route and configured `site` URL. Node 22.23.4 PR workflow runs install, behavior tests and production build. Episode RSS synchronization remains unchanged. Refresh from current main and rebuild before any approved merge because automated episode additions may advance it.
 
-The inherited Astro 5 dependency tree has npm advisories, including [AVIF optimization RCE](https://github.com/advisories/GHSA-26w7-cxv4-gfx2). The advisory requires processing an attacker-supplied AVIF. This site does not use Astro image optimization or accept uploads, and the local preview serves built files without Astro's dev server. This limits that specific exposure; it does not make the dependency tree advisory-free. npm's Astro fix is a major upgrade to 7; no forced major update is bundled into this front-door change. Review dependency remediation separately before introducing untrusted build content, image processing or server rendering. See `docs/pips/PIP-001-website-front-door.md` for actual evidence and remaining gates.
+The October 30 release preparation upgrades Astro from 5.18.2 to the exact patched version 7.4.4 and refreshes its dependency lockfile. A fresh locked install and `npm audit` report **zero known vulnerabilities**, down from 13 vulnerable dependency entries (including the [AVIF optimization RCE](https://github.com/advisories/GHSA-26w7-cxv4-gfx2)). This is the current registry audit result, not a guarantee against undiscovered issues. Content configuration now lives at `src/content.config.ts`, Zod uses `astro/zod`, and explicit HTML compression preserves the prior whitespace behavior. All 45 production routes and their main-content text/table row counts matched the pre-upgrade build before the approved resource-label changes. See `docs/dependency-release-review-2026-10-30.md` for exact versions, checks and remaining release limits.
 
 Owner approval remains required before merge/push to main, production deployment, live collection activation or payment activation. No commit, PR, push, merge or deployment is included in this local preview work.

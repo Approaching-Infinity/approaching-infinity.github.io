@@ -17,13 +17,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      CONTACT_FORM_URL: ${{ vars.CONTACT_FORM_URL }}
+      CONTACT_FORM_APPROVED: ${{ vars.CONTACT_FORM_APPROVED }}
+      NEWSLETTER_FORM_URL: ${{ vars.NEWSLETTER_FORM_URL }}
+      NEWSLETTER_FORM_APPROVED: ${{ vars.NEWSLETTER_FORM_APPROVED }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install, build, and upload site
         uses: withastro/action@v3
         with:
-          node-version: 22
+          node-version: 22.23.4
 
   deploy:
     needs: build

@@ -56,3 +56,11 @@ Draft article/worksheet source was copied from the October 30 editorial reports.
 The October 30 release preparation upgrades Astro from 5.18.2 to the exact patched version 7.4.4 and refreshes its dependency lockfile. A fresh locked install and `npm audit` report **zero known vulnerabilities**, down from 13 vulnerable dependency entries (including the [AVIF optimization RCE](https://github.com/advisories/GHSA-26w7-cxv4-gfx2)). This is the current registry audit result, not a guarantee against undiscovered issues. Content configuration now lives at `src/content.config.ts`, Zod uses `astro/zod`, and explicit HTML compression preserves the prior whitespace behavior. All 45 production routes and their main-content text/table row counts matched the pre-upgrade build before the approved resource-label changes. See `docs/dependency-release-review-2026-10-30.md` for exact versions, checks and remaining release limits.
 
 Owner approval remains required before merge/push to main, production deployment, live collection activation or payment activation. No commit, PR, push, merge or deployment is included in this local preview work.
+
+## October 30 live release
+
+The owner approved publishing the reviewed website and first resource. The default release keeps collection off until owned mailbox routing, provider approval, activation and delivery evidence are complete. No newsletter send or Stripe activation is part of this release.
+
+A prepared optional FormSubmit adapter uses the provider's native subject/table/CC/honeypot fields and preserves its default CAPTCHA. Intended contact routing is service@limitlesslp.com with msison@limitlesslp.com copied, as confirmed by the owner. Never enable the approval variable just because this code exists: Google Workspace confirms the service account Active; new-provider consent, activation and dual receipt remain pending. No activation or external form test has been performed.
+
+Deployment reads public hosted-form URLs and approval flags from GitHub Actions repository variables. None were configured during release preparation. With no variables, production offers direct email to the existing Justin/Maria inboxes. This fallback is a mail link, not an active automated form.

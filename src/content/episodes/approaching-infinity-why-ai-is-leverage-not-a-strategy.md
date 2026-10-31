@@ -11,6 +11,9 @@ guid: "5f5cf652-f097-44c8-8834-622bb3d7088e"
 # Synced from the podcast feed. Safe to enrich by hand: this file is never
 # overwritten. Optional extras: spotifyEpisodeId / spotifyUrl, appleUrl,
 # youtubeUrl / youtubeId, guest.
+listenerQuestion: "Which decisions should remain under human control when AI becomes part of an investment process?"
+episodeVisuals: [{"src": "/shows/ai-data-driven-leadership.webp", "alt": "AI & Data Driven Leadership podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
+guestAppearance: {"show": "AI & Data Driven Leadership", "host": "Dean Guida", "url": "https://podcasts.apple.com/us/podcast/ai-data-driven-leadership/id1784508781"}
 ---
 
 I was a guest on the AI & Data Driven Leadership Podcast, hosted by Dean Guida. Re-uploading here with credit to Dean and his team so our audience can catch it.
@@ -25,10 +28,30 @@ We close on AI. My view is that AI is leverage on a strategy you already have, n
 
 Watch and listen to Dean's show
 
-Infragistics: https://www.infragistics.com/Slingshot: https://podcast.slingshotapp.io/Dean on LinkedIn: https://www.linkedin.com/in/deanguida/Follow Approaching Infinity
+- Infragistics: https://www.infragistics.com/
 
-YouTube: https://www.youtube.com/@approachinginfinityshowInstagram: https://www.instagram.com/approachinginfinityshow/TikTok: https://www.tiktok.com/@approachinginfinityshowX: https://x.com/Justin_777_LinkedIn: https://www.linkedin.com/company/approaching-infinity/Facebook: https://www.facebook.com/profile.php?id=61576572194605Justin Roopnarine
+- Slingshot: https://podcast.slingshotapp.io/
 
-LinkedIn: https://www.linkedin.com/in/justin-roopnarine/Thanks for listening. Full credit to Dean Guida and Infragistics for hosting this conversation.
+- Dean on LinkedIn: https://www.linkedin.com/in/deanguida/
+
+Follow Approaching Infinity
+
+- YouTube: https://www.youtube.com/@approachinginfinityshow
+
+- Instagram: https://www.instagram.com/approachinginfinityshow/
+
+- TikTok: https://www.tiktok.com/@approachinginfinityshow
+
+- X: https://x.com/Justin_777_
+
+- LinkedIn: https://www.linkedin.com/company/approaching-infinity/
+
+- Facebook: https://www.facebook.com/profile.php?id=61576572194605
+
+Justin Roopnarine
+
+- LinkedIn: https://www.linkedin.com/in/justin-roopnarine/
+
+Thanks for listening. Full credit to Dean Guida and Infragistics for hosting this conversation.
 
 Disclaimer: Approaching Infinity is an independent media production for educational and entertainment purposes only. Nothing in this episode is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. The host and guests may be principals of, or affiliated with, investment firms and may hold positions in the securities or instruments discussed; their views are their own as of the recording date. Mention of any company, security, or strategy is not a recommendation or endorsement. Do your own research and consult a qualified professional about your circumstances. Past performance is no guarantee of future results.

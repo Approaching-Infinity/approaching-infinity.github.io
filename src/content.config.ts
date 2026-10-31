@@ -9,6 +9,20 @@ const episodes = defineCollection({
     title: z.string(),
     episodeNumber: z.number(),
     guest: z.string().optional(),
+    // Curated from approved show notes; never inferred by the feed sync.
+    listenerQuestion: z.string().trim().min(10).max(140).optional(),
+    episodeVisuals: z.array(z.object({
+      src: z.string().regex(/^\/(guests|shows)\/[a-z0-9-]+\.(jpg|jpeg|png|webp)$/),
+      alt: z.string().trim().min(2).max(160),
+      kind: z.enum(['portrait', 'show', 'episode-artwork']).default('portrait'),
+      position: z.enum(['center 15%', 'center 28%', 'center 30%', 'center 35%', 'center']).default('center'),
+      zoom: z.number().min(1).max(2.5).default(1),
+    })).max(3).default([]),
+    guestAppearance: z.object({
+      show: z.string().trim().min(2).max(120),
+      host: z.string().trim().min(2).max(100),
+      url: z.string().url().startsWith('https://'),
+    }).optional(),
     description: z.string(),
     pubDate: z.coerce.date(),
     duration: z.string().optional(),

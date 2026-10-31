@@ -1,0 +1,16 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import EpisodeVisual from './EpisodeVisual.astro';
+interface Props { episode: CollectionEntry<'episodes'> }
+const { episode: ep } = Astro.props;
+---
+<a class:list={['ep', {'ep--portrait': ep.data.episodeVisuals.length > 0}]} href={`/episodes/${ep.id}/`}>
+  <span class:list={['ep-no', { 'ep-no--bonus': ep.data.bonus }]}>{ep.data.bonus ? 'Bonus' : ep.data.episodeNumber}</span>
+  <EpisodeVisual visuals={ep.data.episodeVisuals} />
+  <div class="ep-copy">
+    <div class="ep-title">{ep.data.title}</div>
+    {ep.data.guestAppearance ? <div class="ep-guest ep-appearance">Justin featured on {ep.data.guestAppearance.show} · hosted by {ep.data.guestAppearance.host}</div> : ep.data.guest && <div class="ep-guest">with {ep.data.guest}</div>}
+    {ep.data.listenerQuestion && <p class="ep-insight"><span class="ep-insight-label">Why listen</span><span>{ep.data.listenerQuestion}</span></p>}
+  </div>
+  <span class="ep-play" aria-hidden="true"><img src="/icons/play-fill.svg" alt="" width="16" height="16" /></span>
+</a>

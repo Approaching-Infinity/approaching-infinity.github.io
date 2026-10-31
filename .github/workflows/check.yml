@@ -15,6 +15,9 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - run: node scripts/check-episode-ui.mjs dist
+      - run: npm run build:review
+      - run: npm run check:builds
       - name: Build and check owned contact and newsletter request mode
         env:
           CONTACT_FORM_URL: https://limitlesslp.com/contact-approaching-infinity.php

@@ -1,30 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getEpisodesNewestFirst } from '../../lib/episodes';
+import EpisodeRow from '../../components/EpisodeRow.astro';
 
 const episodes = await getEpisodesNewestFirst();
 ---
 <Layout
   title="Episodes — Approaching Infinity"
-  description="Every episode of Approaching Infinity: high-signal conversations with founders, investors, operators, and veterans on finance, business, and building things that last."
+  description="Every episode of Approaching Infinity: conversations with founders, investors, operators and veterans on finance, technology, innovation and ideas put to work."
 >
   <section class="ep-index wrap">
     <a class="ep-back reveal" href="/">&larr; Home</a>
     <header class="sec-head reveal">
       <span class="eyebrow">The conversations</span>
-      <h2>All episodes</h2>
-      <p>High-signal conversations with founders, investors, operators, and veterans, the people building what lasts.</p>
+      <h1>All episodes</h1>
+      <p>Conversations with founders, investors, operators and veterans about ideas put to work.</p>
     </header>
-    <div class="ep-list reveal">
+    <div class="ep-list">
       {episodes.map((ep) => (
-        <a class="ep" href={`/episodes/${ep.id}/`}>
-          <div class="ep-no">{ep.data.bonus ? 'Bonus' : ep.data.episodeNumber}</div>
-          <div>
-            <div class="ep-title">{ep.data.title}</div>
-            {ep.data.guest && <div class="ep-guest">with {ep.data.guest}</div>}
-          </div>
-          <div class="ep-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-        </a>
+        <EpisodeRow episode={ep} />
       ))}
     </div>
   </section>

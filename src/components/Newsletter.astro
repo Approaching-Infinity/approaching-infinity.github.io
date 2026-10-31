@@ -3,21 +3,52 @@ import { siteForms } from '../config/site';
 const config = siteForms();
 const { standalone = false } = Astro.props;
 const Heading = standalone ? 'h1' : 'h2';
+const ownedRelay = !config.review && config.newsletter === 'https://limitlesslp.com/contact-approaching-infinity.php';
 ---
 <section class="news" id="newsletter"><div class="wrap">
   <span class="eyebrow">Approaching Infinity Notes</span>
-  <Heading>Conversations worth carrying forward.</Heading>
+  <Heading>Join the newsletter.</Heading>
   <p>Episode highlights, practical resources, mission progress and confirmed public events. One place to follow the work.</p>
   {config.newsletter ? <>
     {config.review && <p class="review-inline">Demo signup: fictional email only. No subscription is created.</p>}
-    <form action={config.newsletter} method="POST" class="newsletter-form">
+    {ownedRelay && <p class="form-help">We are starting with a small, manually managed list. Request signup below; our team will reply to confirm your email before adding you. Newsletter issues are prepared and sent separately.</p>}
+    <form action={config.newsletter} method="POST" class="newsletter-form" data-newsletter-relay={ownedRelay ? 'true' : undefined}>
       <div class="field"><label for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254" /></div>
       <label class="consent"><input name="consent" type="checkbox" value="yes" required /> <span>I want to receive Approaching Infinity Notes by email. I can unsubscribe at any time.</span></label>
       <div class="form-trap" aria-hidden="true"><label for="newsletter-website-check">Leave this blank</label><input id="newsletter-website-check" name="website_check" tabindex="-1" autocomplete="off" /></div>
-      <button class="btn btn-red" type="submit">{config.review ? 'Test newsletter signup' : 'Request subscription'}</button>
+      <button class="btn btn-red" type="submit" disabled={ownedRelay}>{config.review ? 'Test newsletter signup' : 'Request signup'}</button>
+      {ownedRelay && <><p data-newsletter-result role="status" aria-live="polite" tabindex="-1"></p><noscript><p>This form needs JavaScript. <a href="mailto:service@limitlesslp.com?subject=Approaching%20Infinity%20Notes%20signup%20request&amp;body=I%20want%20to%20receive%20Approaching%20Infinity%20Notes%20by%20email.%20Please%20reply%20to%20confirm%20my%20signup.%20I%20understand%20I%20can%20unsubscribe%20at%20any%20time.">Email a signup request instead</a>.</p></noscript></>}
     </form>
-    <p class="form-help">Look for the provider’s confirmation instructions after signing up. A request is not a confirmed subscription. If the request fails, return here to retry. <a href="/privacy/">Privacy notice</a>.</p>
+    <p class="form-help">{ownedRelay ? 'Submitting the form sends a request to our shared service inbox. You are not subscribed until you confirm with the team. To withdraw a request or unsubscribe, reply to us or email service@limitlesslp.com.' : 'Look for the provider’s confirmation instructions after signing up. A request is not a confirmed subscription. If the request fails, return here to retry.'} <a href="/privacy/">Privacy notice</a>.</p>
   </> : <div class="newsletter-status"><p>Newsletter signup is not open yet. The episodes and free resources are available here while we prepare it.</p><a class="btn btn-ghost" href="/resources/">Explore free resources</a></div>}
   <p class="note">Voluntary signup. Contact inquiries and event participation never enroll you automatically.</p>
   <p><a class="text-link" href="/notes/">Read the notes archive</a></p>
 </div></section>
+<script>
+  import { submitNewsletterRequest, newsletterRequestError } from '../scripts/newsletter-request.mjs';
+  for (const form of document.querySelectorAll<HTMLFormElement>('form[data-newsletter-relay="true"]')) {
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]')!;
+    const result = form.querySelector<HTMLElement>('[data-newsletter-result]')!;
+    let startedAt = Date.now();
+    button.disabled = false;
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (button.disabled || !form.reportValidity()) return;
+      button.disabled = true;
+      button.textContent = 'Sending request…';
+      result.textContent = '';
+      try {
+        await submitNewsletterRequest(form.action, new FormData(form), startedAt);
+        form.reset();
+        startedAt = Date.now();
+        result.textContent = 'Your signup request has been submitted. Our team will reply to confirm your email. You are not subscribed yet; please check your inbox and spam folder for our reply.';
+      } catch (error) {
+        result.textContent = newsletterRequestError(error);
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Request signup';
+        result.focus();
+      }
+    });
+  }
+</script>

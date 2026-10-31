@@ -15,3 +15,12 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - name: Build and check owned contact and newsletter request mode
+        env:
+          CONTACT_FORM_URL: https://limitlesslp.com/contact-approaching-infinity.php
+          CONTACT_FORM_APPROVED: 'true'
+          NEWSLETTER_FORM_URL: https://limitlesslp.com/contact-approaching-infinity.php
+          NEWSLETTER_FORM_APPROVED: 'true'
+        run: |
+          npm run build
+          node scripts/check-owned-forms.mjs

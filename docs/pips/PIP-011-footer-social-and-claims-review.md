@@ -4,7 +4,7 @@
 
 The footer omitted the show Facebook page. It also asserted a charitable entity status and a universal personal-capacity arrangement for guests that the reviewed source records did not establish.
 
-Add an accessible Facebook icon using the existing official episode-note destination, publicly checked to resolve to Approaching Infinity. Replace those unsupported assertions with the factual statements that guest views are their own and mission work is in development. Retain the educational-use and no-charitable-solicitation language.
+Add an accessible Facebook icon using the existing official episode-note destination, publicly checked to resolve to Approaching Infinity. Increase footer disclosure/copyright contrast from the faint palette to the existing muted palette; the original small text measured 3.45:1 against the dark background. Replace those unsupported assertions with the factual statements that guest views are their own and mission work is in development. Retain the educational-use and no-charitable-solicitation language.
 
 ## Scope
 

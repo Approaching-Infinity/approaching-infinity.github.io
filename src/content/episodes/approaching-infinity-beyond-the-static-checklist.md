@@ -11,6 +11,9 @@ guid: "d31d0dd8-3028-4b8e-9d41-50e41849e570"
 # Synced from the podcast feed. Safe to enrich by hand: this file is never
 # overwritten. Optional extras: spotifyEpisodeId / spotifyUrl, appleUrl,
 # youtubeUrl / youtubeId, guest.
+listenerQuestion: "When do static compliance checklists need to become continuously monitored processes?"
+episodeVisuals: [{"src": "/shows/innovation-in-compliance.webp", "alt": "Innovation in Compliance with Tom Fox podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
+guestAppearance: {"show": "Innovation in Compliance with Tom Fox", "host": "Tom Fox", "url": "https://podcasts.apple.com/us/podcast/from-checklists-to-dynamic-compliance-systems-with/id1356603588?i=1000779817893"}
 ---
 
 I was a guest on the Compliance Podcast Network, hosted by Tom Fox. Re-uploading here with credit to Tom and his team so our audience can catch it.
@@ -27,10 +30,32 @@ We close on financial literacy as a risk management strategy. Teams across corpo
 
 Watch and listen to Tom's shows
 
-Compliance Podcast Network: https://compliancepodcastnetwork.net/Instagram: https://www.instagram.com/voiceofcompliance/X: https://x.com/tfoxlawTom on LinkedIn: https://www.linkedin.com/in/thomasfox13/Follow Approaching Infinity
+- Compliance Podcast Network: https://compliancepodcastnetwork.net/
 
-YouTube: https://www.youtube.com/@approachinginfinityshowInstagram: https://www.instagram.com/approachinginfinityshow/TikTok: https://www.tiktok.com/@approachinginfinityshowX: https://x.com/Justin_777_LinkedIn: https://www.linkedin.com/company/approaching-infinity/Facebook: https://www.facebook.com/profile.php?id=61576572194605Justin Roopnarine
+- Instagram: https://www.instagram.com/voiceofcompliance/
 
-LinkedIn: https://www.linkedin.com/in/justin-roopnarine/Thanks for listening. Full credit to Tom Fox and the Compliance Podcast Network for hosting this conversation.
+- X: https://x.com/tfoxlaw
+
+- Tom on LinkedIn: https://www.linkedin.com/in/thomasfox13/
+
+Follow Approaching Infinity
+
+- YouTube: https://www.youtube.com/@approachinginfinityshow
+
+- Instagram: https://www.instagram.com/approachinginfinityshow/
+
+- TikTok: https://www.tiktok.com/@approachinginfinityshow
+
+- X: https://x.com/Justin_777_
+
+- LinkedIn: https://www.linkedin.com/company/approaching-infinity/
+
+- Facebook: https://www.facebook.com/profile.php?id=61576572194605
+
+Justin Roopnarine
+
+- LinkedIn: https://www.linkedin.com/in/justin-roopnarine/
+
+Thanks for listening. Full credit to Tom Fox and the Compliance Podcast Network for hosting this conversation.
 
 Disclaimer: Approaching Infinity is an independent media production for educational and entertainment purposes only. Nothing in this episode is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. The host and guests may be principals of, or affiliated with, investment firms and may hold positions in the securities or instruments discussed; their views are their own as of the recording date. Mention of any company, security, or strategy is not a recommendation or endorsement. Do your own research and consult a qualified professional about your circumstances. Past performance is no guarantee of future results.

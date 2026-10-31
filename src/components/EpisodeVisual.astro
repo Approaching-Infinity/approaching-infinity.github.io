@@ -1,0 +1,11 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { resolveEpisodeVisuals } from '../lib/episode-visuals';
+interface Props { visuals: CollectionEntry<'episodes'>['data']['episodeVisuals'] }
+const visuals = await resolveEpisodeVisuals(Astro.props.visuals);
+---
+{visuals.length > 0 && <span class:list={['ep-portrait', { 'ep-portrait--group': visuals.length > 1 }]}>
+  {visuals.map(visual => <span class:list={['ep-portrait-frame', { 'ep-portrait-frame--art': visual.kind !== 'portrait' }]}>
+    <img src={visual.image.src} alt={visual.alt} width="76" height="76" loading="lazy" decoding="async" style={`object-position:${visual.position};transform:scale(${visual.zoom});transform-origin:${visual.position}`} />
+  </span>)}
+</span>}

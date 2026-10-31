@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
+import { resolveEpisodeVisuals } from '../../lib/episode-visuals';
 
 export async function getStaticPaths() {
   const eps = await getCollection('episodes');
@@ -10,6 +11,7 @@ export async function getStaticPaths() {
 const { ep } = Astro.props;
 const { Content } = await render(ep);
 const d = ep.data;
+const showArt = d.guestAppearance ? (await resolveEpisodeVisuals(d.episodeVisuals))[0] : undefined;
 const dateStr = d.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 const pageTitle = `${d.title} — Approaching Infinity`;
 const num = d.bonus ? '★' : String(d.episodeNumber).padStart(2, '0');
@@ -40,7 +42,7 @@ const defKey = tabs.length ? tabs[0].key : null;
       <div class="ep-num-ghost" aria-hidden="true">{num}</div>
       <span class="eyebrow">{d.bonus ? 'Bonus episode' : `Episode ${d.episodeNumber}`} &middot; {dateStr}{d.duration ? ` · ${d.duration}` : ''}</span>
       <h1>{d.title}</h1>
-      {d.guest && <p class="ep-hero-guest">with {d.guest}</p>}
+      {d.guestAppearance ? <p class="ep-hero-guest">Justin featured on <a href={d.guestAppearance.url} target="_blank" rel="noopener">{d.guestAppearance.show}</a> · hosted by {d.guestAppearance.host}</p> : d.guest && <p class="ep-hero-guest">with {d.guest}</p>}
     </header>
 
     {tabs.length > 0 && (
@@ -64,7 +66,7 @@ const defKey = tabs.length ? tabs[0].key : null;
               data-panel={t.key}>
               {t.kind === 'native' ? (
                 <div class="audio-inline">
-                  {d.artwork && <img class="player-art" src={d.artwork} alt="" width="88" height="88" loading="lazy" />}
+                  {(showArt || d.artwork) && <img class="player-art" src={showArt?.image.src ?? d.artwork} alt={showArt?.alt ?? ''} width="88" height="88" loading="lazy" />}
                   <div class="player-audio-main">
                     <span class="eyebrow">{d.bonus ? 'Bonus' : `Episode ${d.episodeNumber}`}</span>
                     <audio class="ep-audio" controls preload="none" src={t.src}>Your browser does not support the audio element.</audio>
@@ -103,7 +105,7 @@ const defKey = tabs.length ? tabs[0].key : null;
       </div>
     </div>
 
-    <div class="prose reveal">
+    <div class="prose">
       <Content />
     </div>
 

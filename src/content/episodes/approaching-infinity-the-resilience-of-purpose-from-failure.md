@@ -11,22 +11,49 @@ guid: "8b47a0d4-19e6-4e2f-badd-85ba44513289"
 # Synced from the podcast feed. Safe to enrich by hand: this file is never
 # overwritten. Optional extras: spotifyEpisodeId / spotifyUrl, appleUrl,
 # youtubeUrl / youtubeId, guest.
+listenerQuestion: "How can failure reshape a veteran's approach to leadership, resilience and service?"
+episodeVisuals: [{"src": "/shows/veterans-outlook.webp", "alt": "The Veterans Outlook Season III (2026) podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
+guestAppearance: {"show": "The Veterans Outlook", "host": "Pastor Robert Jordan", "url": "https://podcasts.apple.com/us/podcast/the-veterans-outlook-season-iii-2026/id1745944890"}
 ---
 
 I was a guest on the Veterans Outlook Podcast, hosted by Pastor Robert Jordan. Re-uploading here with credit to Pastor Bob and his team so our audience can catch it.
 
-About the host:Pastor and Author Robert Jordan is the host of the Veterans Outlook Podcast, dedicated to highlighting veterans who use their gifts for leadership, economic empowerment, and the greater good.
+**About the host:**Pastor and Author Robert Jordan is the host of the Veterans Outlook Podcast, dedicated to highlighting veterans who use their gifts for leadership, economic empowerment, and the greater good.
 
-What we covered:Pastor Bob and I get into my transition from engineering aircraft engines and Air Force launch operations at Vandenberg Space Force Base to founding Limitless Capital. I walk through how experiencing true failure during Officer Training School served as a defining lesson in leadership and resilience.
+**What we covered:**Pastor Bob and I get into my transition from engineering aircraft engines and Air Force launch operations at Vandenberg Space Force Base to founding Limitless Capital. I walk through how experiencing true failure during Officer Training School served as a defining lesson in leadership and resilience.
 
 We also discuss why pooled capital structures are essential vehicles for large-scale economic projects, separating money as a neutral tool from human greed, and applying the "campfire rule" to alleviate global poverty.
 
-Watch and listen to Pastor Bob show:
+**Watch and listen to Pastor Bob show:**
 
-FatherBob.co: https://fatherbob.co/LinkedIn: https://www.linkedin.com/in/robert-jordan-a22373172/YouTube: https://www.youtube.com/@robertjordan6571X: https://x.com/RobertJ15397676Instagram: https://www.instagram.com/robertejordan757/Follow Approaching Infinity:
+- FatherBob.co: [https://fatherbob.co/](https://fatherbob.co/)
 
-YouTube: https://www.youtube.com/@approachinginfinityshowInstagram: https://www.instagram.com/approachinginfinityshow/TikTok: https://www.tiktok.com/@approachinginfinityshowX: https://x.com/Justin_777_LinkedIn: https://www.linkedin.com/company/approaching-infinity/Facebook: https://www.facebook.com/profile.php?id=61576572194605Justin Roopnarine:
+- LinkedIn: [https://www.linkedin.com/in/robert-jordan-a22373172/](https://www.linkedin.com/in/robert-jordan-a22373172/)
 
-LinkedIn: https://www.linkedin.com/in/justin-roopnarine/Thanks for listening. Full credit to Pastor Robert Jordan and the Veterans Outlook Podcast for hosting this conversation. 🚀
+- YouTube: [https://www.youtube.com/@robertjordan6571](https://www.youtube.com/@robertjordan6571)
+
+- X: [https://x.com/RobertJ15397676](https://x.com/RobertJ15397676)
+
+- Instagram: [https://www.instagram.com/robertejordan757/](https://www.instagram.com/robertejordan757/)
+
+**Follow Approaching Infinity:**
+
+- YouTube: [https://www.youtube.com/@approachinginfinityshow](https://www.youtube.com/@approachinginfinityshow)
+
+- Instagram: [https://www.instagram.com/approachinginfinityshow/](https://www.instagram.com/approachinginfinityshow/)
+
+- TikTok: [https://www.tiktok.com/@approachinginfinityshow](https://www.tiktok.com/@approachinginfinityshow)
+
+- X: [https://x.com/Justin_777_](https://x.com/Justin_777_)
+
+- LinkedIn: [https://www.linkedin.com/company/approaching-infinity/](https://www.linkedin.com/company/approaching-infinity/)
+
+- Facebook: [https://www.facebook.com/profile.php?id=61576572194605](https://www.facebook.com/profile.php?id=61576572194605)
+
+**Justin Roopnarine:**
+
+- LinkedIn: [https://www.linkedin.com/in/justin-roopnarine/](https://www.linkedin.com/in/justin-roopnarine/)
+
+Thanks for listening. Full credit to Pastor Robert Jordan and the Veterans Outlook Podcast for hosting this conversation. 🚀
 
 Disclaimer: Approaching Infinity is an independent media production for educational and entertainment purposes only. Nothing in this episode is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. The host and guests may be principals of, or affiliated with, investment firms and may hold positions in the securities or instruments discussed; their views are their own as of the recording date. Mention of any company, security, or strategy is not a recommendation or endorsement. Do your own research and consult a qualified professional about your circumstances. Past performance is no guarantee of future results.

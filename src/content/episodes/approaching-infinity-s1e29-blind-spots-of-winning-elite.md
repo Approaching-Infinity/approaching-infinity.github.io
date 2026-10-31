@@ -1,7 +1,7 @@
 ---
 title: "Approaching Infinity S1E29: Blind Spots of Winning: Elite Operators Audit Success with Evan Marks"
 episodeNumber: 29
-description: "In this episode of Approaching Infinity, host Justin Roopnarine sits down with Evan Marks, Founder of M1 Performance Group, to unpack the mental architecture required to execute under intense pressure. Marks presents the core framework that elite performance is built at the intersection of psychoanalytic conditioning and neuroplasticity. Rather than waiting for emotions to settle before taking act"
+description: "In this episode of Approaching Infinity, host Justin Roopnarine sits down with Evan Marks, Founder of M1 Performance Group, to unpack the mental architecture required to execute under intense pressure. Marks presents the core framework that elite performance is built at the intersection of psychoanalytic conditioning and neuroplasticity. Rather than waiting for emotions to settle before taking action, Marks explains that operators must consciously change their behavior so that their feelings and internal narrative can follow, establishing a grounded baseline for critical decision-making."
 pubDate: 2026-10-30
 duration: "28 min"
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/128421831/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-30%2F435420603-44100-2-7630acc05c47c.mp3
@@ -10,6 +10,8 @@ guid: "42e93653-0cc5-4014-8ab9-45150cbfd3d8"
 # Synced from the podcast feed. Safe to enrich by hand: this file is never
 # overwritten. Optional extras: spotifyEpisodeId / spotifyUrl, appleUrl,
 # youtubeUrl / youtubeId, guest.
+listenerQuestion: "How do you protect your judgment when everything is going right?"
+episodeVisuals: [{"src": "/guests/evan-marks-official-bio.webp", "alt": "Evan Marks", "kind": "portrait", "position": "center 28%", "zoom": 2.2}]
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Evan Marks, Founder of M1 Performance Group, to unpack the mental architecture required to execute under intense pressure. Marks presents the core framework that elite performance is built at the intersection of psychoanalytic conditioning and neuroplasticity. Rather than waiting for emotions to settle before taking action, Marks explains that operators must consciously change their behavior so that their feelings and internal narrative can follow, establishing a grounded baseline for critical decision-making.
@@ -20,12 +22,38 @@ Marks also explores the crucial operational contrast between genuine intuition a
 
 Finally, Marks discusses the hidden operational risks that emerge during winning streaks. He observes that critical blind spots most frequently develop during periods of success, making disciplined reflection vital even when performance is strong. By learning to slow down in order to speed up, identify unconscious resistance, and systematically audit their habits, Marks asserts that decision-makers can tame impulsivity, protect their judgment, and maintain calm visibility under pressure.
 
-Support and Connect with Evan
+**Support and Connect with Evan**
 
-LinkedIn: https://www.linkedin.com/in/evanmarks-m1/YouTube: https://www.youtube.com/@evanmarks-m1Instagram: https://www.instagram.com/emarks72/X: https://x.com/emarkspwFacebook: https://www.facebook.com/evan.marks.3954M1 Performance Group: https://m1performancegroup.com/Follow Approaching Infinity
+- LinkedIn: [https://www.linkedin.com/in/evanmarks-m1/](https://www.linkedin.com/in/evanmarks-m1/)
 
-YouTube: https://www.youtube.com/@approachinginfinityshowInstagram: https://www.instagram.com/approachinginfinityshow/TikTok: https://www.tiktok.com/@approachinginfinityshowX: https://x.com/Justin_777_LinkedIn: https://www.linkedin.com/company/approaching-infinity/Facebook: https://www.facebook.com/profile.php?id=61576572194605Hosted by Justin Roopnarine
+- YouTube: [https://www.youtube.com/@evanmarks-m1](https://www.youtube.com/@evanmarks-m1)
 
-LinkedIn: https://www.linkedin.com/in/justin-roopnarine/Thank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
+- Instagram: [https://www.instagram.com/emarks72/](https://www.instagram.com/emarks72/)
+
+- X: [https://x.com/emarkspw](https://x.com/emarkspw)
+
+- Facebook: [https://www.facebook.com/evan.marks.3954](https://www.facebook.com/evan.marks.3954)
+
+- M1 Performance Group: [https://m1performancegroup.com/](https://m1performancegroup.com/)
+
+**Follow Approaching Infinity**
+
+- YouTube: [https://www.youtube.com/@approachinginfinityshow](https://www.youtube.com/@approachinginfinityshow)
+
+- Instagram: [https://www.instagram.com/approachinginfinityshow/](https://www.instagram.com/approachinginfinityshow/)
+
+- TikTok: [https://www.tiktok.com/@approachinginfinityshow](https://www.tiktok.com/@approachinginfinityshow)
+
+- X: [https://x.com/Justin_777_](https://x.com/Justin_777_)
+
+- LinkedIn: [https://www.linkedin.com/company/approaching-infinity/](https://www.linkedin.com/company/approaching-infinity/)
+
+- Facebook: [https://www.facebook.com/profile.php?id=61576572194605](https://www.facebook.com/profile.php?id=61576572194605)
+
+**Hosted by Justin Roopnarine**
+
+- LinkedIn: [https://www.linkedin.com/in/justin-roopnarine/](https://www.linkedin.com/in/justin-roopnarine/)
+
+Thank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
 
 Disclaimer: Approaching Infinity is an independent media production for educational and entertainment purposes only. Nothing in this episode is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. The host and guests may be principals of, or affiliated with, investment firms and may hold positions in the securities or instruments discussed; their views are their own as of the recording date. Mention of any company, security, or strategy is not a recommendation or endorsement. Do your own research and consult a qualified professional about your circumstances. Past performance is no guarantee of future results.

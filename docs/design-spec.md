@@ -5,7 +5,7 @@ Approved design specification for the Approaching Infinity website at
 
 ## Purpose and current implementation
 
-This local review extends the existing podcast site into a useful front door for finance, technology and innovation conversations, practical free resources, open learning and connections. It preserves the existing design rather than redesigning it. The October 30 changes await owner review and are not deployed.
+This October 31 revision preserves the existing black/red editorial design. Owner selected platform option3balanced two-by-two and the Why listen footer, then explicitly approved all35archive rows and publication. External-show appearances use original show art/host credits; regular interviews use verified portraits, solos1–2Justin, ep12both guests, ep23verified group episode artwork and ep4honest show-logo fallback. PIP006/source audit/design QA and TASK-0089 record release evidence.
 
 Mission areas remain **Ending Poverty**, **Veteran Initiatives** and **Financial Literacy**. Initiatives are in development. No charitable status, audience impact, confirmed events or active payments are claimed.
 

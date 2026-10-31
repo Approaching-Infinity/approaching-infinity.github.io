@@ -7,6 +7,8 @@ const privacy = await html('privacy');
 assert.match(contact, /data-owned-relay="true"/);
 assert.ok(!contact.includes('name="consent"'), 'Contact must remain separate from newsletter consent');
 assert.match(newsletter, /data-newsletter-relay="true"/);
+assert.match(newsletter, /data-signup-page="\/newsletter\/"/);
+assert.match(await readFile('dist/index.html', 'utf8'), /data-signup-page="\/"/);
 assert.match(newsletter, /name="consent"[^>]*required/);
 assert.ok(!/name="consent"[^>]*\schecked/.test(newsletter), 'Consent cannot be preselected');
 assert.match(newsletter, /not subscribed until you confirm/);

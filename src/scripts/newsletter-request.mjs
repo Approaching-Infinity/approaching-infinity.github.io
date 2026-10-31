@@ -5,8 +5,9 @@ export const newsletterConsentVersion = '2026-10-31';
 
 // A separate, explicit request; the contact form never invokes this helper.
 // The existing relay emails the request to the shared inbox, not a mailing list.
-export async function submitNewsletterRequest(endpoint, formData, startedAt, transport = fetch, requestedAt = new Date()) {
+export async function submitNewsletterRequest(endpoint, formData, startedAt, transport = fetch, requestedAt = new Date(), sourcePath = '/newsletter/') {
   if (formData.get('consent') !== 'yes') throw new Error('consent');
+  if (!['/', '/newsletter/'].includes(sourcePath)) throw new Error('source');
   const inquiry = new FormData();
   inquiry.set('name', 'Newsletter signup request');
   inquiry.set('email', String(formData.get('email') ?? ''));
@@ -17,7 +18,7 @@ export async function submitNewsletterRequest(endpoint, formData, startedAt, tra
     `Consent: ${newsletterConsent}`,
     `Consent wording version: ${newsletterConsentVersion}`,
     `Request time reported by browser: ${requestedAt.toISOString()}`,
-    'Signup page: https://approaching-infinity.github.io/newsletter/',
+    `Signup page: https://approaching-infinity.github.io${sourcePath}`,
     '',
     'This is a pending request, not a confirmed subscription.',
     'Team: reply from the shared service inbox and ask this address to confirm.',

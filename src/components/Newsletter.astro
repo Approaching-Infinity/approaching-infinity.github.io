@@ -13,7 +13,7 @@ const ownedRelay = !config.review && config.newsletter === 'https://limitlesslp.
   {config.newsletter ? <>
     {config.review && <p class="review-inline">Demo signup: fictional email only. No subscription is created.</p>}
     {ownedRelay && <p class="form-help">We are starting with a small, manually managed list. Request signup below; our team will reply to confirm your email before adding you. Newsletter issues are prepared and sent separately.</p>}
-    <form action={config.newsletter} method="POST" class="newsletter-form" data-newsletter-relay={ownedRelay ? 'true' : undefined}>
+    <form action={config.newsletter} method="POST" class="newsletter-form" data-newsletter-relay={ownedRelay ? 'true' : undefined} data-signup-page={standalone ? '/newsletter/' : '/'}>
       <div class="field"><label for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254" /></div>
       <label class="consent"><input name="consent" type="checkbox" value="yes" required /> <span>{newsletterConsent}</span></label>
       <div class="form-trap" aria-hidden="true"><label for="newsletter-website-check">Leave this blank</label><input id="newsletter-website-check" name="website_check" tabindex="-1" autocomplete="off" /></div>
@@ -39,7 +39,7 @@ const ownedRelay = !config.review && config.newsletter === 'https://limitlesslp.
       button.textContent = 'Sending request…';
       result.textContent = '';
       try {
-        await submitNewsletterRequest(form.action, new FormData(form), startedAt);
+        await submitNewsletterRequest(form.action, new FormData(form), startedAt, fetch, new Date(), form.dataset.signupPage);
         form.reset();
         startedAt = Date.now();
         result.textContent = 'Your signup request has been submitted. Our team will reply to confirm your email. You are not subscribed yet; please check your inbox and spam folder for our reply.';

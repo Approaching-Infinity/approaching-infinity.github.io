@@ -24,10 +24,23 @@ test('newsletter request reuses bounded contact fields and retains exact consent
     assert.match(body.message, /Consent wording version: 2026-10-31/);
     assert.match(body.message, /browser: 2026-10-31T12:00:00.000Z/);
     assert.match(body.message, /pending request, not a confirmed subscription/);
+    assert.match(body.message, /Signup page: https:\/\/approaching-infinity.github.io\/newsletter\//);
     assert.ok(!body.message.includes('Untrusted replacement'));
     assert.ok(body.message.length < 3000);
     return { ok: true, json: async () => ({ ok: true }) };
   }, new Date('2026-10-31T12:00:00Z'));
+});
+test('request provenance is the rendered canonical page and cannot be an arbitrary URL', async () => {
+  let calls = 0;
+  await submitNewsletterRequest('https://example.com', data(), 100, async (_url, options) => {
+    calls++;
+    assert.match(JSON.parse(options.body).message, /Signup page: https:\/\/approaching-infinity.github.io\/\n/);
+    return { ok: true, json: async () => ({ ok: true }) };
+  }, new Date('2026-10-31T12:00:00Z'), '/');
+  for (const path of ['https://evil.example/', '/contact/', '/newsletter/?email=reader@example.com']) {
+    await assert.rejects(submitNewsletterRequest('https://example.com', data(), 100, async () => { calls++; }, new Date(), path), /source/);
+  }
+  assert.equal(calls, 1);
 });
 test('honeypot reaches the relay and a refused request never resolves as success', async () => {
   const form = data(); form.set('website_check', 'bot');

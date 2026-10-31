@@ -343,6 +343,10 @@ html:not(.js) .reveal{opacity:1;transform:none}
 @media(max-width:860px){html:not(.js) #header{position:relative}html:not(.js) #header .bar{height:auto;flex-wrap:wrap;padding-block:1rem;gap:1rem}html:not(.js) nav.main{position:static;visibility:visible;pointer-events:auto;transform:none;width:100%;padding:1rem 0;gap:.8rem}html:not(.js) .navtoggle{display:none}}
 
 .stat-word{font-size:clamp(2.4rem,5.8vw,5rem)}
+.hero-followup{margin-top:1rem;font-size:.9rem;color:var(--muted)}
+.hero-followup a{text-decoration:underline;text-underline-offset:4px}
+.hero-followup a:hover{color:var(--text)}
+.news [data-newsletter-result]{color:var(--text);font-size:.95rem}
 .btn-ghost{background:transparent}
 .resource-document .prose{overflow-wrap:anywhere}
 @page{margin:12mm}

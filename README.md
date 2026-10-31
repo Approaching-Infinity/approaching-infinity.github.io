@@ -2,6 +2,12 @@
 
 Static Astro site for thoughtful conversations on finance, technology and innovation, practical resources, free learning and connections. The Financial Literacy, Veteran Initiatives and Ending Poverty mission areas are in development. No charitable status or completed impact is claimed.
 
+## October 31 newsletter request update
+
+Contact was activated and public receipt verified on October 30. The October 31 branch makes Contact us and Join newsletter easier to find and adds a **manual, confirmation-required newsletter request** using that same owned relay. This is not a new ESP or an automatically active subscription. See `docs/pips/PIP-005-newsletter-signup-requests.md` for the shared-inbox confirmation, private roster and opt-out process. Live activation and a new public test remain pending until this branch is reviewed and released.
+
+To activate the reviewed manual request flow, set `NEWSLETTER_FORM_URL=https://limitlesslp.com/contact-approaching-infinity.php` and `NEWSLETTER_FORM_APPROVED=true` in GitHub repository variables, then deploy. The existing contact variables remain unchanged. The signup's separate checkbox and fixed consent email do not enroll contact inquiries. A private confirmed roster, suppression handling, postal/footer and received-email checks still gate any campaign. Never store actual subscriber addresses in this repository. Older release-preparation sections below describe their dated baseline; deployment configuration and actual receipt evidence establish live state.
+
 ## Local preview
 
 Use Node 22.23.4 or newer, matching the minimum in `package.json`; CI pins 22.23.4. Main pushes automatically deploy to GitHub Pages; keep this work local until release approval.
@@ -29,8 +35,8 @@ Once an existing hosted provider and costs are approved, configure shell/CI buil
 | --- | --- |
 | `CONTACT_FORM_URL` | Approved hosted contact form HTTPS action |
 | `CONTACT_FORM_APPROVED=true` | Owner/operator confirms provider, routing and privacy release gate |
-| `NEWSLETTER_FORM_URL` | Approved ESP's hosted native signup HTTPS action |
-| `NEWSLETTER_FORM_APPROVED=true` | Owner/operator confirms separate confirmed-opt-in and privacy release gate |
+| `NEWSLETTER_FORM_URL` | Approved ESP's hosted native signup HTTPS action, or exact owned relay for manual signup requests |
+| `NEWSLETTER_FORM_APPROVED=true` | Owner/operator confirms separate consent, truthful pending state, privacy and operating process |
 | `SITE_REVIEW_MODE=true` | Local review only; never set in deployment |
 
 Unapproved, credential-bearing, non-HTTPS, local/IP-literal endpoints and obvious secret query parameters fail configuration. Validation cannot tell whether an arbitrary URL hides a credential in its path: do not paste service API URLs or secrets. Only HTML action URLs belong here. Flags record operator approval; they do not prove delivery.

@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+const html = route => readFile(`dist/${route}/index.html`, 'utf8');
+const contact = await html('contact');
+const newsletter = await html('newsletter');
+const privacy = await html('privacy');
+assert.match(contact, /data-owned-relay="true"/);
+assert.ok(!contact.includes('name="consent"'), 'Contact must remain separate from newsletter consent');
+assert.match(newsletter, /data-newsletter-relay="true"/);
+assert.match(newsletter, /data-signup-page="\/newsletter\/"/);
+assert.match(await readFile('dist/index.html', 'utf8'), /data-signup-page="\/"/);
+assert.match(newsletter, /name="consent"[^>]*required/);
+assert.ok(!/name="consent"[^>]*\schecked/.test(newsletter), 'Consent cannot be preselected');
+assert.match(newsletter, /not subscribed until you confirm/);
+assert.match(newsletter, /service@limitlesslp.com/);
+assert.match(privacy, /relay creates no subscriber database/);
+assert.match(privacy, /opt-out record/);
+console.log('Owned contact and newsletter request build checks passed: separate consent, pending state, opt-out and privacy.');

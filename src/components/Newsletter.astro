@@ -1,5 +1,6 @@
 ---
 import { siteForms } from '../config/site';
+import { newsletterConsent } from '../scripts/newsletter-request.mjs';
 const config = siteForms();
 const { standalone = false } = Astro.props;
 const Heading = standalone ? 'h1' : 'h2';
@@ -14,7 +15,7 @@ const ownedRelay = !config.review && config.newsletter === 'https://limitlesslp.
     {ownedRelay && <p class="form-help">We are starting with a small, manually managed list. Request signup below; our team will reply to confirm your email before adding you. Newsletter issues are prepared and sent separately.</p>}
     <form action={config.newsletter} method="POST" class="newsletter-form" data-newsletter-relay={ownedRelay ? 'true' : undefined}>
       <div class="field"><label for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254" /></div>
-      <label class="consent"><input name="consent" type="checkbox" value="yes" required /> <span>I want to receive Approaching Infinity Notes by email. I can unsubscribe at any time.</span></label>
+      <label class="consent"><input name="consent" type="checkbox" value="yes" required /> <span>{newsletterConsent}</span></label>
       <div class="form-trap" aria-hidden="true"><label for="newsletter-website-check">Leave this blank</label><input id="newsletter-website-check" name="website_check" tabindex="-1" autocomplete="off" /></div>
       <button class="btn btn-red" type="submit" disabled={ownedRelay}>{config.review ? 'Test newsletter signup' : 'Request signup'}</button>
       {ownedRelay && <><p data-newsletter-result role="status" aria-live="polite" tabindex="-1"></p><noscript><p>This form needs JavaScript. <a href="mailto:service@limitlesslp.com?subject=Approaching%20Infinity%20Notes%20signup%20request&amp;body=I%20want%20to%20receive%20Approaching%20Infinity%20Notes%20by%20email.%20Please%20reply%20to%20confirm%20my%20signup.%20I%20understand%20I%20can%20unsubscribe%20at%20any%20time.">Email a signup request instead</a>.</p></noscript></>}

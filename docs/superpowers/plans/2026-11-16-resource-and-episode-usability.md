@@ -31,11 +31,11 @@ Files: replace src/pages/resources/bill-calendar-worksheet.md with .astro; add s
 
 Interfaces: existing worksheet URL, optional #example and #print anchors; current ResourceLayout and site tokens. Agent chooses small focused filenames and records them.
 
-- [ ] Verify baseline tests, reuse/read prototype core and safe renderer.
-- [ ] Test amount/date/print-model edge cases that protect the user's interpretation.
-- [ ] Implement resource-first UI, approved copy, optional example and print views, private memory-only state.
-- [ ] Run scoped tests/build and self-review desktop/mobile implementation; report exact tests and unverified browser limits.
-- [ ] Commit only Task 1 files, report commit and source/behavior notes.
+- [x] Verify baseline tests, reuse/read prototype core and safe renderer.
+- [x] Test amount/date/print-model edge cases that protect the user's interpretation.
+- [x] Implement resource-first UI, approved copy, optional example and print views, private memory-only state.
+- [x] Run scoped tests/build and self-review desktop/mobile implementation; report exact tests and unverified browser limits.
+- [x] Commit only Task 1 files, report commit and source/behavior notes.
 
 ### Task 2: Episodes 30–32 and future completeness reporting
 
@@ -43,16 +43,21 @@ Files: only three src/content/episodes/approaching-infinity-s1e3[012]*.md frontm
 
 Interfaces: episodeVisuals JSON line, listenerQuestion JSON string and guest string supported by existing content schema and EpisodeRow. New reporter defaults to nonblocking warning/summary for uncurated imports. Do not alter RSS identity/title/body/date/audio.
 
-- [ ] Verify image identities from official pages and inspect actual images before selecting crops; download and optimize originals without generating likenesses.
-- [ ] Add concise description-grounded question per episode with sources and source excerpt.
-- [ ] Implement metadata report in existing twice-daily sync and PR checks, with missing fields/slugs actionable, no automated factual invention.
-- [ ] Run source completeness checks and compare before/after unchanged bodies and protected frontmatter.
-- [ ] Commit only Task 2 files; report provenance, checks and any publication-side unverified boundary.
+- [x] Verify image identities from official pages and inspect actual images before selecting crops; download and optimize originals without generating likenesses.
+- [x] Add concise description-grounded question per episode with sources and source excerpt.
+- [x] Implement metadata report in existing twice-daily sync and PR checks, with missing fields/slugs actionable, no automated factual invention.
+- [x] Run source completeness checks and compare before/after unchanged bodies and protected frontmatter.
+- [x] Commit only Task 2 files; report provenance, checks and any publication-side unverified boundary.
 
 ### Integration and review
 
-- [ ] Combine the two isolated commits on the resource worktree and inspect combined diff.
-- [ ] Run npm test, npm run build, node scripts/check-episode-ui.mjs dist, and existing owned-form/build checks appropriate to changed files.
-- [ ] Fresh reviewer checks both task scopes, spec compliance and overall quality; fix material findings before handoff.
-- [ ] Verify real desktop/mobile UI, fictional/blank/print behavior, episode photos/questions, no unintended submissions/storage and old routes.
-- [ ] Save screenshots and review summary; leave a concrete preview for Justin. No task self-approval or live deployment.
+- [x] Combine the two isolated commits on the resource worktree and inspect combined diff.
+- [x] Run npm test, npm run build, node scripts/check-episode-ui.mjs dist, and existing owned-form/build checks appropriate to changed files.
+- [x] Fresh reviewer checks both task scopes, spec compliance and overall quality; fix material findings before handoff.
+- [x] Verify real desktop/mobile UI, fictional/blank/print behavior, episode photos/questions, no unintended submissions/storage and old routes.
+- [x] Save screenshots and review summary; leave a concrete preview for Justin. No task self-approval or live deployment.
+
+## Remaining operator review
+
+- [ ] Justin reviews the revised styling and approves the live release.
+- [ ] A native device PDF/physical print output is inspected; screen snapshots and source print styles are verified separately.

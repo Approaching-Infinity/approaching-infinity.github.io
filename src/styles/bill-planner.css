@@ -1,5 +1,6 @@
 .bp{
-  scroll-margin-top:90px
+  scroll-margin-top:90px;
+  padding-top:100px
 }
 .bp [hidden]{
   display:none!important
@@ -9,11 +10,11 @@
 }
 .bp-intro .eyebrow{
   display:flex;
-  margin:2rem 0 1rem
+  margin:1rem 0 .7rem
 }
 .bp h1{
-  font-size:clamp(2.7rem,6vw,5.3rem);
-  max-width:17ch
+  font-size:clamp(2.2rem,4vw,3.15rem);
+  max-width:25ch
 }
 .bp h2{
   font-size:clamp(1.7rem,3vw,2.4rem)
@@ -23,17 +24,17 @@
   line-height:1.1
 }
 .bp-intro p:not(.eyebrow){
-  margin-top:1.2rem
+  margin-top:.7rem
 }
 .bp-lead{
-  font-size:1.18rem;
+  font-size:1.05rem;
   color:var(--text)
 }
 .bp-privacy{
   border-left:3px solid var(--red);
-  padding:1rem 1.2rem;
+  padding:.65rem 1rem;
   background:var(--surface);
-  margin-top:2rem;
+  margin-top:1rem;
   max-width:85ch
 }
 .bp-toolbar{
@@ -57,7 +58,7 @@
   justify-content:space-between;
   gap:1.4rem;
   flex-wrap:wrap;
-  margin:2.7rem 0 1rem
+  margin:1.6rem 0 .8rem
 }
 .bp-month,.bp-pair{
   display:grid;

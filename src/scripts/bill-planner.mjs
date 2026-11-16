@@ -264,6 +264,7 @@ if(root){
   }
   $('print-completed').addEventListener('click',e=>openPreview(false,e.currentTarget));
   $('print-blank').addEventListener('click',e=>openPreview(true,e.currentTarget));
+  $('blank-shortcut').addEventListener('click',e=>openPreview(true,e.currentTarget));
   $('back').addEventListener('click',()=>{
     preview=false;
     root.classList.remove('bp-preview');
@@ -286,4 +287,8 @@ if(root){
   }
   );
   update();
+  // Resource-card shortcuts act immediately on a newly opened worksheet.
+  // Existing in-page edits still use the same confirmation/preview handlers.
+  if (window.location.hash === '#example') $('example').click();
+  if (window.location.hash === '#print') openPreview(true, $('print-blank'));
 }

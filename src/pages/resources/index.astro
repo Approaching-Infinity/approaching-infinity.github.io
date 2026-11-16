@@ -53,23 +53,23 @@ const cards = episodeResources.map(card => {
       <p class="learning-note">The guest’s conversation is the starting point. Resources labeled “Selected by Approaching Infinity” are our follow-up choices, not guest recommendations or endorsements. Links checked November 16, 2026. External programs set their own requirements; eligibility and outcomes are not guaranteed.</p>
       <aside class="practical-tool" aria-labelledby="tool-title">
         <div class="tool-copy">
-          <p class="eyebrow">Try a practical tool</p>
-          <h2 id="tool-title">A small step for your month ahead.</h2>
-          <p>Put three bills and their planned payment dates on one page. Our free worksheet works privately in your browser or on paper. No signup needed.</p>
+          <p class="eyebrow">Try an idea from the show</p>
+          <h2 id="tool-title">Ask a better question.</h2>
+          <p>Explore a question across the episode archive, check the sources behind an answer, or work through a short decision challenge. Three free AI questions daily on this browser, while pilot capacity is available.</p>
           <div class="tool-links">
-            <a class="btn btn-ghost" href="/resources/bill-calendar-worksheet/">Open the bill worksheet</a>
-            <a class="text-link" href="/resources/month-ahead/">Read the walkthrough</a>
+            <a class="btn btn-red" href="/ask-the-show/">Ask the Show</a>
+            <a class="text-link" href="/ask-the-show/#challenge-panel">Try a decision challenge</a>
           </div>
         </div>
-        <a class="worksheet-visual" href="/resources/bill-calendar-worksheet/" aria-label="Open the free bill-calendar worksheet">
-          <span class="visual-kicker">YOUR NEXT THREE BILLS</span>
-          <span class="visual-row"><span>01 · Phone</span><span>Due by</span><span>Pay on</span></span>
-          <span class="visual-row"><span>02 · Electricity</span><span>—</span><span>—</span></span>
-          <span class="visual-row"><span>03 · Internet</span><span>—</span><span>—</span></span>
-          <span class="visual-calendar" aria-hidden="true">{Array.from({length:14}, (_, i) => <span class:list={{marked:[2,6,10].includes(i)}}>{i+1}</span>)}</span>
-          <span class="visual-footer">One month. One next step. <span aria-hidden="true">↗</span></span>
+        <a class="worksheet-visual" href="/ask-the-show/" aria-label="Explore Ask the Show and its decision challenges">
+          <span class="visual-kicker">FROM CONVERSATION TO A NEXT STEP</span>
+          <span class="visual-row"><span>01 · Ask</span><span>Your question</span></span>
+          <span class="visual-row"><span>02 · Explore</span><span>Cited episode ideas</span></span>
+          <span class="visual-row"><span>03 · Check</span><span>The original evidence</span></span>
+          <span class="visual-footer">Stay curious. Check the source. <span aria-hidden="true">↗</span></span>
         </a>
       </aside>
+      <p class="learning-note">Looking for the earlier standalone resource? <a href="/resources/bill-calendar-worksheet/">Open the bill-calendar worksheet</a> or <a href="/resources/month-ahead/">read its walkthrough</a>.</p>
     </div>
   </section>
 </Layout>

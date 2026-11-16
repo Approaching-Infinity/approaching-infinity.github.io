@@ -10,6 +10,9 @@ node_modules/
 .env
 .env.production
 
+# private prototype runtime metrics (no questions or answers)
+prototype/.local/
+
 # local design reference (not shipped)
 _mockup.html
 

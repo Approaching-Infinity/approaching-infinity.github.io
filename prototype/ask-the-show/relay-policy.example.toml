@@ -1,0 +1,32 @@
+# PROPOSED ADDITION ONLY. Merge through the Relay owner's protected release.
+# Existing pool_month_limit_usd remains 5.0. These caps are subordinate bounds,
+# not new money. No app token or provider key is contained in this file.
+[[apps]]
+id = "approaching_infinity"
+token_service = "llm-lab-vps-approaching-infinity-token"
+
+[apps.native_routes.episode_selection]
+provider = "openai"
+protocol = "chat"
+models = ["gpt-4o-mini"]
+max_output_tokens = 150
+sensitive = true
+# Native framing reserve: <=60,000 canonical bytes +32,768 input tokens.
+# At the current dated price plus850 output tokens, worst case is <$0.015.
+request_ceiling_usd = 0.015
+operation_ceiling_usd = 0.03
+operation_group = "archive_question"
+allow_images = false
+policy_version = "ask-show-1"
+
+[apps.native_routes.archive_answer]
+provider = "openai"
+protocol = "chat"
+models = ["gpt-4o-mini"]
+max_output_tokens = 850
+sensitive = true
+request_ceiling_usd = 0.015
+operation_ceiling_usd = 0.03
+operation_group = "archive_question"
+allow_images = false
+policy_version = "ask-show-1"

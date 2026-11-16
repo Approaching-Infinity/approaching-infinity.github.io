@@ -106,5 +106,5 @@ function showChallenge(c) {
 async function loadChallenges(){try{const r=await fetch('/ask-the-show/challenges.json');if(!r.ok)throw new Error();const data=await r.json();challengeData=data.challenges;
   for(const [i,c] of challengeData.entries()){const b=el('button',['Look behind results','Make the goal clear','Carry a lesson forward'][i]);b.type='button';b.dataset.id=c.id;b.addEventListener('click',()=>showChallenge(c));$('#challenge-picker').append(b);}if(challengeData[0])showChallenge(challengeData[0]);
 }catch{$('#challenge-content').textContent='Decision challenges could not load. Refresh the page to try again.';}}
-await Promise.all([refreshStatus(),loadChallenges()]);
 if(location.hash==='#challenge-panel')mode('challenge');
+await Promise.all([refreshStatus(),loadChallenges()]);

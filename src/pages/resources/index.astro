@@ -41,7 +41,7 @@ const cards = episodeResources.map(card => {
               <p class="learning-label">Take it further</p>
               {card.resources.map(resource => (
                 <div class="learning-resource">
-                  <p class="resource-origin">{resource.relationship === 'episode-notes' ? 'Linked in the episode notes' : 'Selected by Approaching Infinity'}</p>
+                  <p class="resource-origin">{resource.relationship === 'episode-notes' ? 'Organization linked in the episode notes' : 'Selected by Approaching Infinity'}</p>
                   <a href={resource.url} target="_blank" rel="noopener noreferrer">{resource.label}<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a>
                   <p>{resource.description}</p>
                 </div>
@@ -74,6 +74,17 @@ const cards = episodeResources.map(card => {
   </section>
 </Layout>
 <style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
   .resource-page { padding-top: 110px; }
   .page-heading { max-width: 760px; margin-bottom: 2.5rem; }
   .page-heading .eyebrow { margin-bottom: .9rem; }

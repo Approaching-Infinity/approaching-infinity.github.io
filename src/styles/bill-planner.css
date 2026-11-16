@@ -545,3 +545,13 @@
     font-size:7pt!important
   }
 }
+
+/* Phone agenda omits empty dates; full months remain available on desktop/print. */
+.bp-agenda-label { display: none; }
+@media screen and (max-width: 550px) {
+  .bp-agenda-label { display: block; margin-top: 1rem; }
+  .bp-calendar-grid:not(.bp-blank-calendar) .bp-day:not(.bp-has-payment) { display: none; }
+  .bp-print-sheet .bp-blank-calendar { grid-template-columns: repeat(7, minmax(0, 1fr)); border-left: 1px solid var(--line-strong); border-top: 1px solid var(--line-strong); }
+  .bp-print-sheet .bp-blank-calendar .bp-day-heading { display: block; }
+  .bp-print-sheet .bp-blank-calendar .bp-day { display: block; min-height: 50px; margin: 0; padding: .25rem; border-top: 0; border-left: 0; }
+}

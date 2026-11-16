@@ -101,7 +101,14 @@ if(root){
   function grid(container,d,blank=false){
     container.replaceChildren();
     container.append(el('p','bp-help','Planned payment / withdrawal dates only. Due dates stay in the list.'));
-    const days=el('div','bp-calendar-grid');
+    const days=el('div', blank ? 'bp-calendar-grid bp-blank-calendar' : 'bp-calendar-grid');
+    if (!blank) {
+      container.append(el('h3', 'bp-agenda-label', 'Planned dates this month'));
+      const hasPlannedDates = d.bills.some(b => active(b) && inMonth(b.planned, d.year, d.month));
+      if (!hasPlannedDates) {
+        container.append(el('p', 'bp-agenda-label bp-empty', 'No planned payments in this month yet. Add a payment / withdrawal date above, or check the list for dates outside this month.'));
+      }
+    }
     days.setAttribute('role','list');
     days.setAttribute('aria-label',`${months[d.month]} ${d.year} planned payments`);
     ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(day=>days.append(el('div','bp-day-heading',day)));
@@ -113,6 +120,7 @@ if(root){
         cell.append(el('strong','',String(day)));
         if (!blank) {
           d.bills.filter(b => active(b) && inMonth(b.planned, d.year, d.month) && parseDate(b.planned).day === day).forEach(b => {
+            cell.classList.add('bp-has-payment');
             const item = el('div', 'bp-calendar-entry');
             item.append(el('span', 'bp-calendar-label', b.label || 'Bill'));
             item.append(el('small', '', `${method(b)} · ${certainty(b)}`));
@@ -187,7 +195,7 @@ if(root){
   $('jump-calendar').addEventListener('click', () => {
     view('calendar');
     $('results').focus({preventScroll: true});
-    $('results').scrollIntoView({block: 'start'});
+    $('results').scrollIntoView({block: 'start', behavior: 'instant'});
   });
   function loadExample(){
     const rows=[['Phone','50','2026-11-12','2026-11-09','confirmed','manual','Timing assumed checked'],['Electricity','85','2026-11-20','2026-11-17','estimate','manual','Check the statement'],['Internet','60','2026-11-25','2026-11-23','confirmed','automatic','Withdrawal assumed checked']];
@@ -291,7 +299,7 @@ if(root){
     root.querySelector('.bp-preview-controls').hidden=false;
     $('preview-title').textContent=blank?'Blank worksheet · Print preview':'My worksheet · Print preview';
     $('back').focus();
-    window.scrollTo(0,0);
+    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
   }
   $('print-completed').addEventListener('click',e=>openPreview(false,e.currentTarget));
   $('print-blank').addEventListener('click',e=>openPreview(true,e.currentTarget));
@@ -301,7 +309,7 @@ if(root){
     root.classList.remove('bp-preview');
     root.querySelector('.bp-preview-controls').hidden=true;
     $('print-sheet').replaceChildren();
-    window.scrollTo(0,scroll);
+    window.scrollTo({top: scroll, left: 0, behavior: 'instant'});
     trigger?.focus({
       preventScroll:true
     }

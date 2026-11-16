@@ -11,8 +11,8 @@ for (const file of (await readdir('src/content/episodes')).filter(f => f.endsWit
 }
 const normalized = value => value.replace(/[\*_`]/g, '').replace(/\s+/g, ' ').trim();
 test('every audited question matches published copy and an actual description excerpt', () => {
-  assert.equal(audit.length, 35);
-  assert.equal(new Set(audit.map(x => x.slug)).size, 35);
+  assert.equal(audit.length, 38);
+  assert.equal(new Set(audit.map(x => x.slug)).size, 38);
   for (const entry of audit) {
     const row = records.get(entry.slug);
     assert.ok(row, entry.slug);

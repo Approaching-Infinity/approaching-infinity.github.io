@@ -42,6 +42,9 @@ jobs:
       - name: Sync episodes from the feed
         run: node scripts/sync-episodes.mjs
 
+      - name: Report episodes needing editorial review
+        run: node scripts/check-episode-metadata.mjs
+
       - name: Verify the site still builds
         run: npm run build
 

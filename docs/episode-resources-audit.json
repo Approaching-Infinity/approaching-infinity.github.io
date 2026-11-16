@@ -1,0 +1,56 @@
+{
+  "checkedDate": "2026-11-16",
+  "audioOrTranscriptVerified": false,
+  "cards": [
+    {
+      "episodeId": "continuing-the-call-of-duty-david-kims-tale-of-valor-venture",
+      "sourceExcerpt": "We venture into his altruistic quest as the co-founder and CEO of the Children of Fallen Patriots Foundation",
+      "resources": [
+        {
+          "url": "https://t2t.org/mae-and-george-siller-scholarship-program/",
+          "relationship": "episode-notes",
+          "verificationURLs": [
+            "https://t2t.org/mae-and-george-siller-scholarship-program/",
+            "https://fallenpatriots.org/",
+            "https://t2t.org/tunnel-to-towers-foundation-acquires-children-of-fallen-patriots-expanding-scholarships-for-children-of-all-fallen-and-injured-heroes/"
+          ],
+          "linkedInNotesURL": "https://www.fallenpatriots.org",
+          "successorExplanation": "Children of Fallen Patriots was linked in the 2023 notes; its current scholarship program is with Tunnel to Towers. The destination is not claimed to have appeared in the original notes."
+        }
+      ]
+    },
+    {
+      "episodeId": "from-frontlines-to-finance-a-tale-of-bravery-recovery-and-em",
+      "sourceExcerpt": "We touch upon his invaluable career guidance for transitioning Veterans",
+      "resources": [
+        {
+          "url": "https://www.va.gov/careers-employment/education-and-career-counseling/",
+          "relationship": "team-selected",
+          "verificationURLs": [
+            "https://www.va.gov/careers-employment/education-and-career-counseling/"
+          ]
+        }
+      ]
+    },
+    {
+      "episodeId": "from-farmhand-to-fund-manager-stephen-reads-mission-to-democ",
+      "sourceExcerpt": "Stephen delves into the principles of financial literacy, sharing lessons from his early experiences with investing in a Roth IRA and learning the importance of minimizing costs.",
+      "resources": [
+        {
+          "url": "https://files.consumerfinance.gov/f/documents/cfpb_your-money-your-goals_SMART-goals_tool_2018-11.pdf",
+          "relationship": "team-selected",
+          "verificationURLs": [
+            "https://files.consumerfinance.gov/f/documents/cfpb_your-money-your-goals_SMART-goals_tool_2018-11.pdf"
+          ]
+        },
+        {
+          "url": "https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/toolkit/",
+          "relationship": "team-selected",
+          "verificationURLs": [
+            "https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/toolkit/"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -523,5 +523,82 @@
     "sourceTitle": "Why You Should Start a Fund!",
     "feedMatchMethod": "exact_audio_url",
     "audioOrTranscriptVerified": false
+  },
+  {
+    "slug": "approaching-infinity-s1e32-treat-it-as-a-project-1st",
+    "question": "What should founders put in place before they seek capital or turn a new idea into a business?",
+    "sourceExcerpt": "true readiness requires establishing clean financial foundations and developing organizational maturity well in advance",
+    "sourceRationale": "The notes cover financial readiness before capital seeking and validating customer demand; no financing outcome or legal claim is promised.",
+    "confidence": "high",
+    "sourceType": "primary_current_publisher_RSS_episode_notes",
+    "sourceURL": "https://anchor.fm/s/aaecdd08/podcast/rss",
+    "episodeURL": "https://podcasters.spotify.com/pod/show/approaching-infinity/episodes/Approaching-Infinity-S1E32-Treat-It-as-a-Project-1st-Building-Resilient-Foundations-with-Rod-Loges-e3sajm7",
+    "sourceSha256": "3ef2bed333d40dc123f7edbb1e55b68b9babe68debe13daadddd20462afd0503",
+    "sourceGuid": "6ffea9b1-82cc-4899-85bc-7202158b43c3",
+    "sourceTitle": "Approaching Infinity S1E32: Treat It as a Project 1st: Building Resilient Foundations with Rod Loges",
+    "feedMatchMethod": "exact_audio_url",
+    "audioOrTranscriptVerified": false,
+    "imageSource": {
+      "pageURL": "https://www.onedegreecapital.com/rod-loges",
+      "imageURL": "https://www.onedegreecapital.com/hubfs/Team%20Images/Rod-headshot-2025.png",
+      "identityProof": "Official Rod Loges biography image alt and title say Rod Loges Headshot; tux portrait visually inspected.",
+      "localAsset": "/guests/rod-loges-official.webp",
+      "processing": "Orientation, size reduction if necessary, WebP compression only; no generated or altered likeness.",
+      "verifiedDate": "2026-11-16",
+      "originalSha256": "c0f157a69d620e2e4d26deae96857582792258f3e6b042ba2da57d07f6260693",
+      "assetSha256": "7433eb704d4eaa140b7b9f3ae507fc68b5573dc5e684e171283be63bef1fd940"
+    },
+    "additionalSupportingExcerpt": "founders should focus first on proving customer demand and validating that their solution addresses a genuine problem people are willing to pay to solve"
+  },
+  {
+    "slug": "approaching-infinity-s1e31-2-days-planning-1-100-days",
+    "question": "What turns a two-day strategic planning session into years of focused execution?",
+    "sourceExcerpt": "the real work of implementation spans roughly 1,100 days across a multi-year cycle",
+    "sourceRationale": "The notes contrast two-to-three-day planning with multi-year implementation, alignment and follow-through.",
+    "confidence": "high",
+    "sourceType": "primary_current_publisher_RSS_episode_notes",
+    "sourceURL": "https://anchor.fm/s/aaecdd08/podcast/rss",
+    "episodeURL": "https://podcasters.spotify.com/pod/show/approaching-infinity/episodes/Approaching-Infinity-S1E31-2-Days-Planning--1-100-Days-Execution-with-Anthony-C--Taylor-e3s8uc7",
+    "sourceSha256": "3ef2bed333d40dc123f7edbb1e55b68b9babe68debe13daadddd20462afd0503",
+    "sourceGuid": "8895d3d9-0dd3-4af4-a469-624b63266846",
+    "sourceTitle": "Approaching Infinity S1E31: 2 Days Planning, 1,100 Days Execution with Anthony C. Taylor",
+    "feedMatchMethod": "exact_audio_url",
+    "audioOrTranscriptVerified": false,
+    "imageSource": {
+      "pageURL": "https://www.smestrategy.net/speaker-and-media-page",
+      "imageURL": "https://www.smestrategy.net/hubfs/Graphics%20-%20Anthony%20Taylor%20Headshot%20-%20SALP%20Anthony%20Taylor.jpg",
+      "identityProof": "Official speaker/media image filename explicitly names Anthony Taylor Headshot; alt identifies Anthony Taylor and Strategy and Leadership Podcast. Seated portrait visually inspected.",
+      "localAsset": "/guests/anthony-taylor-official.webp",
+      "processing": "Orientation, size reduction if necessary, WebP compression only; no generated or altered likeness.",
+      "verifiedDate": "2026-11-16",
+      "originalSha256": "ecbebe5e81f5e2a77d99200eda9c0a1a3aadcd1a4f18bdcd09d95feae2252137",
+      "assetSha256": "54c4698eb13a6da6ab2042ab66f3f4a299688838f13304da6edd64c84ac355b5"
+    }
+  },
+  {
+    "slug": "approaching-infinity-s1e30-kill-the-ego-rewiring-executive",
+    "question": "How can leaders replace fixed expectations with curiosity and bring lessons back to everyday life?",
+    "sourceExcerpt": "A central focus of Dr. Gneiting's philosophy is replacing an aggressive, conquer-oriented mindset with authentic curiosity.",
+    "sourceRationale": "The notes discuss curiosity, preparation, reflection and everyday integration; no result is promised.",
+    "confidence": "high",
+    "sourceType": "primary_current_publisher_RSS_episode_notes",
+    "sourceURL": "https://anchor.fm/s/aaecdd08/podcast/rss",
+    "episodeURL": "https://podcasters.spotify.com/pod/show/approaching-infinity/episodes/Approaching-Infinity-S1E30-Kill-the-Ego-Rewiring-Executive-Mindset-with-Dr--Layne-Gneiting-e3s6n6g",
+    "sourceSha256": "3ef2bed333d40dc123f7edbb1e55b68b9babe68debe13daadddd20462afd0503",
+    "sourceGuid": "08f01ba4-9888-4a09-8031-25d066fa88b2",
+    "sourceTitle": "Approaching Infinity S1E30: Kill the Ego: Rewiring Executive Mindset with Dr. Layne Gneiting",
+    "feedMatchMethod": "exact_audio_url",
+    "audioOrTranscriptVerified": false,
+    "imageSource": {
+      "pageURL": "https://the.wayofthehero.com/",
+      "imageURL": "https://the.wayofthehero.com/assets/images/image02.jpg?v=f5dfd6ae",
+      "identityProof": "Official About Layne Gneiting, PhD section; blue-shirt portrait visually inspected.",
+      "localAsset": "/guests/layne-gneiting-official.webp",
+      "processing": "Orientation, size reduction if necessary, WebP compression only; no generated or altered likeness.",
+      "verifiedDate": "2026-11-16",
+      "originalSha256": "9e121b544c81cd278737898d01d9191beb483fa493f3401f09fafc79ea353512",
+      "assetSha256": "6fb59e8119b214f908da8cf3aba500685d8d629ebf9e6690eabbf4588dbc0a8b"
+    },
+    "additionalSupportingExcerpt": "the critical yet often neglected phase of intentional reflection and everyday integration"
   }
 ]

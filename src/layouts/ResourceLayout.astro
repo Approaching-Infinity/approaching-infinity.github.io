@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 <Layout title={`${frontmatter.title} — Approaching Infinity`} description={frontmatter.description}>
   <section class="page-shell"><div class="wrap"><article class="resource-document">
     <p class="resource-back ep-back"><a href="/resources/">All free resources</a></p>
-    <div class="resource-actions"><button class="btn btn-ghost" type="button" id="print-resource">Print / save as PDF</button><a class="btn btn-ghost" href="/resources/bill-calendar-worksheet/">Blank worksheet</a></div>
+    <div class="resource-actions"><button class="btn btn-ghost" type="button" id="print-resource">Print / save as PDF</button><a class="btn btn-ghost" href="/resources/bill-calendar-worksheet/">Start the worksheet</a></div>
     <div class="prose"><slot /></div>
   </article></div></section>
   <script>

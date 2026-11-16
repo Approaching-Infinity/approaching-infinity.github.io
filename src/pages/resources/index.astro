@@ -1,4 +1,51 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 ---
-<Layout title="Free resources — Approaching Infinity" description="Practical, free educational resources from Approaching Infinity, beginning with a simple bill calendar."><section class="page-shell"><div class="wrap"><div class="page-heading"><h1>Put an idea to work.</h1><p>Small, practical resources drawn from thoughtful conversations. Start with one useful step.</p></div><div class="resource-grid"><article class="resource-card"><p class="resource-status">Financial literacy · Free resource</p><h2>A clearer picture of the month ahead</h2><p>See the timing of bills and income with a simple calendar, a fictional example and a blank worksheet.</p><a class="text-link" href="/resources/month-ahead/">Read the walkthrough</a></article><article class="resource-card"><p class="resource-status">In preparation</p><h2>Veteran initiatives &amp; ending poverty</h2><p>These mission areas are still being shaped. We will list resources when they are ready to use, with sources and a clear account of the work.</p><a class="text-link" href="/contact/">Suggest a useful question</a></article></div></div></section></Layout>
+<Layout title="Free resources — Approaching Infinity" description="Put your next three bills on one page with a free, private bill-calendar worksheet.">
+<section class="page-shell">
+<div class="wrap">
+<div class="page-heading">
+<h1>One useful step.</h1>
+<p>Free resources you can use right now. Start small, keep your details private and take one idea into your week.</p>
+</div>
+<article class="resource-card resource-feature">
+<div class="resource-copy">
+<p class="resource-status">Financial literacy · Free · No signup</p>
+<h2>Put your next three bills on one page</h2>
+<p>Write down three bills, see your planned payment dates and choose one thing to check next. Fill it in here or print a copy for paper.</p>
+<a class="btn btn-red" href="/resources/bill-calendar-worksheet/">Start the worksheet</a>
+<div class="resource-options">
+<a class="text-link" href="/resources/bill-calendar-worksheet/#example">Try the example</a>
+<a class="text-link" href="/resources/bill-calendar-worksheet/#print">Print a blank copy</a>
+<a class="text-link" href="/resources/month-ahead/">Read the walkthrough</a>
+</div>
+</div>
+<a class="worksheet-visual" href="/resources/bill-calendar-worksheet/" aria-label="Open the free bill-calendar worksheet">
+<span class="visual-kicker">YOUR NEXT THREE BILLS</span>
+<span class="visual-row">
+<span>01 · Phone</span>
+<span>Due by</span>
+<span>Pay on</span>
+</span>
+<span class="visual-row">
+<span>02 · Electricity</span>
+<span>—</span>
+<span>—</span>
+</span>
+<span class="visual-row">
+<span>03 · Internet</span>
+<span>—</span>
+<span>—</span>
+</span>
+<span class="visual-calendar" aria-hidden="true">{Array.from({length:14},(_,i)=>
+<span class:list={{marked:[2,6,10].includes(i)}}>{i+1}</span>)}</span>
+<span class="visual-footer">One month. One next step. <span aria-hidden="true">↗</span>
+</span>
+</a>
+</article>
+<p class="resource-later">Veteran initiatives and ending poverty resources are still in preparation. <a class="text-link" href="/contact/">Suggest a useful question.</a>
+</p>
+</div>
+</section>
+</Layout>
+<style>.resource-feature{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(1.5rem,4vw,4rem);align-items:center;padding:clamp(1.4rem,4vw,3rem)}.resource-copy h2{font-size:clamp(2.1rem,4vw,3.6rem);max-width:18ch}.resource-copy>p{margin-block:1rem 1.4rem}.resource-options{display:flex;gap:.8rem 1.3rem;flex-wrap:wrap;margin-top:1.4rem;font-size:.9rem}.worksheet-visual{display:block;background:#f6f3f1;color:#171412;padding:1.5rem;transform:rotate(1deg);border-top:5px solid var(--red);box-shadow:0 15px 30px #0005}.worksheet-visual:focus-visible{outline:3px solid var(--red-hot);outline-offset:8px}.visual-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;display:block;margin-bottom:1.3rem}.visual-row{display:grid;grid-template-columns:2fr 1fr 1fr;font-size:.75rem;border-bottom:1px solid #ccc;gap:.4rem;padding:.7rem 0}.visual-calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;margin:1.3rem 0}.visual-calendar>span{border:1px solid #d0ccca;min-height:32px;font-size:.65rem;padding:.2rem}.visual-calendar .marked{background:#e31b23;color:#fff;border-color:#e31b23}.visual-footer{display:flex;justify-content:space-between;font-weight:600;font-size:.85rem}.resource-later{margin-top:2rem;max-width:75ch;color:var(--muted);font-size:.9rem}.resource-later a{text-decoration:underline}@media(max-width:750px){.resource-feature{grid-template-columns:1fr}.worksheet-visual{max-width:440px;transform:none}.resource-options{flex-direction:column;align-items:flex-start}}</style>

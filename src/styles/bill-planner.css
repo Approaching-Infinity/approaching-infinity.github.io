@@ -1,0 +1,461 @@
+.bp{
+  scroll-margin-top:90px
+}
+.bp [hidden]{
+  display:none!important
+}
+.bp-intro{
+  max-width:850px
+}
+.bp-intro .eyebrow{
+  display:flex;
+  margin:2rem 0 1rem
+}
+.bp h1{
+  font-size:clamp(2.7rem,6vw,5.3rem);
+  max-width:17ch
+}
+.bp h2{
+  font-size:clamp(1.7rem,3vw,2.4rem)
+}
+.bp h3{
+  font-size:1.4rem;
+  line-height:1.1
+}
+.bp-intro p:not(.eyebrow){
+  margin-top:1.2rem
+}
+.bp-lead{
+  font-size:1.18rem;
+  color:var(--text)
+}
+.bp-privacy{
+  border-left:3px solid var(--red);
+  padding:1rem 1.2rem;
+  background:var(--surface);
+  margin-top:2rem;
+  max-width:85ch
+}
+.bp-toolbar{
+  display:flex;
+  gap:.8rem 1.2rem;
+  align-items:center;
+  flex-wrap:wrap;
+  margin:1.3rem 0
+}
+.bp .btn{
+  min-height:44px;
+  white-space:normal
+}
+.bp .text-link{
+  text-decoration:underline;
+  text-underline-offset:4px
+}
+.bp-section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.4rem;
+  flex-wrap:wrap;
+  margin:2.7rem 0 1rem
+}
+.bp-month,.bp-pair{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.8rem
+}
+.bp-month{
+  max-width:360px
+}
+.bp label{
+  display:flex;
+  flex-direction:column;
+  gap:.35rem;
+  font-size:.85rem;
+  min-width:0;
+  font-weight:600
+}
+.bp input,.bp select{
+  width:100%;
+  min-width:0;
+  min-height:46px;
+  border:1px solid var(--line-strong);
+  border-radius:3px;
+  background:var(--bg);
+  color:var(--text);
+  padding:.65rem .7rem;
+  font:inherit;
+  font-size:1rem;
+  color-scheme:dark
+}
+.bp input::placeholder{
+  color:var(--muted)
+}
+.bp input:focus,.bp select:focus,.bp button:focus-visible,.bp a:focus-visible,.bp summary:focus-visible{
+  outline:2px solid var(--red-hot);
+  outline-offset:3px
+}
+.bp input[aria-invalid=true]{
+  border-color:#ff9c80
+}
+.bp-help{
+  color:var(--muted);
+  font-size:.9rem;
+  max-width:90ch
+}
+.bp-help strong{
+  color:var(--text)
+}
+.bp-bills{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1rem;
+  margin-top:1.7rem
+}
+.bp-bill{
+  margin:0;
+  padding:1.2rem;
+  min-width:0;
+  border:1px solid var(--line-strong);
+  background:var(--surface);
+  display:flex;
+  flex-direction:column;
+  gap:1rem
+}
+.bp-bill legend{
+  font-family:var(--mono);
+  font-size:.9rem;
+  color:var(--red-hot);
+  padding:0 .5rem
+}
+.bp-warning{
+  font-size:.85rem;
+  color:#ffb29d
+}
+.bp-warning:empty{
+  display:none
+}
+.bp-next,.bp-results,.bp-print-actions{
+  margin-top:2.5rem;
+  padding-top:2rem;
+  border-top:1px solid var(--line-strong)
+}
+.bp-next-grid{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 200px;
+  gap:1rem;
+  margin-top:1.4rem
+}
+.bp-results .bp-section-head{
+  margin-top:0
+}
+.bp-results .eyebrow{
+  margin-bottom:.6rem
+}
+#bp-total{
+  font-size:1.15rem;
+  font-weight:600;
+  margin-bottom:.7rem
+}
+#bp-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1rem;
+  margin-top:1.2rem
+}
+.bp-result-bill{
+  padding:1.1rem;
+  border:1px solid var(--line-strong);
+  overflow-wrap:anywhere
+}
+.bp-result-bill p{
+  margin-top:.55rem;
+  font-size:.9rem
+}
+.bp-badge{
+  color:var(--red-hot);
+  font-family:var(--mono)
+}
+.bp-calendar-grid{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(0,1fr));
+  margin:1rem 0;
+  border-left:1px solid var(--line-strong);
+  border-top:1px solid var(--line-strong)
+}
+.bp-day-heading,.bp-day{
+  padding:.5rem;
+  border-right:1px solid var(--line-strong);
+  border-bottom:1px solid var(--line-strong);
+  font-size:.8rem;
+  min-width:0;
+  overflow-wrap:anywhere
+}
+.bp-day{
+  min-height:95px
+}
+.bp-day span{
+  display:block;
+  font-size:.75rem;
+  margin-top:.5rem;
+  line-height:1.35
+}
+.bp-outside{
+  background:var(--surface)
+}
+#bp-next-result{
+  margin-top:1.5rem
+}
+#bp-next-result p{
+  margin-top:.6rem
+}
+.bp-print-actions p{
+  margin-top:1rem;
+  max-width:80ch
+}
+.bp-source{
+  margin:2rem 0;
+  color:var(--muted);
+  font-size:.9rem
+}
+.bp-source summary{
+  cursor:pointer;
+  padding:.6rem 0
+}
+.bp-source p{
+  max-width:90ch
+}
+.bp-notice{
+  padding:1rem;
+  border:1px solid var(--line-strong);
+  background:var(--surface);
+  margin:1rem 0
+}
+.bp-notice p{
+  margin-bottom:.8rem
+}
+.bp-print-sheet{
+  display:none
+}
+.bp-preview .bp-intro,.bp-preview .bp-work{
+  display:none
+}
+.bp-preview .bp-print-sheet{
+  display:block
+}
+.bp-preview-controls{
+  margin-bottom:2rem
+}
+.bp-print-sheet{
+  background:white;
+  color:#111;
+  padding:clamp(1rem,3vw,2.5rem);
+  overflow-wrap:anywhere
+}
+.bp-print-sheet h1{
+  font-size:2.2rem;
+  margin:1rem 0
+}
+.bp-print-sheet h2,.bp-print-sheet h3{
+  font-size:1.3rem;
+  margin:1rem 0 .5rem
+}
+.bp-print-sheet p{
+  margin:.6rem 0;
+  font-size:.9rem
+}
+.bp-print-sheet .bp-help,.bp-print-sheet .bp-badge,.bp-print-sheet .bp-warning{
+  color:#333
+}
+.bp-print-sheet .bp-result-bill,.bp-print-sheet .bp-calendar-grid,.bp-print-sheet .bp-day,.bp-print-sheet .bp-day-heading{
+  border-color:#999
+}
+.bp-print-sheet .bp-outside{
+  background:#eee
+}
+.bp-print-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:.7rem
+}
+.bp-print-table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0;
+  font-size:.8rem
+}
+.bp-print-table th,.bp-print-table td{
+  border:1px solid #999;
+  text-align:left;
+  padding:.6rem;
+  overflow-wrap:anywhere
+}
+.bp-print-table td{
+  height:60px
+}
+.bp-print-brand,.bp-print-footer{
+  font-family:var(--mono)
+}
+@media(max-width:1000px){
+  .bp-bills{
+    grid-template-columns:1fr
+  }
+  .bp-bill{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:start
+  }
+  .bp-bill>.bp-pair{
+    grid-column:1/-1
+  }
+  .bp-next-grid{
+    grid-template-columns:1fr 1fr
+  }
+  .bp-next-grid label:last-child{
+    max-width:230px
+  }
+  #bp-list{
+    grid-template-columns:1fr
+  }
+  .bp-print-list{
+    grid-template-columns:1fr
+  }
+  .bp-print-sheet .bp-result-bill{
+    padding:.6rem
+  }
+}
+@media(max-width:550px){
+  .bp-bill{
+    display:flex
+  }
+  .bp-month{
+    width:100%;
+    max-width:none
+  }
+  .bp-next-grid{
+    grid-template-columns:1fr
+  }
+  .bp-section-head{
+    align-items:flex-start
+  }
+  .bp-calendar-grid{
+    grid-template-columns:1fr;
+    border:0
+  }
+  .bp-day-heading,.bp-outside{
+    display:none
+  }
+  .bp-day{
+    min-height:44px;
+    border:1px solid var(--line-strong);
+    margin-bottom:.4rem;
+    display:flex;
+    gap:.7rem;
+    align-items:baseline
+  }
+  .bp-day span{
+    font-size:.85rem
+  }
+  .bp-day strong{
+    min-width:1.5rem
+  }
+  .bp-print-table{
+    font-size:.66rem
+  }
+  .bp-print-table th,.bp-print-table td{
+    padding:.25rem
+  }
+  .bp-print-sheet .bp-calendar-grid{
+    grid-template-columns:repeat(7,minmax(0,1fr));
+    border-left:1px solid #999;
+    border-top:1px solid #999
+  }
+  .bp-print-sheet .bp-day{
+    display:block;
+    min-height:65px;
+    border-left:0;
+    border-top:0;
+    margin:0;
+    padding:.2rem
+  }
+  .bp-print-sheet .bp-day-heading{
+    display:block;
+    font-size:.6rem;
+    padding:.2rem
+  }
+  .bp-print-sheet .bp-outside{
+    display:block
+  }
+  .bp-print-sheet .bp-day span{
+    font-size:.55rem
+  }
+}
+@media print{
+  body:has(.bp) #header,body:has(.bp) footer,body:has(.bp) .review-banner{
+    display:none!important
+  }
+  .bp{
+    padding:0!important
+  }
+  .bp-intro,.bp-work,.bp-preview-controls{
+    display:none!important
+  }
+  .bp-print-sheet{
+    display:block!important;
+    padding:0;
+    font-size:9pt
+  }
+  .bp-print-sheet h1{
+    font-size:23pt
+  }
+  .bp-print-sheet p{
+    font-size:8.5pt;
+    line-height:1.35
+  }
+  .bp-print-list{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr))
+  }
+  .bp-print-sheet .bp-result-bill{
+    break-inside:avoid;
+    padding:7pt
+  }
+  .bp-print-sheet .bp-calendar-grid{
+    display:grid;
+    grid-template-columns:repeat(7,minmax(0,1fr));
+    break-inside:avoid;
+    border-left:1px solid #999;
+    border-top:1px solid #999
+  }
+  .bp-print-sheet .bp-day-heading{
+    display:block;
+    font-size:8pt
+  }
+  .bp-print-sheet .bp-day{
+    display:block;
+    min-height:48pt;
+    border-left:0;
+    border-top:0;
+    margin:0;
+    padding:4pt;
+    font-size:8pt
+  }
+  .bp-print-sheet .bp-outside{
+    display:block
+  }
+  .bp-print-sheet .bp-day span{
+    font-size:7pt
+  }
+  .bp-print-table{
+    font-size:8pt
+  }
+  .bp-print-table td{
+    height:35pt
+  }
+  .bp-print-next{
+    break-inside:avoid
+  }
+  .bp-print-footer{
+    font-size:7pt!important
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "pillar": "Ending poverty",
+    "episodeId": "continuing-the-call-of-duty-david-kims-tale-of-valor-venture",
+    "topic": "Keeping education within reach",
+    "idea": "David Kim connects a life of service with education support for military families.",
+    "resources": [
+      {
+        "label": "Explore the current scholarship program",
+        "url": "https://t2t.org/mae-and-george-siller-scholarship-program/",
+        "description": "Children of Fallen Patriots is linked in E11’s notes and is now part of Tunnel to Towers. Review current eligibility before applying; awards are not guaranteed.",
+        "relationship": "episode-notes"
+      }
+    ]
+  },
+  {
+    "pillar": "Veteran initiatives",
+    "episodeId": "from-frontlines-to-finance-a-tale-of-bravery-recovery-and-em",
+    "topic": "Plan your next chapter after service",
+    "idea": "Jerry Majetich’s move from military service to finance opens a conversation about career guidance and supporting fellow veterans.",
+    "resources": [
+      {
+        "label": "Explore VA career guidance",
+        "url": "https://www.va.gov/careers-employment/education-and-career-counseling/",
+        "description": "Free education and career guidance for eligible users. Check VA’s requirements and application options.",
+        "relationship": "team-selected"
+      }
+    ]
+  },
+  {
+    "pillar": "Financial literacy",
+    "episodeId": "from-farmhand-to-fund-manager-stephen-reads-mission-to-democ",
+    "topic": "Give your money goals a starting point",
+    "idea": "Stephen Read shares early money lessons and explores financial literacy, costs and planning around personal goals.",
+    "resources": [
+      {
+        "label": "Try a goal-setting worksheet (PDF)",
+        "url": "https://files.consumerfinance.gov/f/documents/cfpb_your-money-your-goals_SMART-goals_tool_2018-11.pdf",
+        "description": "Use a public CFPB worksheet to turn a money goal into specific steps. Free PDF download; no signup needed.",
+        "relationship": "team-selected"
+      },
+      {
+        "label": "Explore more CFPB money tools",
+        "url": "https://www.consumerfinance.gov/consumer-tools/educator-tools/your-money-your-goals/toolkit/",
+        "description": "Public educational tools for saving, debt, credit and everyday money questions.",
+        "relationship": "team-selected"
+      }
+    ]
+  }
+]

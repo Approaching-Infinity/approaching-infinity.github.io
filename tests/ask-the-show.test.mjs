@@ -8,6 +8,7 @@ import { get as httpGet } from 'node:http';
 const core = await import('../prototype/ask-the-show/core.mjs').catch(() => ({}));
 const source = await import('../prototype/ask-the-show/corpus.mjs').catch(() => ({}));
 const service = await import('../prototype/ask-the-show/server.mjs').catch(() => ({}));
+const modelModule = await import('../prototype/ask-the-show/model.mjs').catch(()=>({}));
 const chunks = [
   {id:'finance',episodeId:'finance',title:'Learning from investment results',guest:'A researcher',type:'notes',text:'When investment performance is unusually strong, examine concentration and the process behind returns.',url:'https://approaching-infinity.github.io/episodes/finance/'},
   {id:'vets',episodeId:'vets',title:'Veterans moving into new careers',guest:'A veteran',type:'notes',text:'Military service members can seek career guidance and mentorship for the transition to civilian work.',url:'https://approaching-infinity.github.io/episodes/vets/'},
@@ -104,6 +105,21 @@ test('semantic episode routing resolves only corpus-owned passages and includes 
   assert.ok(evidence.some(c=>c.id==='finance-transcript'));
   assert.ok(evidence.every(c=>c.episodeId==='finance'));
   assert.throws(()=>core.resolveEpisodeEvidence(corpus,['made-up-episode']),/episode/i);
+});
+
+test('model uses short enumerated source keys and maps them back to exact corpus citations',async()=>{
+  let n=0;
+  const result=await modelModule.generateLocal({question:'Why can results hide risk?',sources:[],corpus:{episodes:[{episodeId:'finance',title:'Investment process',angle:'Why can results hide risk?'}],chunks},fetchImpl:async(_url,request)=>{
+    const body=JSON.parse(request.body);n++;
+    if(n===1){assert.deepEqual(body.format.properties.episodeKeys.items.enum,['EP1']);return Response.json({message:{content:JSON.stringify({episodeKeys:['EP1']})},prompt_eval_count:10,eval_count:5});}
+    assert.deepEqual(body.format.anyOf[0].properties.points.items.properties.sourceIds.items.enum,['S1']);
+    assert.equal(body.format.anyOf[0].properties.points.minItems,1);
+    assert.equal(body.format.anyOf[1].properties.points.maxItems,0);
+    return Response.json({message:{content:JSON.stringify({status:'answered',points:[{text:'The researcher examines the process. (S1)',sourceIds:['S1']}],application:null,followUp:null})},prompt_eval_count:20,eval_count:8});
+  }});
+  assert.equal(result.draft.points[0].sourceIds[0],'finance');
+  assert.equal(result.draft.points[0].text,'The researcher examines the process.');
+  assert.equal(result.usage.inputTokens,30);
 });
 
 test('corpus loader excludes boilerplate, keeps feature credit and labels transcript candidates', async () => {

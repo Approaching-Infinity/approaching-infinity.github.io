@@ -37,7 +37,8 @@ export function validateAnswer(draft,allowed) {
   const points=draft.points.map(p=>{
     if(typeof p.text!=='string'||!p.text.trim()||p.text.length>1800||!Array.isArray(p.sourceIds)||!p.sourceIds.length||p.sourceIds.length>3) throw new Error('Each answer point needs a valid citation.');
     for(const id of p.sourceIds) {const c=allowed.find(c=>c.id===id);if(!c)throw new Error('The model returned an unknown citation.');used.set(id,c);}
-    return {text:p.text.trim(),sourceIds:[...new Set(p.sourceIds)]};
+    let text=p.text.trim();for(const id of p.sourceIds)text=text.replaceAll(`(${id})`,'').replaceAll(`[${id}]`,'');
+    return {text:text.trim(),sourceIds:[...new Set(p.sourceIds)]};
   });
   for(const key of ['application','followUp']) if(draft[key]!=null&&(typeof draft[key]!=='string'||draft[key].length>1000)) throw new Error('The model response included an invalid extra field.');
   if(draft.status==='insufficient'&&draft.application) throw new Error('Insufficient evidence cannot support an application.');
@@ -47,6 +48,19 @@ export function validateAnswer(draft,allowed) {
 export function projectCost(inputTokens,outputTokens) {
   if(!Number.isFinite(inputTokens)||!Number.isFinite(outputTokens)||inputTokens<0||outputTokens<0)throw new Error('Invalid token count.');
   return Math.round((inputTokens*CLOUD_REFERENCE.inputPerMillion+outputTokens*CLOUD_REFERENCE.outputPerMillion)/1e6*1e9)/1e9;
+}
+
+export function resolveEpisodeEvidence(corpus,episodeIds) {
+  if(!Array.isArray(episodeIds)||episodeIds.length>3)throw new Error('Invalid episode selection.');
+  const result=[];let size=0;
+  for(const id of [...new Set(episodeIds)]) {
+    const records=corpus.chunks.filter(c=>c.episodeId===id);
+    if(!records.length)throw new Error('Unknown episode selected.');
+    records.sort((a,b)=>(b.type==='transcript-candidate')-(a.type==='transcript-candidate'));
+    let episodeSize=0;
+    for(const c of records){if(size+c.text.length>30000||episodeSize+c.text.length>12000)continue;result.push(c);size+=c.text.length;episodeSize+=c.text.length;}
+  }
+  return result;
 }
 
 export const ANSWER_SCHEMA={type:'object',additionalProperties:false,required:['status','points','application','followUp'],properties:{status:{type:'string',enum:['answered','insufficient']},points:{type:'array',maxItems:4,items:{type:'object',additionalProperties:false,required:['text','sourceIds'],properties:{text:{type:'string'},sourceIds:{type:'array',items:{type:'string'}}}}},application:{type:['string','null']},followUp:{type:['string','null']}}};

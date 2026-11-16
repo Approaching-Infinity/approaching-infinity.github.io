@@ -11,7 +11,7 @@ export async function loadCorpus({episodeDir='src/content/episodes',evidencePath
     if(!match) continue;
     const field=key=>{const value=match[1].match(new RegExp(`^${key}:\\s*(.+)$`,'m'))?.[1];try{return JSON.parse(value);}catch{return value;}};
     const episodeId=file.slice(0,-3),appearance=field('guestAppearance');
-    const episode={episodeId,title:field('title'),number:Number(field('episodeNumber')),date:field('pubDate'),guest:field('guest')||'',url:publicBase+episodeId+'/',credit:appearance?`Justin featured on ${appearance.show} · hosted by ${appearance.host}`:'Approaching Infinity conversation',sha256:createHash('sha256').update(raw).digest('hex')};
+    const episode={episodeId,title:field('title'),angle:field('listenerQuestion')||'',number:Number(field('episodeNumber')),date:field('pubDate'),guest:field('guest')||'',url:publicBase+episodeId+'/',credit:appearance?`Justin featured on ${appearance.show} · hosted by ${appearance.host}`:'Approaching Infinity conversation',sha256:createHash('sha256').update(raw).digest('hex')};
     episodes.push(episode);
     const body=match[2].split(/\n(?:\*\*)?(?:Support and Connect|Follow Approaching Infinity|Watch and listen|Hosted by Justin|Disclaimer)/i)[0];
     let n=0;

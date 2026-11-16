@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import { createHash } from 'node:crypto';
 
 const publicBase = 'https://approaching-infinity.github.io/episodes/';
-export async function loadCorpus({episodeDir='src/content/episodes',evidencePath}={}) {
+export async function loadCorpus({episodeDir='src/content/episodes',evidencePath,evidence:givenEvidence}={}) {
   const episodes=[],chunks=[];
   for(const file of (await readdir(episodeDir)).filter(f=>f.endsWith('.md')).sort()) {
     const raw=await readFile(join(episodeDir,file),'utf8');
@@ -19,8 +19,8 @@ export async function loadCorpus({episodeDir='src/content/episodes',evidencePath
       chunks.push({...episode,id:`${episodeId}:notes:${++n}`,type:'notes',text:paragraph.trim().slice(0,2400),timestamp:null,timestampVerified:false});
     }
   }
-  if(evidencePath) {
-    const evidence=JSON.parse(await readFile(evidencePath,'utf8'));
+  if(evidencePath||givenEvidence) {
+    const evidence=givenEvidence??JSON.parse(await readFile(evidencePath,'utf8'));
     for(const passage of evidence.excerpts??[]) {
       const episode=episodes.find(e=>e.episodeId===passage.episodeId);
       if(!episode||typeof passage.text!=='string'||!passage.id) continue;

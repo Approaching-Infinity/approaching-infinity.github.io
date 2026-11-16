@@ -21,7 +21,7 @@ The example's per-request reservation cap is $0.015, shared operation cap $0.03.
 
 Deploy the app backend on existing approved hosting with private Relay connectivity. Keep the Relay listener private. The static GitHub Pages frontend cannot hold an app secret or enforce monetary controls. Do not tunnel the Mac or expose local Ollama.
 
-The backend must persist visitor allowance (two AI questions/day), enforce an application sublimit inside the shared pool, rate/concurrency/input/output limits, preserve one action ID across both rounds, and fail closed on Relay stops. Anonymous allowances are bypassable, so Relay's central reservations and cap remain the final spend backstop. Challenges without AI should remain usable when generation is unavailable.
+The backend must persist visitor allowance (three AI questions/day), enforce an application sublimit inside the shared pool, rate/concurrency/input/output limits, preserve one action ID across both rounds, and fail closed on Relay stops. Anonymous allowances are bypassable, so Relay's central reservations and cap remain the final spend backstop. Challenges without AI should remain usable when generation is unavailable.
 
 Verify source labels/external-show credits, privacy copy, actual cited answers and unsupported questions, quota/budget/failure paths and responsive UI against the deployed backend. Until then, no public AI release or zero-cash-cost claim is supported.
 

@@ -1,0 +1,33 @@
+---
+import styleUrl from "../../prototype/ask-the-show/style.css?url";
+---
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Ask questions across the Approaching Infinity archive, explore cited episode evidence and try free decision challenges."><link rel="canonical" href="https://approaching-infinity.github.io/ask-the-show/"><title>Ask the Show · Approaching Infinity</title><link rel="stylesheet" href={styleUrl}><script>import "../scripts/ask-show-public.js";</script></head>
+<body>
+  <a href="#question" class="skip">Skip to question</a>
+  <header class="topbar"><a class="brand" href="https://approaching-infinity.github.io/" target="_blank" rel="noopener noreferrer"><span class="infinity" aria-hidden="true">∞</span> Approaching Infinity</a><span class="private-tag">Free public pilot · <a href="/resources/">All resources</a></span></header>
+  <main class="shell" data-api-url="https://crm.limitlesslp.com/approaching-infinity-api">
+    <section class="intro"><p class="breadcrumb">From the conversation into your day.</p><h1>Ask the show.</h1><p class="intro-text">Explore an idea. Work through a question. Find a useful next step, with the episodes behind the answer.</p></section>
+    <div class="workspace">
+      <div class="main-column">
+        <div class="mode-tabs" aria-label="Choose an experience"><button id="ask-tab" type="button" class="active" aria-pressed="true">Ask a question</button><button id="challenge-tab" type="button" aria-pressed="false">Try a decision challenge</button></div>
+        <section id="ask-panel" aria-label="Ask a question">
+          <form id="ask-form"><label for="question">What would you like to understand or work through?</label><textarea id="question" name="question" rows="3" maxlength="1000" required placeholder="I have an idea, but I’m not sure what to test before putting time into it…"></textarea><div class="form-row"><span id="question-count">Keep it brief. No personal financial details needed.</span><div class="form-actions"><button id="stop" type="button" class="quiet" hidden>Stop</button><button id="submit" type="submit" class="primary">Ask the show <span aria-hidden="true">↗</span></button></div></div></form>
+          <div class="suggestions" aria-label="Example questions"><span>Start somewhere:</span><button type="button" data-question="How can I turn a strategy into clear action?">Turn a plan into action</button><button type="button" data-question="Why can unusually strong investment results hide risk?">Look behind strong results</button><button type="button" data-question="What have guests shared about veterans moving into civilian careers?">Explore a next chapter</button><button type="button" data-question="How can AI help with work while people retain judgment?">Use AI with judgment</button></div>
+          <p id="request-status" role="status" aria-live="polite"></p>
+          <div id="conversation" aria-label="Conversation"></div>
+          <div id="empty-state" class="empty-state"><span class="empty-infinity" aria-hidden="true">∞</span><div><h2>A conversation worth continuing.</h2><p>Ask across finance, technology, building businesses and service. Answers link back to the source, with gaps left visible.</p></div></div>
+          <button id="clear" type="button" class="quiet clear" hidden>Start a new conversation</button>
+        </section>
+        <section id="challenge-panel" aria-label="Decision challenges" hidden><div class="challenge-intro"><h2>One situation. A better question.</h2><p>Explore a fictional case, choose a response and see the lesson behind it. These are original exercises inspired by the episodes.</p></div><div id="challenge-picker" class="challenge-picker"></div><div id="challenge-content"></div></section>
+      </div>
+      <aside class="sidebar">
+        <section class="cost-panel"><div class="cost-heading"><span class="live-dot" aria-hidden="true"></span><h2>A question worth asking.</h2></div><div class="spend"><span id="metric-requests">3</span><span>free questions each day</span></div><p id="allowance-note">Three questions daily on this browser. No signup needed. Shared pilot capacity is limited.</p><dl class="cost-stats"><div><dt>Remaining today</dt><dd id="metric-remaining">—</dd></div><div><dt>Latest answer</dt><dd id="metric-latency">—</dd></div></dl><p><a href="/episodes/">Explore all episodes ↗</a></p></section>
+        <section class="coverage-panel"><h2>See the evidence.</h2><p id="coverage">Loading the episode archive…</p><p>Published notes and candidate transcript excerpts are labeled separately. Transcript timing and wording still need audio review.</p><p>Guest views describe the conversation at the time. Our suggested applications are labeled separately.</p></section>
+        <section class="privacy-panel"><h2>Keep personal details private.</h2><p>Your question, recent conversation and selected episode passages are sent to our AI provider to prepare an answer. We keep anonymous usage and technical records, not your question text or answers. A browser identifier tracks your free allowance. <a href="/privacy/#ask-the-show">How this works</a>.</p></section>
+      </aside>
+    </div>
+    <footer><span>Approaching Infinity · Learn from the conversation</span><p>Educational exploration. This tool does not recommend investments or provide financial, legal or tax advice. Sources and generated answers can contain errors.</p></footer>
+  </main>
+</body></html>

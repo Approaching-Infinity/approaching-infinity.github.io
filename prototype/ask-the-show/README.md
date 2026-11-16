@@ -46,7 +46,7 @@ The cost panel projects the recorded local token counts at a hypothetical GPT-5.
 
 Requests are serial, input is limited to1,000characters and three prior exchanges, and each server run allows100model-backed attempts. Host/Origin checks and a static-file allowlist protect the loopback prototype; there is no remote access, user account or public authentication scheme. Source-selection and answer-generation tokens are both counted. Interrupted/unavailable calls with missing usage are labeled rather than recorded as zero-token successes.
 
-Justin asked about a public free allowance. Proposed release pattern: two free AI questions per anonymous visitor per day, browser-only challenges available without inference, a return-later message after the allowance and an independently enforced application-wide monetary ceiling. A browser/cookie allowance is bypassable; a server-wide cap is the budget backstop. This pattern is **not activated** by the private prototype. Publication is authorized, pending the secure Relay backend, budget enforcement, abuse controls, privacy copy and deployment testing. Stripe/paid tiers remain outside this task.
+Justin asked about a public free allowance and subsequently selected **three** free AI questions per anonymous visitor per day, browser-only challenges available without inference, a return-later message after the allowance and an independently enforced application-wide monetary ceiling. A browser/cookie allowance is bypassable; a server-wide cap is the budget backstop. The private prototype does not activate this pattern. Publication is authorized, pending the secure Relay registration/backend and deployment testing. Stripe/paid tiers remain outside this task.
 
 ## Verification
 

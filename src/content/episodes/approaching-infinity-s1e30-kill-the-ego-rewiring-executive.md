@@ -10,6 +10,9 @@ guid: "08f01ba4-9888-4a09-8031-25d066fa88b2"
 # Synced from the podcast feed. Safe to enrich by hand: this file is never
 # overwritten. Optional extras: spotifyEpisodeId / spotifyUrl, appleUrl,
 # youtubeUrl / youtubeId, guest.
+guest: "Dr. Layne Gneiting"
+listenerQuestion: "How can leaders replace fixed expectations with curiosity and bring lessons back to everyday life?"
+episodeVisuals: [{"src": "/guests/layne-gneiting-official.webp", "alt": "Dr. Layne Gneiting", "kind": "portrait", "position": "center 15%", "zoom": 1}]
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Dr. Layne Gneiting, CEO and Adventure Strategist at Way of the Hero Consulting, who shares his perspective on how founders and executives can unlock sustainable growth by stepping away from everyday routines. He explains that high performers often find themselves trapped in rigid operational patterns, where familiar habits prevent genuine leadership evolution. According to Dr. Gneiting, real personal and professional breakthroughs require stepping into unfamiliar, demanding environments that intentionally disrupt established rhythms.

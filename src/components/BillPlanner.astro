@@ -38,7 +38,11 @@ import {months} from '../lib/bill-planner.mjs';
 <p id="bp-year-error" class="bp-warning" hidden>Choose a year from 1900 to 9999. The calendar keeps the last valid month.</p>
     <p class="bp-help">
 <strong>Due by</strong> is the biller’s deadline. <strong>Pay / withdrawal on</strong> is when you plan to send money or expect an automatic withdrawal. Check processing time with your biller. Leave unknown dates blank.</p>
-    <div class="bp-bills">{[0,1,2].map(i=>
+    <aside class="bp-live-summary" aria-label="Worksheet progress">
+  <div><p class="eyebrow">As you fill it in</p><p id="bp-quick-total" aria-live="polite"></p><p class="bp-help" id="bp-quick-detail"></p></div>
+  <button type="button" class="btn btn-ghost" id="bp-jump-calendar">View my calendar <span aria-hidden="true">↓</span></button>
+</aside>
+<div class="bp-bills">{[0,1,2].map(i=>
 <fieldset class="bp-bill">
 <legend>Bill {i+1}</legend>
 <label>Short bill label<input id={`bp-label-${i}`} maxlength="48" placeholder={['Phone','Electricity','Internet'][i]} />
@@ -82,7 +86,7 @@ import {months} from '../lib/bill-planner.mjs';
 </div>
 </div>
 </form>
-    <section class="bp-results" aria-labelledby="bp-result-title">
+    <section class="bp-results" id="bp-results" aria-labelledby="bp-result-title" tabindex="-1">
 <div class="bp-section-head">
 <div>
 <p class="eyebrow">Your simple calendar</p>
@@ -127,10 +131,10 @@ import {months} from '../lib/bill-planner.mjs';
   </div>
   <div class="bp-preview-controls" hidden>
 <h2 id="bp-preview-title">Worksheet preview</h2>
-<p>Review this copy before opening your device’s print dialog.</p>
+<p class="bp-preview-help">This is a snapshot for printing. Choose <strong>Edit worksheet</strong> to change your bills. Paper and saved PDFs use a clean white layout.</p>
 <div class="bp-toolbar">
-<button id="bp-back" class="btn btn-ghost" type="button">Back to worksheet</button>
-<button id="bp-open-print" class="btn btn-red" type="button">Print / save as PDF</button>
+<button id="bp-back" class="btn btn-red" type="button">Edit worksheet</button>
+<button id="bp-open-print" class="btn btn-ghost" type="button">Print / save as PDF</button>
 </div>
 </div>
   <article id="bp-print-sheet" class="bp-print-sheet" aria-label="Printable worksheet">

@@ -76,9 +76,22 @@ if(root){
     }
     entries.sort((a,b)=>(parseDate(a.planned)?a.planned:'9999-99-99').localeCompare(parseDate(b.planned)?b.planned:'9999-99-99')).forEach(b=>{
       const card=el('article','bp-result-bill');
-      card.append(el('h3','',b.label||'Bill · label to check'),el('p','bp-badge',certainty(b)));
-      card.append(el('p','',`Due by: ${dateLabel(b.due)}`),el('p','',`Pay / withdrawal on: ${dateLabel(b.planned)}`),el('p','',`${amount(b.amount)===null?(b.amount===''?'Amount not entered':'Amount to check'):money(amount(b.amount))} · ${method(b)}`));
-      if(b.notes)card.append(el('p','',b.notes));
+      const heading = el('div', 'bp-bill-heading');
+      heading.append(el('h3', '', b.label || 'Bill · label to check'), el('span', 'bp-badge', certainty(b)));
+      const facts = el('dl', 'bp-result-facts');
+      const values = [
+        ['Amount', amount(b.amount) === null ? (b.amount === '' ? 'Not entered' : 'To check') : money(amount(b.amount))],
+        ['Due by', dateLabel(b.due)],
+        ['Pay / withdrawal on', dateLabel(b.planned)],
+        ['Method', method(b)],
+      ];
+      values.forEach(([label, value]) => {
+        const fact = el('div');
+        fact.append(el('dt', '', label), el('dd', '', value));
+        facts.append(fact);
+      });
+      card.append(heading, facts);
+      if(b.notes)card.append(el('p','bp-result-note',b.notes));
       warnings(b).forEach(w=>card.append(el('p','bp-warning',w)));
       if(parseDate(b.planned)&&!inMonth(b.planned,d.year,d.month))card.append(el('p','bp-help','Planned date is outside this calendar month; kept in this list.'));
       container.append(card);
@@ -98,7 +111,14 @@ if(root){
         cell.setAttribute('role','listitem');
         cell.setAttribute('aria-label',`${months[d.month]} ${day}`);
         cell.append(el('strong','',String(day)));
-        if(!blank)d.bills.filter(b=>active(b)&&inMonth(b.planned,d.year,d.month)&&parseDate(b.planned).day===day).forEach(b=>cell.append(el('span','',`${b.label||'Bill'} · ${method(b)} · ${certainty(b)}`)));
+        if (!blank) {
+          d.bills.filter(b => active(b) && inMonth(b.planned, d.year, d.month) && parseDate(b.planned).day === day).forEach(b => {
+            const item = el('div', 'bp-calendar-entry');
+            item.append(el('span', 'bp-calendar-label', b.label || 'Bill'));
+            item.append(el('small', '', `${method(b)} · ${certainty(b)}`));
+            cell.append(item);
+          });
+        }
       }
       days.append(cell);
     }
@@ -122,6 +142,12 @@ if(root){
     $('year').setAttribute('aria-invalid',String(!valid));
     $('result-title').textContent=months[d.month]+' '+d.year;
     $('total').textContent=totalText(d);
+    const progress = summary(d.bills);
+    $('quick-total').textContent = progress.amountCount
+      ? `${money(progress.total)} listed so far`
+      : 'No amounts entered yet';
+    $('quick-detail').textContent = `${progress.amountCount} of ${progress.entries.length} started bills have valid amounts. ${progress.estimates} estimate(s); ${progress.unchecked} to check. Missing/invalid amounts excluded. Partial list, not a budget.`;
+
     $('example-notice').hidden=!example;
     $('example-notice').textContent = exampleEdited
       ? 'Example with your edits — verify all details. Untouched fields may still contain invented values.'
@@ -158,6 +184,11 @@ if(root){
   }
   $('list-view').addEventListener('click',()=>view('list'));
   $('calendar-view').addEventListener('click',()=>view('calendar'));
+  $('jump-calendar').addEventListener('click', () => {
+    view('calendar');
+    $('results').focus({preventScroll: true});
+    $('results').scrollIntoView({block: 'start'});
+  });
   function loadExample(){
     const rows=[['Phone','50','2026-11-12','2026-11-09','confirmed','manual','Timing assumed checked'],['Electricity','85','2026-11-20','2026-11-17','estimate','manual','Check the statement'],['Internet','60','2026-11-25','2026-11-23','confirmed','automatic','Withdrawal assumed checked']];
     rows.forEach((r,i)=>['label','amount','due','planned','certainty','method','notes'].forEach((k,j)=>$(k+'-'+i).value=r[j]));
@@ -258,7 +289,7 @@ if(root){
     preview=true;
     root.classList.add('bp-preview');
     root.querySelector('.bp-preview-controls').hidden=false;
-    $('preview-title').textContent=blank?'Blank worksheet preview':'My worksheet preview';
+    $('preview-title').textContent=blank?'Blank worksheet · Print preview':'My worksheet · Print preview';
     $('back').focus();
     window.scrollTo(0,0);
   }

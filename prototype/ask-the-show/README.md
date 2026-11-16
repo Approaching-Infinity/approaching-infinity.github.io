@@ -18,7 +18,7 @@ npm run ask:show
 
 Open http://127.0.0.1:4360/. Stop either process with Ctrl-C in its own terminal. The Mac must remain awake with both services running. This is not an internet-accessible preview and the Mac is not proposed as a public production server.
 
-The default model is the already-installed `gemma3:4b`, selected after live comparison. `ASK_SHOW_MODEL=qwen3-vl:30b-a3b-instruct` selects the other existing model, which produced some empty/insufficient answers during initial evaluation. The application never downloads a model and has no cloud adapter or API credentials. Ollama is started separately with cloud disabled.
+The default model is the already-installed `qwen3-vl:30b-a3b-instruct`. Initial answer-format failures led to short enumerated source keys and constrained response states; Qwen then handled source selection and unsupported questions more reliably in comparison. `ASK_SHOW_MODEL=gemma3:4b` selects the smaller existing model, whose trial produced some speaker-attribution and formatting errors. The application never downloads a model and has no cloud adapter or API credentials. Ollama is started separately with cloud disabled.
 
 The optional `ASK_SHOW_EVIDENCE_PATH` points to the private `candidate-evidence.json` researched for this project. Default path: `~/Documents/ChatGPT/Approaching Infinity/reports/ask-the-show-2026-11-16/candidate-evidence.json`. Missing evidence fails startup rather than silently claiming transcript coverage. The38 publisher-note files are read from `src/content/episodes`. The private source bundle stays outside this repository.
 

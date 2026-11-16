@@ -1,3 +1,4 @@
+import {historyEntry,challengeForQuestion} from './conversation.mjs';
 const $=s=>document.querySelector(s);
 const question=$('#question'),status=$('#request-status'),conversation=$('#conversation');
 let history=[],controller=null,timer=null,turn=0,pendingChallenge=null,challengeData=[];
@@ -58,8 +59,9 @@ async function refreshStatus() {
     const box=$('#cost-details');box.replaceChildren();
     box.append(el('p',`Model: ${d.model}. Cloud calls disabled.`),el('p',`${d.usage.inputTokens.toLocaleString()} input tokens · ${d.usage.outputTokens.toLocaleString()} output tokens. ${d.usage.completed} completed · ${d.usage.failed} failed.`));
     if(d.usage.unknownUsageRequests)box.append(el('p',`${d.usage.unknownUsageRequests} stopped/unavailable request(s) have no complete token count.`));
-    box.append(el('p',`The same recorded token counts at ${d.pricing.model} reference rates would be approximately ${money(d.usage.cloudEquivalentUSD)}. This is an estimate, not a charge or a cloud-model benchmark.`));
-    if(d.usage.requests)box.append(el('p',`Public pilot sketch: 100 visitors a day using two free AI questions each would mean 6,000 requests in 30 days. At this recorded request mix, token charges would be about ${money(d.usage.cloudEquivalentUSD/d.usage.requests*6000)}, before hosting and other costs. Public allowances and spending caps are not activated in this private prototype.`));
+    box.append(el('p',`The same recorded token counts at ${d.pricing.model} reference rates would be ${d.usage.unknownUsageRequests?'at least':'approximately'} ${money(d.usage.cloudEquivalentUSD)}. This is an estimate, not a charge or a cloud-model benchmark.`));
+    if(d.usage.requests&&!d.usage.unknownUsageRequests)box.append(el('p',`Public pilot sketch: 100 visitors a day using two free AI questions each would mean 6,000 requests in 30 days. At this recorded request mix, token charges would be about ${money(d.usage.cloudEquivalentUSD/d.usage.requests*6000)}, before hosting and other costs. Public allowances and spending caps are not activated in this private prototype.`));
+    if(d.usage.unknownUsageRequests)box.append(el('p','A monthly projection is withheld because some requests have incomplete token usage.'));
     box.append(el('p',`Rates checked ${d.pricing.checked}: ${money(d.pricing.inputPerMillion)}/million input and ${money(d.pricing.outputPerMillion)}/million output tokens. Different tokenizers, reasoning and hosting add uncertainty.`));
     const link=el('a','Official model pricing ↗');link.href=d.pricing.url;link.target='_blank';link.rel='noopener noreferrer';box.append(link,el('p','Local hardware, electricity and operator time have not been measured. Usage totals are stored locally; questions and answers are not.'));
   } catch {$('#coverage').textContent='The local server is unavailable. Restart it with npm run ask:show.';}
@@ -71,10 +73,11 @@ $('#ask-form').addEventListener('submit',async event=>{
   controller=new AbortController();busy(true);const start=Date.now();status.textContent='Finding episode evidence and preparing an answer…';
   timer=setInterval(()=>{status.textContent=`Finding evidence and preparing an answer… ${Math.floor((Date.now()-start)/1000)}s`;},1000);
   try {
-    const response=await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,history:history.slice(-3),...(pendingChallenge?{challengeId:pendingChallenge}:{})}),signal:controller.signal});
+    const challengeId=challengeForQuestion(q,pendingChallenge);
+    const response=await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,history:history.slice(-3),...(challengeId?{challengeId}:{})}),signal:controller.signal});
     const result=await response.json();if(!response.ok)throw new Error(result.error??'The answer could not be prepared.');
     renderAnswer(q,result);
-    if(result.status==='answered')history.push({question:q,answer:result.points.map(p=>p.text).join(' ').slice(0,1500)});
+    if(result.status==='answered')history.push(historyEntry(q,result));
     pendingChallenge=null;question.value='';status.textContent=result.status==='answered'?'Answer ready. Open a numbered source to check the evidence.':'Try a more specific question or explore an episode source.';
   } catch(error){status.textContent=error.name==='AbortError'?'Stopped. Your question is still here.':error.message;}
   finally{clearInterval(timer);timer=null;controller=null;busy(false);await refreshStatus();}
@@ -93,7 +96,7 @@ function showChallenge(c) {
     feedback.hidden=false;feedback.replaceChildren(el('h4',choice.id===c.preferred?'A useful question to ask':'Another angle to consider'),el('p',choice.feedback));
     feedback.append(el('p',c.lesson));
     if(c.sources.length)feedback.append(sourceList(c.sources,`challenge-${c.id}`));
-    const ask=el('button','Explore this with Ask the Show ↗','challenge-ask');ask.type='button';ask.addEventListener('click',()=>{pendingChallenge=c.id;question.value=`In the "${c.title}" challenge, I chose "${choice.text}". Help me understand what I might be missing.`;mode('ask');question.focus();});feedback.append(ask);
+    const ask=el('button','Explore this with Ask the Show ↗','challenge-ask');ask.type='button';ask.addEventListener('click',()=>{question.value=`In the "${c.title}" challenge, I chose "${choice.text}". Help me understand what I might be missing.`;pendingChallenge={id:c.id,question:question.value};mode('ask');question.focus();});feedback.append(ask);
   });choices.append(b);}
   card.append(choices,feedback);$('#challenge-content').replaceChildren(card);
 }

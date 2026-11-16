@@ -9,11 +9,11 @@ import { generateLocal } from './model.mjs';
 import { challenges } from './challenges.mjs';
 
 const HERE=dirname(fileURLToPath(import.meta.url));
-const staticFiles=new Map([['/',['index.html','text/html; charset=utf-8']],['/app.js',['app.js','text/javascript']],['/style.css',['style.css','text/css']]]);
+const staticFiles=new Map([['/',['index.html','text/html; charset=utf-8']],['/app.js',['app.js','text/javascript']],['/conversation.mjs',['conversation.mjs','text/javascript']],['/style.css',['style.css','text/css']]]);
 const cleanSource=c=>Object.fromEntries(['id','episodeId','title','number','date','guest','credit','url','text','type','timestamp','timestampVerified','speaker','clock'].filter(k=>c[k]!==undefined).map(k=>[k,c[k]]));
 const initialUsage=()=>({startedAt:new Date().toISOString(),requests:0,completed:0,failed:0,inputTokens:0,outputTokens:0,milliseconds:0,unknownUsageRequests:0,apiSpendUSD:0});
 
-export function createPrototypeServer({corpus,generate=generateLocal,model='gemma3:4b',usage:givenUsage,ledgerPath}={}) {
+export function createPrototypeServer({corpus,generate=generateLocal,model='qwen3-vl:30b-a3b-instruct',usage:givenUsage,ledgerPath}={}) {
   const usage={...initialUsage(),...givenUsage,apiSpendUSD:0};
   let busy=false,runRequests=0;
   const persist=async()=>{if(!ledgerPath)return;await mkdir(dirname(ledgerPath),{recursive:true});await writeFile(ledgerPath+'.tmp',JSON.stringify(usage,null,2)+'\n',{mode:0o600});await rename(ledgerPath+'.tmp',ledgerPath);};
@@ -46,6 +46,7 @@ export function createPrototypeServer({corpus,generate=generateLocal,model='gemm
       if(body.challengeId&&!challenge)return send(400,{error:'Choose an available decision challenge.'});
       if(busy)return send(429,{error:'One answer is already being prepared. Please wait for it to finish.'});
       if(runRequests>=100)return send(429,{error:'This private run has reached its 100-question limit. Restart it for another review session.'});
+      if(/\b(reveal|print|show|give|disclose)\b.{0,80}\b(system prompt|api key|internal instruction|hidden instruction)/i.test(question))return send(200,{status:'scope',points:[],sources:[],application:null,followUp:'I can help you explore ideas from the episodes. What topic would you like to ask about?',generated:false});
       if(/\bshould i\b.{0,90}\b(buy|sell|invest|allocate|borrow)\b|\b(how|where|can i)\b.{0,60}\b(invest|subscribe)\b.{0,40}\b(limitless|fund)\b/i.test(question))return send(200,{status:'scope',points:[],sources:[],application:null,followUp:'I can explain what the episodes discuss and help identify questions to research. I cannot recommend a personal investment or provide access to a fund.',generated:false});
       const searchQuestion=challenge?`${question} ${challenge.title} ${challenge.lesson}`:question;
       let selected=retrieve(corpus,searchQuestion,history);
@@ -58,8 +59,8 @@ export function createPrototypeServer({corpus,generate=generateLocal,model='gemm
         const result=await generate({question,history,sources:selected,corpus,challenge:challenge?{title:challenge.title,scenario:challenge.scenario,lesson:challenge.lesson}:null,model,signal:AbortSignal.any([abort.signal,AbortSignal.timeout(90000)])});
         const u=result.usage??{};
         const tokens={inputTokens:Math.max(0,Number(u.inputTokens)||0),outputTokens:Math.max(0,Number(u.outputTokens)||0)};
-        consumed=true;usage.inputTokens+=tokens.inputTokens;usage.outputTokens+=tokens.outputTokens;
-        if(result.error)throw new Error(result.error);
+        consumed=result.usageComplete!==false;usage.inputTokens+=tokens.inputTokens;usage.outputTokens+=tokens.outputTokens;
+        if(result.error){const error=new Error(result.error);error.name=result.errorName||'Error';throw error;}
         const allowed=result.sourceIds?result.sourceIds.map(id=>corpus.chunks.find(c=>c.id===id)).filter(Boolean):selected;
         const answer=validateAnswer(result.draft,allowed);
         usage.completed++;const elapsed=Date.now()-started;usage.milliseconds+=elapsed;
@@ -77,7 +78,7 @@ export function createPrototypeServer({corpus,generate=generateLocal,model='gemm
 async function start() {
   const port=Number(process.env.ASK_SHOW_PORT??4360);
   if(!Number.isInteger(port)||port<1024||port>65535)throw new Error('Use a local port between1024 and65535.');
-  const model=process.env.ASK_SHOW_MODEL??'gemma3:4b';
+  const model=process.env.ASK_SHOW_MODEL??'qwen3-vl:30b-a3b-instruct';
   if(!['qwen3-vl:30b-a3b-instruct','gemma3:4b'].includes(model))throw new Error('This prototype uses only the two existing local models.');
   const evidencePath=process.env.ASK_SHOW_EVIDENCE_PATH??join(homedir(),'Documents/ChatGPT/Approaching Infinity/reports/ask-the-show-2026-11-16/candidate-evidence.json');
   const corpus=await loadCorpus({evidencePath});

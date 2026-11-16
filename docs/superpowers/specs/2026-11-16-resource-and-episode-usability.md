@@ -1,23 +1,24 @@
-# Resource and episode usability
+# Episode-led resources and complete episode presentation
 
-Approved scope: Justin's November 16 direction to use sub-agents, reduce clicks, improve the live resource presentation with a fillable tool, and restore images and Why listen for episodes 30–32. No new product family, subscriptions or spending. Local review precedes release; no live deployment yet.
+Approved direction: Justin's November 16 correction makes the show the starting point for resources across the three mission pillars. He explicitly authorized publishing, including episodes30–32, followed by live-site verification. This supersedes the earlier worksheet-first homepage design.
 
-## Approach
+## Experience
 
-Improve the existing worksheet at /resources/bill-calendar-worksheet/ using the earlier local planner logic. The homepage and Resources card lead directly to it. The walkthrough becomes optional supporting explanation; a separate editable PDF is deferred because the completed tool can print/save a PDF. Keep the existing black/red Astro brand, typography and navigation. No site-wide redesign.
+- Preserve Listen now and restore Explore free resources → /resources/ in the homepage hero.
+- Resources leads with three curated episode → idea → practical resource cards, using the real episode title, guest portrait, and episode link. Each connects a conversation to one mission area. Do not claim measured social impact.
+- Show explicit resource provenance: Linked in the episode notes versus Selected by Approaching Infinity. No audio verification is implied by show-note evidence; no guest recommendation, partnership, sponsorship or provider endorsement is invented.
+- The first cards use David Kim/E11 for education access, Jerry Majetich/E9 for post-service career guidance and Stephen Read/E15 for financial literacy. Current public resources are the Fallen Patriots successor scholarship program at Tunnel to Towers, VA Chapter36, and CFPB goal-setting/toolkit materials.
+- Preserve the historical/current distinction: E11 notes link Children of Fallen Patriots; the current action reaches its successor program. State eligibility review and no guaranteed award. VA guidance is free for eligible users, not everyone. Public CFPB material is general education.
+- Keep the existing bill worksheet and walkthrough as secondary optional resources, with their useful visual preview. Do not build more calculators or frame the show primarily as a bill-planning service.
+- Update the lower homepage resource summary to the same episode-led framing. Preserve factual progress status; no unsupported outcomes or activity claims.
 
-Approved opening: “Put your next three bills on one page”. “In 15 minutes, write down three bills, when they’re due and when you plan to pay them. You’ll finish with a simple calendar and one thing to check next.” “Use paper or our free worksheet. No signup needed. Keep your financial details private.”
+## Existing implementation retained
 
-## User experience
+- Preserve the private browser-only planner, examples, totals, desktop calendar/phone agenda and blank/completed snapshot behavior at the existing worksheet URL. No storage, submission, analytics, new dependency, account or subscription.
+- Preserve the black/red Astro brand and accessible responsive behavior. On-screen snapshots stay branded; actual print CSS stays white. Native PDF/physical print output remains an explicit operator-check limit.
+- Restore official photos, guest labels and grounded Why listen questions for E30 Layne Gneiting, E31 Anthony C. Taylor and E32 Rod Loges. Preserve episode bodies, titles, dates, audio, GUIDs and prior feature credits.
+- Existing feed/PR workflows report uncurated episodes for editorial review. They do not fabricate future photos/questions or add a new recurring automation.
 
-Homepage has a specific direct worksheet CTA. Resources has an inviting bill-calendar card with a small visual of the tool, short outcome copy, primary Start worksheet action and secondary example/print options. Do not fabricate multiple ready tools or show placeholder initiatives as usable tools. The planner has three starter bills, clear due-date versus payment-date definitions, optional amounts, estimates/check labels, one next action, live list/calendar and print blank/completed. Keep explanations brief and optional. Reuse the existing prototype only where it serves this scope; remove sponsor previews, internal review language and feedback email from the public task flow.
+## Release acceptance
 
-Entries remain in page memory only; no browser storage, outgoing requests, server collection or analytics. No account numbers requested. State that refresh/close clears entries and print/save keeps a user-controlled copy. Browser print-to-PDF is not an editable PDF. Amount total is only listed valid entries, includes labeled estimates, excludes missing/invalid amounts, and is not spendable balance, affordability, advice or a complete budget. Automatic withdrawals remain visible. Fictional example replaces entries only with visible confirmation if work exists. Unknowns remain unknown. Mobile must not require a wide table or hide controls. Keyboard/focus, reduced-motion and print layout supported. Existing contact/newsletter behavior and release configuration remain intact.
-
-## Episodes
-
-Enrich only E30 Layne Gneiting, E31 Anthony C. Taylor, E32 Rod Loges with verified official-source images, accurate guest labels and one description-grounded listenerQuestion in the existing row style. Preserve titles, feed GUIDs, published descriptions, audio, dates and all earlier episode/feature credits. No generated faces, fabricated outcomes, quotation changes or claims of legal clearance. Record sources. Reuse existing twice-daily sync/check workflow to report uncurated new episodes for editorial review without generating claims or blocking an otherwise valid feed import.
-
-## Acceptance
-
-One homepage click reaches fillable worksheet. Resources is visually actionable. Fictional example totals $195 with one estimate; blank/invalid inputs and cross-month dates remain honest. Completed and blank print previews differ correctly; print/saved rendering is legible. Three missing episode images/questions appear on homepage and archive, with source proof and usable crops. Build/tests and 390/1280px actual browser checks pass. No new data collection, dependencies, live posts, payments or unapproved deployment.
+Run tests, normal/owned-form build checks and episode UI checks. Inspect resource/hompage/episode presentation on desktop and390px. Check each new external resource against current primary sources. Review the final delta independently. Update PR6 around the final scope, merge only the reviewed head and verify the GitHub Pages deployment plus actual live homepage/resources/episode images and questions. No external outreach, grants, payments, applications, registration or account/security changes.

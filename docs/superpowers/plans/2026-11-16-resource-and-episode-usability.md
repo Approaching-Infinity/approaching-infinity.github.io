@@ -1,63 +1,28 @@
-# Resource and Episode Usability Implementation Plan
+# Episode-led Resources Release Plan
 
-For agentic workers: execute the two bounded tasks with isolated sub-agents, then a fresh combined spec/quality review.
-
-**Goal:** Make the existing bill worksheet directly usable and restore the three latest episode presentations.
-
-**Architecture:** Keep Astro static deployment. Browser-only planner reuses pure functions from the local prototype with scoped rendering/print styles. Episode enrichment uses the existing curated metadata fields; feed sync reports omissions for editorial review.
-
-**Tech Stack:** Existing Astro, JavaScript modules, CSS, Node test runner; no dependencies added.
+**Goal:** Connect useful episode ideas to practical mission resources, retain the optional planner and publish the complete episode30–32 presentation.
 
 **Spec:** docs/superpowers/specs/2026-11-16-resource-and-episode-usability.md
 
-## Global Constraints
+**Authority:** Justin explicitly approved publication and live verification November16, while correcting the worksheet-first framing. No further publication approval is required for this scope.
 
-- Preserve existing URLs, black/red identity, contact/newsletter behavior and earlier episode credits.
-- No new tools, subscriptions, storage, network submissions or analytics; no financial advice/affordability claims.
-- Live deployment remains separate from this local review. User Review pending.
-- Approved opening copied verbatim from spec. Existing worksheet route retained.
+## Implementation
 
-## Review Focus
+- [x] Private planner, branded previews and preserved URL implemented and independently reviewed.
+- [x] Official photos and grounded Why listen for E30–32 implemented and independently reviewed.
+- [x] Existing feed/PR metadata warnings implemented; all earlier feature credits preserved.
+- [x] Restore homepage Explore free resources and episode-led lower resource summary.
+- [x] Publish three sourced episode → idea → resource cards; keep the worksheet secondary.
+- [x] Record original-note proof, current external destinations and relationship labels; add relevant source consistency checks.
 
-- Partial/invalid/estimated amounts: totals must not imply certainty or available cash.
-- Changed months/cross-month dates: keep original entered dates, do not silently reschedule bills.
-- Blank versus completed print: no current financial entries in blank copy.
-- Replacing entries with fictional demo: no silent loss of existing work.
-- Guest portrait identity/crops and question grounding: official source and actual descriptions; no inferred quote or guarantee.
+## Release
 
-### Task 1: Fillable resource and direct discovery
+- [x] Run final tests, default/owned builds, episode UI and metadata checks.
+- [x] Independently review final positioning/content delta and inspect desktop/mobile preview.
+- [ ] Update PR6 title/body, push reviewed changes and verify CI on exact head.
+- [ ] Merge the reviewed head and verify GitHub Pages deployment.
+- [ ] Inspect live homepage/resources/episodes and save screenshots and exact status.
 
-Files: replace src/pages/resources/bill-calendar-worksheet.md with .astro; add scoped BillPlanner component, browser script and pure helper module as appropriate; modify resources/index.astro, resources/month-ahead.md, ResourceLayout.astro, Hero.astro, Progress.astro; add meaningful helper tests in tests/*.test.mjs. Do not edit episode metadata, workflow files or package dependencies.
+## Limits
 
-Interfaces: existing worksheet URL, optional #example and #print anchors; current ResourceLayout and site tokens. Agent chooses small focused filenames and records them.
-
-- [x] Verify baseline tests, reuse/read prototype core and safe renderer.
-- [x] Test amount/date/print-model edge cases that protect the user's interpretation.
-- [x] Implement resource-first UI, approved copy, optional example and print views, private memory-only state.
-- [x] Run scoped tests/build and self-review desktop/mobile implementation; report exact tests and unverified browser limits.
-- [x] Commit only Task 1 files, report commit and source/behavior notes.
-
-### Task 2: Episodes 30–32 and future completeness reporting
-
-Files: only three src/content/episodes/approaching-infinity-s1e3[012]*.md frontmatters; images in src/assets/guests; append docs/episode-editorial-audit.json with verified source evidence; add a small metadata check script and existing check/sync workflow steps; no planner/page/layout edits or package dependency changes.
-
-Interfaces: episodeVisuals JSON line, listenerQuestion JSON string and guest string supported by existing content schema and EpisodeRow. New reporter defaults to nonblocking warning/summary for uncurated imports. Do not alter RSS identity/title/body/date/audio.
-
-- [x] Verify image identities from official pages and inspect actual images before selecting crops; download and optimize originals without generating likenesses.
-- [x] Add concise description-grounded question per episode with sources and source excerpt.
-- [x] Implement metadata report in existing twice-daily sync and PR checks, with missing fields/slugs actionable, no automated factual invention.
-- [x] Run source completeness checks and compare before/after unchanged bodies and protected frontmatter.
-- [x] Commit only Task 2 files; report provenance, checks and any publication-side unverified boundary.
-
-### Integration and review
-
-- [x] Combine the two isolated commits on the resource worktree and inspect combined diff.
-- [x] Run npm test, npm run build, node scripts/check-episode-ui.mjs dist, and existing owned-form/build checks appropriate to changed files.
-- [x] Fresh reviewer checks both task scopes, spec compliance and overall quality; fix material findings before handoff.
-- [x] Verify real desktop/mobile UI, fictional/blank/print behavior, episode photos/questions, no unintended submissions/storage and old routes.
-- [x] Save screenshots and review summary; leave a concrete preview for Justin. No task self-approval or live deployment.
-
-## Remaining operator review
-
-- [ ] Justin reviews the revised styling and approves the live release.
-- [ ] A native device PDF/physical print output is inspected; screen snapshots and source print styles are verified separately.
+No fabricated mentions, endorsements, partnerships, eligibility or social outcomes. No new analytics, tools, subscriptions, donations, outreach or applications. Device PDF/physical print output is not claimed verified by browser-screen/source checks. User acceptance remains distinct from successful deployment.

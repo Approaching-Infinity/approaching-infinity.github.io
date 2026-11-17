@@ -1,14 +1,11 @@
 ---
-import styleUrl from "../../prototype/ask-the-show/style.css?url";
+import Layout from "../layouts/Layout.astro";
+import "../styles/ask-the-show.css";
 ---
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Ask questions across the Approaching Infinity archive, explore cited episode evidence and try free decision challenges."><link rel="canonical" href="https://approaching-infinity.github.io/ask-the-show/"><title>Ask the Show · Approaching Infinity</title><link rel="stylesheet" href={styleUrl}><script>import "../scripts/ask-show-public.js";</script></head>
-<body>
-  <a href="#question" class="skip">Skip to question</a>
-  <header class="topbar"><a class="brand" href="https://approaching-infinity.github.io/" target="_blank" rel="noopener noreferrer"><span class="infinity" aria-hidden="true">∞</span> Approaching Infinity</a><span class="private-tag">Free public pilot · <a href="/resources/">All resources</a></span></header>
-  <main class="shell" data-api-url="https://crm.limitlesslp.com/approaching-infinity-api">
-    <section class="intro"><p class="breadcrumb">From the conversation into your day.</p><h1>Ask the show.</h1><p class="intro-text">Explore an idea. Work through a question. Find a useful next step, with the episodes behind the answer.</p></section>
+<Layout title="Ask the Show · Approaching Infinity" description="Ask questions across the Approaching Infinity archive, explore cited episode evidence and try free decision challenges.">
+  <script>import "../scripts/ask-show-public.js";</script>
+  <div class="ask-show shell" data-api-url="https://crm.limitlesslp.com/approaching-infinity-api">
+    <section class="intro"><p class="breadcrumb"><a href="/resources/">Resources</a><span aria-hidden="true"> / </span>Ask the Show</p><h1>Ask the show.</h1><p class="intro-text">Explore an idea. Work through a question. Find a useful next step, with the episodes behind the answer.</p></section>
     <div class="workspace">
       <div class="main-column">
         <div class="mode-tabs" aria-label="Choose an experience"><button id="ask-tab" type="button" class="active" aria-pressed="true">Ask a question</button><button id="challenge-tab" type="button" aria-pressed="false">Try a decision challenge</button></div>
@@ -28,6 +25,6 @@ import styleUrl from "../../prototype/ask-the-show/style.css?url";
         <section class="privacy-panel"><h2>Keep personal details private.</h2><p>Your question, recent conversation and selected episode passages are sent to our AI provider to prepare an answer. We keep anonymous usage and technical records, not your question text or answers. A browser identifier tracks your free allowance. <a href="/privacy/#ask-the-show">How this works</a>.</p></section>
       </aside>
     </div>
-    <footer><span>Approaching Infinity · Learn from the conversation</span><p>Educational exploration. This tool does not recommend investments or provide financial, legal or tax advice. Sources and generated answers can contain errors.</p></footer>
-  </main>
-</body></html>
+    <p class="tool-note">AI-generated answers can contain errors. Open the episode sources to check the evidence.</p>
+  </div>
+</Layout>

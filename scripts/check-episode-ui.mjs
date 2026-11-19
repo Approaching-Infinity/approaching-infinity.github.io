@@ -7,7 +7,7 @@ const decode = s => s.replaceAll('&amp;', '&').replaceAll('&lt;', '<').replaceAl
 const audit = JSON.parse(await readFile('docs/episode-editorial-audit.json', 'utf8'));
 const reviewed = new Set(audit.map(x => x.slug));
 const files = (await readdir('src/content/episodes')).filter(f => f.endsWith('.md'));
-let curated = 0, absent = 0, images = 0, appearances = 0;
+let curated = 0, absent = 0, images = 0, appearances = 0, homeEpisodes = 0;
 const uniqueImages = new Set();
 for (const file of files) {
   const source = await readFile(`src/content/episodes/${file}`, 'utf8');
@@ -17,6 +17,13 @@ for (const file of files) {
   const row = index.match(new RegExp(`<a\\b[^>]*href="/episodes/${slug}/"[^>]*>[\\s\\S]*?</a>`));
   assert.ok(row, `${slug}: existing episode link retained`);
   assert.ok(!row[0].includes('<button'), `${slug}: no nested control in row link`);
+  const homeRow = home.match(new RegExp(`<a\\b[^>]*href="/episodes/${slug}/"[^>]*>[\\s\\S]*?</a>`));
+  if (homeRow) {
+    homeEpisodes++;
+    const title = JSON.parse(front.match(/^title: (.+)$/m)[1]);
+    assert.ok(decode(homeRow[0]).includes(title), `${slug}: current title rendered on homepage`);
+    if (questionLine) assert.ok(decode(homeRow[0]).includes(JSON.parse(questionLine[1])), `${slug}: homepage question rendered`);
+  }
   if (questionLine) {
     assert.ok(decode(row[0]).includes(JSON.parse(questionLine[1])), `${slug}: curated question rendered`);
     assert.ok(row[0].includes('Why listen'));
@@ -45,7 +52,7 @@ for (const file of files) {
     appearances++;
   }
 }
-assert.ok(home.includes('How do you protect your judgment when everything is going right?'));
+assert.equal(homeEpisodes, Math.min(4, files.length), 'homepage shows four current episode links');
 assert.ok(index.includes('<h1>All episodes</h1>'));
 assert.ok(!index.includes('High-signal conversations'));
 assert.ok(!/class="ep-list[^\"]*\breveal\b/.test(index));

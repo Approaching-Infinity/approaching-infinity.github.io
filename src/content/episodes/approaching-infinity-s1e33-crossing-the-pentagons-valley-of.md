@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity S1E33: Crossing the Pentagon’s Valley of Death (Defense) with Dr. Arun Seraphin"
+title: "Creating the Industrial Base of the Future"
 episodeNumber: 33
 description: "In this episode of Approaching Infinity, host Justin Roopnarine speaks with Dr. Arun Seraphin, Executive Director at the Emerging Technologies Institute. While the defense sector has opened more entry points for startups and private capital through innovation hubs like DIU and AFWERX, Dr. Seraphin explains that most commercial innovators still get stuck in the lobby after an initial pilot because"
 pubDate: 2026-11-18

@@ -1,6 +1,52 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { siteForms } from '../config/site';
-export function getStaticPaths() { return siteForms().review ? [{ params: { reviewPage: 'support' } }] : []; }
+import { siteSupport } from '../config/site';
+
+export function getStaticPaths() {
+  const { visible, checkoutUrl, review } = siteSupport();
+  return visible ? [{ params: { reviewPage: 'support' }, props: { checkoutUrl, review } }] : [];
+}
+
+const { checkoutUrl, review } = Astro.props;
 ---
-<Layout title="Support draft — Approaching Infinity" description="Local draft of business support terms for independent educational media." noindex={true}><section class="page-shell"><div class="wrap"><div class="page-heading"><h1>Support useful work.</h1><p>Draft for review. Payments are not open.</p></div><div class="prose"><h2>What support would fund</h2><p>Support for Approaching Infinity’s independent educational media could help fund production, free practical resources and free public learning sessions. We will describe the specific work and costs before asking for payment.</p><h2>Business support terms</h2><p>This would be support for an educational media business. It is not a charitable donation and is not represented as tax-deductible. Support would not purchase investment access, financial advice, editorial influence, a guest appearance or access to participant information.</p><h2>Sponsorship inquiries</h2><p>A sponsor could discuss underwriting a defined free resource or session, with clearly disclosed acknowledgment and written scope. No audience size, attendance, outcome or advertising result is promised. Editorial decisions remain independent.</p><p><a class="text-link" href="/contact/">Discuss a sponsorship</a></p><h2>Before payments open</h2><p>The operating entity, existing payment account, charge and payout readiness, receipt information and refund terms still require verification and owner approval. No checkout or payment link is active in this preview.</p></div></div></section></Layout>
+<Layout title="Support the show — Approaching Infinity" description="Leave a one-time tip for the Approaching Infinity podcast and see how listener support is used." noindex={review}>
+  <section class="page-shell">
+    <div class="wrap">
+      <div class="page-heading">
+        <h1>Support the show.</h1>
+        <p>Enjoyed an episode? Leave a one-time tip for the published Approaching Infinity podcast.</p>
+      </div>
+
+      <div class="prose">
+        {review && <p>{checkoutUrl ? 'Test checkout. Use a Stripe test card. No real money moves.' : 'Payments are not open.'}</p>}
+        <p>Tips are paid to <strong>Approaching Infinity Group LLC</strong>. No charitable tax deduction applies.</p>
+        <p>Tips help cover editing, captions, transcripts and other costs of producing the podcast and free educational resources.</p>
+        <p><a class="text-link" href="#use-of-support">How we use listener support</a></p>
+        {checkoutUrl && <p><a class="btn btn-red checkout-link" href={checkoutUrl}>{review ? 'Continue to Stripe test checkout' : 'Continue to Stripe'}</a></p>}
+        <p>For payment or refund questions, email <a href="mailto:service@limitlesslp.com">service@limitlesslp.com</a>. See how we handle <a href="/privacy/#payments">payment information</a>.</p>
+
+        <h2 id="use-of-support">How we use listener support</h2>
+        <dl class="mission-areas">
+          <div><dt>Ending poverty</dt><dd>Conversations and guides about expanding economic opportunity.</dd></div>
+          <div><dt>Veteran initiatives</dt><dd>Episodes and practical resources for life after military service.</dd></div>
+          <div><dt>Financial literacy</dt><dd>Plain-language explainers and free learning resources.</dd></div>
+        </dl>
+
+        <h2>Quarterly listener support reports</h2>
+        <p>After the first reporting period, we’ll publish gross tips, refunds, fees and disputes, and net listener support. Each report will show spending by mission area, shared production costs, opening and closing unspent support, and links to the work published.</p>
+        <p>We’ll reconcile totals to Stripe activity and the LLC’s books, date any corrections, and keep individual payment details private.</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .checkout-link { min-height: 44px; }
+  .checkout-link:focus-visible { outline: 2px solid var(--text); outline-offset: 4px; }
+  #use-of-support { scroll-margin-top: 5.5rem; }
+  .mission-areas { margin: 1rem 0; }
+  .mission-areas div { display: grid; grid-template-columns: minmax(0, 10rem) minmax(0, 1fr); gap: .25rem 1rem; padding-block: .65rem; border-top: 1px solid var(--line); }
+  .mission-areas dt { font-weight: 700; color: var(--text); }
+  .mission-areas dd { margin: 0; }
+  @media (max-width: 500px) { .mission-areas div { grid-template-columns: 1fr; } }
+</style>

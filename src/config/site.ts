@@ -12,3 +12,15 @@ export function siteForms() {
     GITHUB_ACTIONS: process.env.GITHUB_ACTIONS,
   });
 }
+
+export function siteSupport() {
+  const { review } = siteForms();
+  const testUrl = process.env.SUPPORT_TEST_CHECKOUT_URL?.trim() ?? '';
+  const liveUrl = process.env.SUPPORT_CHECKOUT_URL?.trim() ?? '';
+  const checkoutUrl = review
+    ? (/^https:\/\/buy\.stripe\.com\/test_[a-zA-Z0-9]+$/.test(testUrl) ? testUrl : undefined)
+    : (process.env.SUPPORT_CHECKOUT_APPROVED === 'true' && /^https:\/\/buy\.stripe\.com\/[a-zA-Z0-9]+$/.test(liveUrl)
+      ? liveUrl : undefined);
+
+  return { visible: review || Boolean(checkoutUrl), checkoutUrl, review };
+}

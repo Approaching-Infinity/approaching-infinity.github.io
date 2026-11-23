@@ -22,6 +22,8 @@ jobs:
       CONTACT_FORM_APPROVED: ${{ vars.CONTACT_FORM_APPROVED }}
       NEWSLETTER_FORM_URL: ${{ vars.NEWSLETTER_FORM_URL }}
       NEWSLETTER_FORM_APPROVED: ${{ vars.NEWSLETTER_FORM_APPROVED }}
+      SUPPORT_CHECKOUT_URL: ${{ vars.SUPPORT_CHECKOUT_URL }}
+      SUPPORT_CHECKOUT_APPROVED: ${{ vars.SUPPORT_CHECKOUT_APPROVED }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

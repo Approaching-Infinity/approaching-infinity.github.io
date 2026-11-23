@@ -1,3 +1,8 @@
+---
+import { siteSupport } from '../config/site';
+
+const { visible: showSupport } = siteSupport();
+---
 <section class="hero">
   <div class="hero-bg" aria-hidden="true">
     <div class="grid-lines"></div>
@@ -11,6 +16,7 @@
       <a class="btn btn-red" href="#listen">&#9654;&nbsp; Listen now</a>
       <a class="btn btn-ghost" href="/resources/">Explore free resources</a>
     </div>
+    {showSupport && <a class="hero-support reveal" href="/support/">Support the show <span aria-hidden="true">&rarr;</span></a>}
     <p class="hero-followup reveal"><a href="/contact/">Contact us</a><span aria-hidden="true"> · </span><a href="/newsletter/">Join the newsletter</a></p>
     <div class="hero-meta reveal">
       <span><i class="dot"></i> New episodes</span>
@@ -19,3 +25,9 @@
     </div>
   </div>
 </section>
+
+<style>
+  .hero-support { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; margin-top: .55rem; color: #ff777c; font-weight: 650; }
+  .hero-support:hover { text-decoration: underline; text-underline-offset: .2em; }
+  .hero-support:focus-visible { outline: 2px solid var(--text); outline-offset: 4px; }
+</style>

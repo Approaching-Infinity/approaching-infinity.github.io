@@ -13,6 +13,10 @@ guid: "8895d3d9-0dd3-4af4-a469-624b63266846"
 guest: "Anthony C. Taylor"
 listenerQuestion: "What turns a two-day strategic planning session into years of focused execution?"
 episodeVisuals: [{"src": "/guests/anthony-taylor-official.webp", "alt": "Anthony C. Taylor", "kind": "portrait", "position": "center 15%", "zoom": 1.6}]
+spotifyUrl: https://open.spotify.com/episode/7GzOzpRvclpH9prItVtQsz
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e31-2-days-planning-1-100-days/id1641001955?i=1000801505850
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/fa38dcc5-cfba-4e9d-a7ad-328570f2611a/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e31-2-days-planning-1-100-days-execution-with-anthony-c-taylor
+youtubeUrl: https://www.youtube.com/watch?v=tGJKi30krcA
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Anthony Taylor, Chief Executive Officer at SME Strategy Consulting, to examine what separates high-performing leadership teams from those that struggle to execute. Taylor shares his perspective on the mechanics of strategic alignment, explaining why moving from implied assumptions to explicit clarity is vital for turning long-term vision into measurable outcomes.

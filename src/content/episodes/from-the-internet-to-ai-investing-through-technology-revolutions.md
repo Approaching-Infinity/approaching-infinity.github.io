@@ -13,6 +13,10 @@ artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be4969
 #   youtubeUrl / youtubeId         (if a full-episode video is posted)
 listenerQuestion: "How can investors distinguish durable technology adoption from temporary market hype?"
 episodeVisuals: [{"src": "/guests/jeff-camp-official.webp", "alt": "Jeff Camp", "kind": "portrait", "position": "center 15%", "zoom": 1}]
+spotifyUrl: https://open.spotify.com/episode/5YH6g7W1I1yOS0e64Lv0Mb
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e26-from-the-internet-to-ai/id1641001955?i=1000777827586
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/73c6de29-5e4e-49a0-8608-af81d550ee0b/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e26-from-the-internet-to-ai-investing-through-technology-revolutions-with-jeff-camp
+youtubeUrl: https://www.youtube.com/watch?v=6b8xQpNAmLk
 ---
 
 In this episode of Approaching Infinity, we are honored to host Jeff Camp, Founder & CEO at JC Venture Capital, an investor with an extraordinary 35 year career spanning Morgan Stanley in Tokyo and co founding a long short equity fund in London. Jeff’s journey has given him a front row seat to multiple technological revolutions, where he developed a probability based framework for distinguishing long term value from temporary market hype.

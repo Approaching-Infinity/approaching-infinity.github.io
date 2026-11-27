@@ -10,7 +10,7 @@ duration: "34 min"
 youtubeUrl: https://www.youtube.com/watch?v=iPy3TqFXIZU
 spotifyUrl: https://open.spotify.com/episode/0RZc6SbbJSREJRI233jihS
 appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity/id1641001955?i=1000802659536
-amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/8de2809a-dbc4-4e57-86ca-5d46db56c8f1/approaching-infinity--approaching-infinity-s1e33-crossing-the-pentagons-valley-of-death-defense-with-dr-arun-seraphin
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/8de2809a-dbc4-4e57-86ca-5d46db56c8f1/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e33-creating-the-industrial-base-of-the-future-with-dr-arun-seraphin
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/129668040/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-18%2F437036783-44100-2-deb9df8fc3bb88.mp3
 artwork: https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/28576498/28576498-1793488047582-4f09899aa7d1e.jpg
 guid: "e4861d1d-e2bb-4662-a21a-920dcb6e52c3"

@@ -14,6 +14,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/106348943/https%3A%2F%2Fd3ct
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can veterans and aspiring technologists find a pathway into cleared technology careers?"
 episodeVisuals: [{"src": "/guests/zera-techbridge-episode.webp", "alt": "Zera TechBridge episode artwork", "kind": "episode-artwork", "position": "center", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/0ea6b8d9-4333-445a-ba7d-6c1f542ede38/approaching-infinity-%F0%9F%9A%80-the-clearance-pathway-launching-the-next-generation-of-tech-patriots-with-zera-techbridge
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Andrew Devon Stephenson, Don Randall, and Evan Mills from Zera TechBridge to examine the widening technical talent gap across the Department of Defense and federal government agencies. Stephenson explains that the rapid acceleration of technology, particularly in artificial intelligence and cloud computing, has outpaced traditional workforce pipeline capacities. This gap leaves critical national security roles unfilled across uniform, civilian, and contractor sectors.

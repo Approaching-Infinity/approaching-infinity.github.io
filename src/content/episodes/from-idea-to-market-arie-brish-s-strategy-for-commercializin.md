@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/83017816/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How do you turn a technology idea into innovation that addresses real customer needs?"
 episodeVisuals: [{"src": "/guests/arie-brish-official.webp", "alt": "Arie Brish", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/07578873-018d-4358-81b8-ea58d68d02ea/approaching-infinity-%F0%9F%9A%80-from-idea-to-market-arie-brish's-strategy-for-commercializing-innovation
 ---
 
 In this episode of Approaching Infinity, we are honored to host Arie Brish, a renowned expert in the realm of business innovation and strategy. Arie delves into the critical importance of execution in innovation, sharing insights drawn from both historical successes and his vast experience. He sheds light on the distinction between technology and true innovation, emphasizing the necessity of understanding customer needs to achieve success.

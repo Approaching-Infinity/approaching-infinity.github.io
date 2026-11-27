@@ -14,6 +14,10 @@ guid: "d31d0dd8-3028-4b8e-9d41-50e41849e570"
 listenerQuestion: "When do static compliance checklists need to become continuously monitored processes?"
 episodeVisuals: [{"src": "/shows/innovation-in-compliance.webp", "alt": "Innovation in Compliance with Tom Fox podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
 guestAppearance: {"show": "Innovation in Compliance with Tom Fox", "host": "Tom Fox", "url": "https://podcasts.apple.com/us/podcast/from-checklists-to-dynamic-compliance-systems-with/id1356603588?i=1000779817893"}
+spotifyUrl: https://open.spotify.com/episode/6YxP6GlsexFLaTFjnHH81c
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-beyond-the-static-checklist/id1641001955?i=1000783911102
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/178d3fe6-26c7-4360-b9cf-5cf5aef4f037/approaching-infinity-%F0%9F%9A%80-approaching-infinity-beyond-the-static-checklist-algorithmic-auditing-and-modern-compliance
+youtubeUrl: https://www.youtube.com/watch?v=a7W_nO512F0
 ---
 
 I was a guest on the Compliance Podcast Network, hosted by Tom Fox. Re-uploading here with credit to Tom and his team so our audience can catch it.

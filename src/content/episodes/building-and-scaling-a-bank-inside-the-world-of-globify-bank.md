@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/69691361/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What experience does Giulio Sartori bring to banking from investing and medical-device development?"
 episodeVisuals: [{"src": "/guests/approaching-infinity-logo.webp", "alt": "Approaching Infinity logo", "kind": "episode-artwork", "position": "center", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/72317eed-c14f-4277-95ba-52d96f88ba11/approaching-infinity-%F0%9F%9A%80-building-and-scaling-a-bank-inside-the-world-of-globify-bank-with-giulio-sartori
 ---
 
 In this episode of Approaching Infinity, we have Giulio Sartori a partner and project manager at Globify Bank in Zurich, Switzerland. He was also the group CEO at Globify Holding, a privately held investment fund based in New York, which focuses on high-yield real estate and other companies with long-term growth potential.

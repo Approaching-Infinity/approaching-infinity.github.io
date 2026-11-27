@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/74405379/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What can a military-to-finance transition teach veterans planning their next career?"
 episodeVisuals: [{"src": "/guests/jerry-majetich-official.webp", "alt": "Jerry Majetich", "kind": "portrait", "position": "center 15%", "zoom": 1.5}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/eb935679-424d-4cd9-b181-7a1d697874b2/approaching-infinity-%F0%9F%9A%80-from-frontlines-to-finance-a-tale-of-bravery-recovery-and-empowerment-with-jerry-majetich-of-drexel-hamilton
 ---
 
 In this episode of Approaching Infinity, we're honored to have Jerry Majetich, Vice President of Business Development & Veteran Initiatives at Drexel Hamilton, a man whose remarkable military and professional journey is the epitome of resilience and dedication.

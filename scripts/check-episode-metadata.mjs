@@ -20,9 +20,10 @@ export function missingCuratedMetadata(text) {
   const visuals = value('episodeVisuals');
   if ((/^guestAppearance:/m.test(front) || (Array.isArray(visuals) && visuals.some(v => v?.kind === 'show'))) &&
       !(appearance?.show && appearance?.host && appearance?.url)) missing.push('guestAppearance show/host/url credit');
-  const question = value('listenerQuestion');
+  const question = value('listenerQuestion') ?? value('listenerSummary');
   if (typeof question !== 'string' || !question.trim()) missing.push('listenerQuestion');
-  if (!Array.isArray(visuals) || !visuals.length || visuals.some(v => !v?.src || !v?.alt)) missing.push('episodeVisuals');
+  const publisherArtwork = /^artwork: https:\/\/\S+$/m.test(front);
+  if ((!Array.isArray(visuals) || !visuals.length) ? !publisherArtwork : visuals.some(v => !v?.src || !v?.alt)) missing.push('episodeVisuals');
   return missing;
 }
 

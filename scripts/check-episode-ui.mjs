@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { readdir, readFile, stat } from 'node:fs/promises';
+import { listeningPlatforms } from '../src/data/platforms.mjs';
 const dir = process.argv[2] || 'dist';
 const index = await readFile(`${dir}/episodes/index.html`, 'utf8');
 const home = await readFile(`${dir}/index.html`, 'utf8');
@@ -12,7 +13,7 @@ const uniqueImages = new Set();
 for (const file of files) {
   const source = await readFile(`src/content/episodes/${file}`, 'utf8');
   const front = source.split('---')[1];
-  const questionLine = front.match(/^listenerQuestion: (.+)$/m);
+  const questionLine = front.match(/^listenerQuestion: (.+)$/m) ?? front.match(/^listenerSummary: (.+)$/m);
   const slug = file.slice(0, -3);
   const row = index.match(new RegExp(`<a\\b[^>]*href="/episodes/${slug}/"[^>]*>[\\s\\S]*?</a>`));
   assert.ok(row, `${slug}: existing episode link retained`);
@@ -31,10 +32,17 @@ for (const file of files) {
   } else { assert.ok(!row[0].includes('ep-insight')); absent++; }
   const expected = JSON.parse(front.match(/^episodeVisuals: (.+)$/m)?.[1] ?? '[]');
   const actual = [...row[0].matchAll(/<img[^>]*src="([^\"]+)"[^>]*alt="([^\"]+)"/g)];
-  assert.equal(actual.length, expected.length, `${slug}: every curated image and no fabricated extra`);
+  const publisherArt = front.match(/^artwork: (https:\/\/\S+)$/m)?.[1];
+  assert.equal(actual.length, expected.length || (publisherArt ? 1 : 0), 'Every curated or publisher image is rendered for ' + slug);
   if (reviewed.has(slug)) assert.ok(expected.length && questionLine, `${slug}: complete approved archive row`);
   for (let i = 0; i < actual.length; i++) {
     const [, src, alt] = actual[i];
+    if (!expected.length) {
+      assert.equal(decode(src), publisherArt);
+      assert.equal(alt, 'Episode cover art');
+      images++;
+      continue;
+    }
     assert.equal(decode(alt), expected[i].alt);
     assert.ok(src.startsWith('/_astro/') && src.endsWith('.webp'));
     assert.ok((await stat(`${dir}${src}`)).size < 60000, `${slug}: compact optimized image`);
@@ -43,6 +51,24 @@ for (const file of files) {
   const appearance = front.match(/^guestAppearance: (.+)$/m);
   const detail = await readFile(`${dir}/episodes/${slug}/index.html`, 'utf8');
   assert.ok(!/class="prose[^\"]*\breveal\b/.test(detail), `${slug}: long notes must not remain hidden by animation threshold`);
+  const platforms = detail.match(/<nav class="episode-platforms"[^>]*>[^]*?<\/nav>/)?.[0] ?? '';
+  assert.ok(platforms, 'Every episode has platform navigation');
+  const field = name => front.match(new RegExp('^' + name + ': (.+)$', 'm'))?.[1]?.replace(/^"|"$/g, '');
+  const expectedPlatformUrls = {
+    apple: field('appleUrl'),
+    amazon: field('amazonUrl'),
+    spotify: field('spotifyEpisodeId') ? 'https://open.spotify.com/episode/' + field('spotifyEpisodeId') : field('spotifyUrl'),
+    youtube: field('youtubeUrl') ?? (field('youtubeId') ? 'https://www.youtube.com/watch?v=' + field('youtubeId') : undefined),
+  };
+  for (const platform of listeningPlatforms) {
+    const direct = expectedPlatformUrls[platform.id];
+    if (platform.id === 'youtube' && (!direct || direct === platform.url)) {
+      assert.ok(!platforms.includes(platform.icon), 'No video icon without a verified full video for ' + slug);
+      continue;
+    }
+    assert.ok(decode(platforms).includes('href="' + (direct ?? platform.url) + '"'), 'Correct platform destination for ' + slug);
+    assert.ok(platforms.includes(platform.icon), 'Platform icon for ' + slug);
+  }
   if (appearance) {
     const credit = JSON.parse(appearance[1]);
     assert.ok(decode(row[0]).includes(`Justin featured on ${credit.show}`));

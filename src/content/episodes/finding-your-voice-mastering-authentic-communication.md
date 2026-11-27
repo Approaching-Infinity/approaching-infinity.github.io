@@ -14,6 +14,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/104743661/https%3A%2F%2Fd3ct
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can founders turn complex investor material into a story their audience can follow?"
 episodeVisuals: [{"src": "/guests/tom-cobin-official.webp", "alt": "Tom Cobin", "kind": "portrait", "position": "center 35%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/04032ebc-ee3b-4170-955c-c43eb45dc96d/approaching-infinity-%F0%9F%9A%80-finding-your-voice-mastering-authentic-communication-with-tom-cobin
 ---
 
 This episode welcomes Tom Cobin, the founder of Dynamicoach, for a conversation on communication mastery. Bringing experience from television newsrooms and pharmaceutical boardrooms, Cobin shares his approach to helping leaders elevate their presence.

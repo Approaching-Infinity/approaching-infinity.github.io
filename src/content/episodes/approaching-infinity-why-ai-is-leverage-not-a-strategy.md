@@ -14,6 +14,10 @@ guid: "5f5cf652-f097-44c8-8834-622bb3d7088e"
 listenerQuestion: "Which decisions should remain under human control when AI becomes part of an investment process?"
 episodeVisuals: [{"src": "/shows/ai-data-driven-leadership.webp", "alt": "AI & Data Driven Leadership podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
 guestAppearance: {"show": "AI & Data Driven Leadership", "host": "Dean Guida", "url": "https://podcasts.apple.com/us/podcast/ai-data-driven-leadership/id1784508781"}
+spotifyUrl: https://open.spotify.com/episode/3fK9PpaoL2tle2jPrrlVAr
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-why-ai-is-leverage-not-a/id1641001955?i=1000784632761
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/debfd39f-6e4e-47e2-9039-755304f52433/approaching-infinity-%F0%9F%9A%80-approaching-infinity-why-ai-is-leverage-not-a-strategy-navigating-uncertainty-in-modern-asset-with-dean-guida
+youtubeUrl: https://www.youtube.com/watch?v=jlUkJZB0vfY
 ---
 
 I was a guest on the AI & Data Driven Leadership Podcast, hosted by Dean Guida. Re-uploading here with credit to Dean and his team so our audience can catch it.

@@ -14,6 +14,10 @@ guid: "9854f1d1-5e54-4f49-a076-c0d1f5c7d2a2"
 listenerQuestion: "How can engineering discipline help leaders control exposure instead of trying to predict outcomes?"
 episodeVisuals: [{"src": "/shows/iam-ceo.webp", "alt": "CEO Podcasts: CEO Chat Podcast + I AM CEO Podcast Powered by Blue16 Media & CBNation.co podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
 guestAppearance: {"show": "I AM CEO Podcast", "host": "Gresh W. Harkless Jr.", "url": "https://podcasts.apple.com/us/podcast/ceo-podcasts-ceo-chat-podcast-i-am-ceo-podcast-powered/id1079021199"}
+spotifyUrl: https://open.spotify.com/episode/78yuo7JNuuCVYg2uyZ3Y5j
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-ceo-responsibility-engineering/id1641001955?i=1000791971585
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/5604186f-8e84-468d-95dd-4c3d875fa0ba/approaching-infinity-%F0%9F%9A%80-approaching-infinity-ceo-responsibility-engineering-discipline-risk-control-with-gresh-harkless
+youtubeUrl: https://www.youtube.com/watch?v=0J043jR_DHw
 ---
 
 I was a guest on the I AM CEO Podcast, hosted by Gresh W. Harkless Jr. Re-uploading here with credit to Gresh and his team so our audience can catch it.

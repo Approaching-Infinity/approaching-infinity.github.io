@@ -9,3 +9,9 @@ Six bonus records are Justin guest appearances: Success Story/Scott D. Clary; I 
 Real photos/provenance in guest-portrait-sources.json. Solo1–2use approved owner headshot. Ep12both guests; ep23exact episode artwork with all guests; ep4current show logo (correct headshot unavailable, no guessed identity). Full original files stay in local research; only optimized304px WebP source assets in public repo. No generated mock portrait pixels, private Drive identifiers or runtime hotlinks. Bounded crop/zoom,76px desktop/44px mobile. Future absent metadata retains number-only row; declared missing asset fails build rather than silently misidentifying.
 
 Library play icon: Bootstrap Icons https://icons.getbootstrap.com/icons/play-fill/ with upstream MIT license retained. Provider/arrow sources and licenses adjacent under public/icons/platforms. No handcrafted symbols or new CDN/dependency.
+
+## New releases
+
+The scheduled RSS workflow builds each new page from the published feed. It displays publisher episode art, or the show logo when the feed has no art. Why listen uses an excerpt from the published notes. A locally curated portrait and question take precedence when supplied. The importer retains paragraphs, linked bullets and section breaks.
+
+Later runs fill missing Apple Podcasts and Spotify episode links from their public catalogs. YouTube requires a unique title match in the show's public full-video feed. The Amazon Music show link stays available until a verified episode URL is recorded. When there is no verified full-length YouTube video, the episode page keeps the audio options.

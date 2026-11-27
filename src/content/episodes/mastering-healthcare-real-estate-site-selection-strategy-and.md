@@ -14,6 +14,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/95759656/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can a healthcare practice expand when costs rise but reimbursements stay capped?"
 episodeVisuals: [{"src": "/guests/austin-hair-official.webp", "alt": "Austin Hair", "kind": "portrait", "position": "center 28%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/ed93f43a-eec0-4383-aeeb-0a45c95ca3fc/approaching-infinity-%F0%9F%9A%80-mastering-healthcare-real-estate-site-selection-strategy-and-success-with-austin-hair
 ---
 
 In this episode of Approaching Infinity, we are honored to host Austin Hair, Managing Partner at Leaders Real Estate, who is widely known for pioneering a unique real estate model that helps healthcare organizations scale sustainably. Austin's journey from a world-class professional wakeboarding career to managing complex commercial developments is a story of tactical pivots, financial discipline, and structural risk mitigation.

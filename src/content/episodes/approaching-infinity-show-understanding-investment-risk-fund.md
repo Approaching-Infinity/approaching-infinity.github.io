@@ -16,6 +16,7 @@ featured: true
 listenerQuestion: "How does a risk-first approach shape a fund's investment thesis?"
 episodeVisuals: [{"src": "/shows/thoughtful-entrepreneur.webp", "alt": "The Thoughtful Entrepreneur podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
 guestAppearance: {"show": "The Thoughtful Entrepreneur", "host": "Josh Elledge", "url": "https://podcasts.apple.com/us/podcast/2427-a-veterans-guide-to-growing-wealth-beyond/id1394227396?i=1000767964758"}
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/8dd32ed6-1ff2-4b48-a825-d908743ea98d/approaching-infinity-%F0%9F%9A%80-approaching-infinity-the-thoughtful-entrepreneur-understanding-risk-fund-management-style
 ---
 
 I was a guest on **The Thoughtful Entrepreneur**, episode 2427, hosted by Josh Elledge. Re-uploading here with credit to Josh and his team so our audience can catch it.

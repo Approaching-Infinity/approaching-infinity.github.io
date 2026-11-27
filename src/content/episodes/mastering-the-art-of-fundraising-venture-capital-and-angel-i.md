@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/61240913/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What should a founder understand about the process of raising angel and venture capital?"
 episodeVisuals: [{"src": "/guests/tim-cooley-official.webp", "alt": "Tim Cooley", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/1f75a1d8-4f83-48e5-ba5b-f050d2f3e31f/approaching-infinity-%F0%9F%9A%80-mastering-the-art-of-fundraising-venture-capital-and-angel-investing-insights-with-tim-cooley
 ---
 
 In this episode of Approaching Infinity, we delve into the entrepreneurial world with Tim Cooley, a seasoned entrepreneur and trusted adviser to hundreds of burgeoning start-ups.

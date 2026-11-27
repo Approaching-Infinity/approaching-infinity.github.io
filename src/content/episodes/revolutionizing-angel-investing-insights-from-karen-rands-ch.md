@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/72734595/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How does angel investing connect entrepreneurial success with wealth creation?"
 episodeVisuals: [{"src": "/guests/karen-rands-official.webp", "alt": "Karen Rands", "kind": "portrait", "position": "center 15%", "zoom": 1.5}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/902483d7-f958-4152-b34d-423083570476/approaching-infinity-%F0%9F%9A%80-revolutionizing-angel-investing-insights-from-karen-rands-champion-of-compassionate-capitalism
 ---
 
 In this episode of Approaching Infinity, we welcome Karen Rands, President of Kugarand Capital Holdings, a seasoned business consultant, strategic advisor, and passionate advocate of the Compassionate Capitalist Movement. With over two decades of experience working with diverse stakeholders, from entrepreneurs and angel investors to venture capitalists, Karen offers a unique insight into the mechanisms of successful investment and business growth.

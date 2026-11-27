@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/76533083/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can a veteran's service values shape a later career in business and philanthropy?"
 episodeVisuals: [{"src": "/guests/david-kim-official.webp", "alt": "David Kim", "kind": "portrait", "position": "center 15%", "zoom": 1.6}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/eefe4cbd-bb8a-426a-8dc6-ac7df433383b/approaching-infinity-%F0%9F%9A%80-continuing-the-call-of-duty-david-kim%E2%80%99s-tale-of-valor-venture-and-virtue
 ---
 
 In this episode of Approaching Infinity, we are honored to host Mr. David Kim, a decorated military veteran and a formidable presence in the global business arena. David's exemplary life, shaped by his personal motto - God, country, family, displays a transition from distinguished military service to an entrepreneur and philanthropist with a significant imprint in global business ventures.

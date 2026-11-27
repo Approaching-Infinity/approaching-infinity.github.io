@@ -21,6 +21,7 @@
   "devDependencies": {
     "entities": "4.5.0",
     "fast-xml-parser": "^5.11.1",
+    "playwright": "1.65.1",
     "ultrahtml": "1.7.0"
   },
   "engines": {

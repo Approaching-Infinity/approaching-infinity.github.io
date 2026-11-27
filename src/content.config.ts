@@ -32,7 +32,7 @@ const episodes = defineCollection({
     youtubeUrl: z.string().url().optional(),
     amazonUrl: z.string().url().optional(),
     // Inline player sources (optional). youtubeId -> video embed; audioUrl -> audio player.
-    youtubeId: z.string().optional(),
+    youtubeId: z.string().regex(/^[a-zA-Z0-9_-]{11}$/).optional(),
     spotifyEpisodeId: z.string().optional(),
     audioUrl: z.string().url().optional(),
     artwork: z.string().url().optional(),

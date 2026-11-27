@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import { resolveEpisodeVisuals } from '../../lib/episode-visuals';
 import { siteSupport } from '../../config/site';
-import { listeningHub, listeningPlatforms } from '../../data/platforms.mjs';
+import { listeningHub, listeningPlatforms, youtubeVideoId } from '../../data/platforms.mjs';
 
 export async function getStaticPaths() {
   const eps = await getCollection('episodes');
@@ -19,16 +19,14 @@ const dateStr = d.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 
 const pageTitle = `${d.title} — Approaching Infinity`;
 const num = d.bonus ? '★' : String(d.episodeNumber).padStart(2, '0');
 
-// Inline player sources. "Listen" (native audio) is the on-brand default; Apple is per-episode
-// (we hold the ids); Spotify falls back to the show player until per-episode ids are added;
-// "Watch" (YouTube) shows when a video is matched.
 const appleEmbed = d.appleUrl ? d.appleUrl.replace('podcasts.apple.com', 'embed.podcasts.apple.com') : null;
 const spotifyEmbed = d.spotifyEpisodeId
   ? `https://open.spotify.com/embed/episode/${d.spotifyEpisodeId}`
   : d.spotifyUrl
     ? d.spotifyUrl.replace('open.spotify.com/', 'open.spotify.com/embed/')
     : null;
-const ytEmbed = d.youtubeId ? `https://www.youtube-nocookie.com/embed/${d.youtubeId}` : null;
+const videoId = youtubeVideoId(d.youtubeUrl) ?? d.youtubeId;
+const ytEmbed = videoId ? 'https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1' : null;
 
 const tabs = [];
 if (ytEmbed) tabs.push({ key: 'watch', label: 'Watch', kind: 'video', src: ytEmbed });
@@ -103,12 +101,15 @@ const platforms = listeningPlatforms.flatMap(platform => {
                     </div>
                   </div>
                 ) : t.kind === 'video' ? (
+                  <button type="button" class="video-poster" data-play-video aria-label={'Play video: ' + d.title}>
+                    <img src={'https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg'} alt="" width="480" height="360" />
+                    <span class="video-play-icon"><img src="/icons/play-fill.svg" alt="" width="26" height="26" /></span>
+                  </button>
                   <iframe
-                    src={t.key === defKey ? t.src : undefined}
                     data-src={t.src}
                     title={d.title}
-                    loading="lazy"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    hidden
+                    allow="autoplay; encrypted-media; picture-in-picture"
                     allowfullscreen></iframe>
                 ) : (
                   <iframe
@@ -180,6 +181,30 @@ const platforms = listeningPlatforms.flatMap(platform => {
   .episode-platforms a:hover { background: var(--surface-2); }
   .episode-platforms img { width: 20px; height: 20px; object-fit: contain; }
   .episode-platforms img[src$="applepodcasts.svg"] { border-radius: 4px; background: #fff; }
+  .video-poster {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: #000;
+    cursor: pointer;
+  }
+  .video-poster[hidden], .player-16x9 iframe[hidden] { display: none; }
+  .video-poster > img { width: 100%; height: 100%; object-fit: cover; }
+  .video-play-icon {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 68px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--red);
+  }
+  .video-poster:hover .video-play-icon { filter: brightness(1.18); }
+  .video-poster:focus-visible { outline-offset: -5px; }
   .episode-show-notes :global(li) { margin: .18rem 0; }
   @media (max-width: 600px) {
     .episode-platforms { padding-block: .8rem; }
@@ -198,6 +223,15 @@ const platforms = listeningPlatforms.flatMap(platform => {
   document.querySelectorAll('[data-player]').forEach(function (player) {
     var tabs = player.querySelectorAll('.tab');
     var panels = player.querySelectorAll('.tab-panel');
+    var poster = player.querySelector('[data-play-video]');
+    var video = player.querySelector('.player-16x9 iframe');
+    poster?.addEventListener('click', function () {
+      if (!(poster instanceof HTMLButtonElement) || !(video instanceof HTMLIFrameElement) || !video.dataset.src) return;
+      video.src = video.dataset.src;
+      video.hidden = false;
+      poster.hidden = true;
+      video.focus();
+    });
     tabs.forEach(function (tab) {
       tab.addEventListener('click', function () {
         var key = tab.getAttribute('data-tab');
@@ -209,9 +243,16 @@ const platforms = listeningPlatforms.flatMap(platform => {
         panels.forEach(function (panel) {
           var on = panel.getAttribute('data-panel') === key;
           panel.classList.toggle('is-active', on);
-          if (on) {
-            var frame = panel.querySelector('iframe');
-            if (frame && !frame.getAttribute('src') && frame.dataset.src) frame.src = frame.dataset.src;
+          var frame = panel.querySelector('iframe');
+          if (!on) {
+            panel.querySelector('audio')?.pause();
+            frame?.removeAttribute('src');
+            if (frame && frame === video && poster instanceof HTMLButtonElement) {
+              frame.hidden = true;
+              poster.hidden = false;
+            }
+          } else if (frame && frame !== video && !frame.getAttribute('src') && frame.dataset.src) {
+            frame.src = frame.dataset.src;
           }
         });
       });

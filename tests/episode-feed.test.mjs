@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { episodeNotes } from '../scripts/episode-feed-content.mjs';
-import { publicAppleEpisodes, publicSpotifyEpisodes, publicYouTubeEpisodes } from '../scripts/episode-catalog.mjs';
+import { publicAmazonEpisodes, publicAppleEpisodes, publicSpotifyEpisodes, publicYouTubeEpisodes } from '../scripts/episode-catalog.mjs';
 
 test('feed notes retain bullets, section separation and safe links', () => {
   const notes = episodeNotes('<p>In this episode the host interviews the team.</p>' +
@@ -32,4 +32,19 @@ test('catalogs expose only active episode IDs and skip Shorts and ambiguous uplo
     yt('abcdefghijk', 'Approaching Infinity S1E31: The episode') +
     yt('abcdefghijl', 'A Short', 'shorts/') + '</feed>')], [['theepisode', 'https://www.youtube.com/watch?v=abcdefghijk']]);
   assert.equal(publicYouTubeEpisodes('<feed>' + yt('abcdefghijk', 'Same Title') + yt('abcdefghijl', 'Same Title') + '</feed>').get('sametitle'), null);
+});
+
+test('Amazon accepts only uniquely matched episode links from the exact show', () => {
+  const prefix = 'https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/';
+  const link = prefix + '8de2809a-dbc4-4e57-86ca-5d46db56c8f1/arun';
+  const title = 'Approaching Infinity S1E33: Creating the Industrial Base of the Future';
+  const first = { title, url: link };
+  assert.deepEqual([...publicAmazonEpisodes([
+    first, { title, url: link + '?ref=another-placement' },
+    { title: 'Different show', url: link.replace('26d3fcae', '00000000') },
+    { title: 'Different domain', url: link.replace('music.amazon.com', 'example.com') },
+  ])], [['creatingtheindustrialbaseofthefuture', link]]);
+  assert.equal(publicAmazonEpisodes([first, {
+    title, url: prefix + 'ace52fc3-51f7-496f-922e-fcbded934b8b/other',
+  }]).get('creatingtheindustrialbaseofthefuture'), null);
 });

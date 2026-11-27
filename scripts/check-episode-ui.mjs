@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { readdir, readFile, stat } from 'node:fs/promises';
-import { listeningPlatforms } from '../src/data/platforms.mjs';
+import { listeningPlatforms, youtubeVideoId } from '../src/data/platforms.mjs';
 const dir = process.argv[2] || 'dist';
 const index = await readFile(`${dir}/episodes/index.html`, 'utf8');
 const home = await readFile(`${dir}/index.html`, 'utf8');
@@ -60,6 +60,14 @@ for (const file of files) {
     spotify: field('spotifyEpisodeId') ? 'https://open.spotify.com/episode/' + field('spotifyEpisodeId') : field('spotifyUrl'),
     youtube: field('youtubeUrl') ?? (field('youtubeId') ? 'https://www.youtube.com/watch?v=' + field('youtubeId') : undefined),
   };
+  const videoId = youtubeVideoId(field('youtubeUrl')) ?? field('youtubeId');
+  if (videoId) {
+    assert.ok(detail.includes('data-panel="watch"') && detail.includes('data-play-video'), 'Video poster for ' + slug);
+    assert.ok(detail.includes('youtube-nocookie.com/embed/' + videoId + '?autoplay=1'), 'Correct video, loaded on play, for ' + slug);
+    assert.match(detail, /class="tab-panel player-16x9 is-active"[^>]*data-panel="watch"/);
+  } else {
+    assert.ok(!detail.includes('data-panel="watch"'), 'Audio-only page for ' + slug);
+  }
   for (const platform of listeningPlatforms) {
     const direct = expectedPlatformUrls[platform.id];
     if (platform.id === 'youtube' && (!direct || direct === platform.url)) {

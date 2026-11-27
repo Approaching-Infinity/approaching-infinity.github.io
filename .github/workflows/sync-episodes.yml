@@ -40,7 +40,7 @@ jobs:
         run: npm ci
 
       - name: Sync episodes from the feed
-        run: node scripts/sync-episodes.mjs
+        run: node scripts/sync-episodes.mjs ${{ github.ref != 'refs/heads/main' && '--dry-run' || '' }}
 
       - name: Report episodes needing editorial review
         run: node scripts/check-episode-metadata.mjs

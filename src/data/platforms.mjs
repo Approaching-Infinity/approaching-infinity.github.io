@@ -6,3 +6,14 @@ export const listeningPlatforms = [
   { id: 'amazon', name: 'Amazon Music', action: 'Listen on Amazon', icon: '/icons/platforms/amazonmusic.svg', url: 'https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/approaching-infinity' },
 ];
 export const listeningHub = 'https://linktr.ee/approachinginfinityshow';
+
+export function youtubeVideoId(value) {
+  const url = URL.parse(value ?? '');
+  if (!url || url.protocol !== 'https:' || url.username || url.password) return undefined;
+  const id = url.origin === 'https://youtu.be'
+    ? url.pathname.slice(1)
+    : url.origin === 'https://www.youtube.com' && url.pathname === '/watch'
+      ? url.searchParams.get('v')
+      : null;
+  return id && /^[a-zA-Z0-9_-]{11}$/.test(id) ? id : undefined;
+}

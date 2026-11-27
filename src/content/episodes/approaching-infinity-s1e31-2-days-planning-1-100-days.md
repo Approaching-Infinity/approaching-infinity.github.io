@@ -27,12 +27,28 @@ Organizational culture and interpersonal trust serve as the foundation for durab
 
 For evaluators, boards, and leaders assessing management teams, Taylor warns that toxic positivity, evasiveness, and an inability to articulate priorities succinctly are critical warning signs of internal misalignment. A capable leadership team can clearly communicate its direction, define measurable outcomes, and make difficult operational calls directly. Ultimately, Taylor emphasizes that organizational excellence requires moving every expectation, metric, and strategic priority from implied to explicit.
 
-Support and Connect with Anthony
+## Support and connect with Anthony
 
-LinkedIn: https://www.linkedin.com/in/anthonyctaylor604/SME Strategy Consulting: https://www.smestrategy.net/Apple Podcast: https://podcasts.apple.com/ca/podcast/the-strategy-and-leadership-podcast-with-anthony-c-taylor/id1202449526Facebook: https://www.facebook.com/Smestrategy/X: https://x.com/anthonyctaylorInstagram: https://www.instagram.com/smestrategyconsulting/Follow Approaching Infinity
+- [LinkedIn](https://www.linkedin.com/in/anthonyctaylor604/)
+- [SME Strategy Consulting](https://www.smestrategy.net/)
+- [Apple Podcast](https://podcasts.apple.com/ca/podcast/the-strategy-and-leadership-podcast-with-anthony-c-taylor/id1202449526)
+- [Facebook](https://www.facebook.com/Smestrategy/)
+- [X](https://x.com/anthonyctaylor)
+- [Instagram](https://www.instagram.com/smestrategyconsulting/)
 
-YouTube: @approachinginfinityshowInstagram: @approachinginfinityshowTikTok: @approachinginfinityshowX: @Justin_777_LinkedIn: linkedin.com/company/approaching-infinityFacebook: Approaching InfinityHosted by Justin Roopnarine
+## Follow Approaching Infinity
 
-LinkedIn: linkedin.com/in/justin-roopnarineThank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
+- [YouTube](https://www.youtube.com/@approachinginfinityshow)
+- [Instagram](https://www.instagram.com/approachinginfinityshow/)
+- [TikTok](https://www.tiktok.com/@approachinginfinityshow)
+- [X](https://x.com/Justin_777_)
+- [LinkedIn](https://www.linkedin.com/company/approaching-infinity/)
+- [Facebook](https://www.facebook.com/profile.php?id=61576572194605)
+
+## Hosted by Justin Roopnarine
+
+- [LinkedIn](https://www.linkedin.com/in/justin-roopnarine/)
+
+Thank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
 
 Disclaimer: Approaching Infinity is an independent media production for educational and entertainment purposes only. Nothing in this episode is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. The host and guests may be principals of, or affiliated with, investment firms and may hold positions in the securities or instruments discussed; their views are their own as of the recording date. Mention of any company, security, or strategy is not a recommendation or endorsement. Do your own research and consult a qualified professional about your circumstances. Past performance is no guarantee of future results.

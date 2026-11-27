@@ -27,12 +27,28 @@ Addressing operational habits, Loges observes that founders frequently get trapp
 
 For early-stage entrepreneurs, Loges advises approaching a new venture as an objective problem-solving project rather than immediately attaching one's personal identity to the business. He stresses that founders should focus first on proving customer demand and validating that their solution addresses a genuine problem people are willing to pay to solve. By maintaining this discipline and aligning financing with a clear end-game strategy, leaders can build durable organizations capable of navigating rapid change.
 
-Support and Connect with Rod
+## Support and connect with Rod
 
-One Degree Financial: www.onedegreecapital.comLinkedIn: https://www.linkedin.com/in/rodloges/The MILCOM Founders Podcast: www.milcomfounders.comFacebook: https://www.facebook.com/onedegreecapitalYouTube: https://www.youtube.com/onedegreecapitalApple Podcasts: https://podcasts.apple.com/us/podcast/the-milcom-founders-podcast/id1785012329Follow Approaching Infinity
+- [One Degree Financial](https://www.onedegreecapital.com/)
+- [LinkedIn](https://www.linkedin.com/in/rodloges/)
+- [The MILCOM Founders Podcast](https://www.milcomfounders.com/)
+- [Facebook](https://www.facebook.com/onedegreecapital)
+- [YouTube](https://www.youtube.com/onedegreecapital)
+- [Apple Podcasts](https://podcasts.apple.com/us/podcast/the-milcom-founders-podcast/id1785012329)
 
-YouTube: https://www.youtube.com/@approachinginfinityshowInstagram: https://www.instagram.com/approachinginfinityshow/TikTok: https://www.tiktok.com/@approachinginfinityshowX: https://x.com/Justin_777_LinkedIn: https://www.linkedin.com/company/approaching-infinity/Facebook: https://www.facebook.com/profile.php?id=61576572194605Hosted by Justin Roopnarine
+## Follow Approaching Infinity
 
-LinkedIn: https://www.linkedin.com/in/justin-roopnarine/Thank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
+- [YouTube](https://www.youtube.com/@approachinginfinityshow)
+- [Instagram](https://www.instagram.com/approachinginfinityshow/)
+- [TikTok](https://www.tiktok.com/@approachinginfinityshow)
+- [X](https://x.com/Justin_777_)
+- [LinkedIn](https://www.linkedin.com/company/approaching-infinity/)
+- [Facebook](https://www.facebook.com/profile.php?id=61576572194605)
+
+## Hosted by Justin Roopnarine
+
+- [LinkedIn](https://www.linkedin.com/in/justin-roopnarine/)
+
+Thank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
 
 Disclaimer: Approaching Infinity is an independent media production for educational and entertainment purposes only. Nothing in this episode is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. The host and guests may be principals of, or affiliated with, investment firms and may hold positions in the securities or instruments discussed; their views are their own as of the recording date. Mention of any company, security, or strategy is not a recommendation or endorsement. Do your own research and consult a qualified professional about your circumstances. Past performance is no guarantee of future results.

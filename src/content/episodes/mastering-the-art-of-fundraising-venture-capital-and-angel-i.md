@@ -1,5 +1,5 @@
 ---
-title: "Mastering the Art of Fundraising: Venture Capital and Angel Investing Insights"
+title: "What Angels and VCs Look for in a Startup with Tim Cooley"
 episodeNumber: 3
 guest: "Tim Cooley"
 description: "In this episode of Approaching Infinity, we delve into the entrepreneurial world with Tim Cooley, a seasoned entrepreneur and trusted adviser to hundreds of burgeoning start-ups."
@@ -15,6 +15,8 @@ listenerQuestion: "What should a founder understand about the process of raising
 episodeVisuals: [{"src": "/guests/tim-cooley-official.webp", "alt": "Tim Cooley", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/1f75a1d8-4f83-48e5-ba5b-f050d2f3e31f/approaching-infinity-%F0%9F%9A%80-mastering-the-art-of-fundraising-venture-capital-and-angel-investing-insights-with-tim-cooley
 ---
+
+Episode 3
 
 In this episode of Approaching Infinity, we delve into the entrepreneurial world with Tim Cooley, a seasoned entrepreneur and trusted adviser to hundreds of burgeoning start-ups.
 

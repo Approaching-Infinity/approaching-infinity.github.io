@@ -1,5 +1,5 @@
 ---
-title: "Building and Scaling a Bank: Inside the World of Globify Bank"
+title: "How to Build and Scale a Bank with Giulio Sartori"
 episodeNumber: 4
 guest: "Giulio Sartori"
 description: "In this episode of Approaching Infinity, we have Giulio Sartori a partner and project manager at Globify Bank in Zurich, Switzerland. He was also the group CEO at Globify Holding, a privately held investment fund based in New York, which focuses on high-yield real estate and other companies with long-term growth potential."
@@ -15,6 +15,8 @@ listenerQuestion: "What experience does Giulio Sartori bring to banking from inv
 episodeVisuals: [{"src": "/guests/approaching-infinity-logo.webp", "alt": "Approaching Infinity logo", "kind": "episode-artwork", "position": "center", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/72317eed-c14f-4277-95ba-52d96f88ba11/approaching-infinity-%F0%9F%9A%80-building-and-scaling-a-bank-inside-the-world-of-globify-bank-with-giulio-sartori
 ---
+
+Season 1, Episode 4
 
 In this episode of Approaching Infinity, we have Giulio Sartori a partner and project manager at Globify Bank in Zurich, Switzerland. He was also the group CEO at Globify Holding, a privately held investment fund based in New York, which focuses on high-yield real estate and other companies with long-term growth potential.
 

@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity & The Resilience of Purpose: From Failure to Impact with Pastor Robert Jordan"
+title: "From Failure to Purpose | The Veterans Outlook with Pastor Robert Jordan"
 episodeNumber: 0
 description: "I was a guest on the Veterans Outlook Podcast, hosted by Pastor Robert Jordan. Re-uploading here with credit to Pastor Bob and his team so our audience can catch it."
 pubDate: 2026-09-11

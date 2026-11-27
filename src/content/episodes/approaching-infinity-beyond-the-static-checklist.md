@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity & Beyond the Static Checklist: Algorithmic Auditing and Modern Compliance"
+title: "Beyond the Checklist: Algorithmic Auditing | Innovation in Compliance with Tom Fox"
 episodeNumber: 0
 description: "I was a guest on the Compliance Podcast Network, hosted by Tom Fox. Re-uploading here with credit to Tom and his team so our audience can catch it."
 pubDate: 2026-08-17

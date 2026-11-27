@@ -1,5 +1,5 @@
 ---
-title: "Bridging Data and Doctors: Ryan Mackman's Crusade for a Healthier America through Business Intelligence"
+title: "How Better Data Can Improve Healthcare with Ryan Mackman"
 episodeNumber: 10
 guest: "Ryan Mackman"
 description: "In this episode of Approaching Infinity, we are thrilled to be joined by Mr. Ryan Mackman, a trailblazer in U.S. healthcare innovation and strategy. Ryan's dedication to transforming the American healthcare system through groundbreaking methodologies and intelligent collaborations is nothing short of inspiring."
@@ -15,6 +15,8 @@ listenerQuestion: "How can business intelligence and collaboration support value
 episodeVisuals: [{"src": "/guests/ryan-mackman-official.webp", "alt": "Ryan Mackman", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3a7515f5-85e0-4cbc-b84c-83a5487936da/approaching-infinity-%F0%9F%9A%80-bridging-data-and-doctors-ryan-mackman's-crusade-for-a-healthier-america-through-business-intelligence
 ---
+
+Season 1, Episode 10
 
 In this episode of Approaching Infinity, we are thrilled to be joined by Mr. Ryan Mackman, a trailblazer in U.S. healthcare innovation and strategy. Ryan's dedication to transforming the American healthcare system through groundbreaking methodologies and intelligent collaborations is nothing short of inspiring.
 

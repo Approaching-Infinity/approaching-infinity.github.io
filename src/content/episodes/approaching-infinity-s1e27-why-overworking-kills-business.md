@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity S1E27: Why Overworking Kills Business & Recovery Strategy with Dean Guida"
+title: "How Founders Can Scale Without Burning Out with Dean Guida"
 episodeNumber: 27
 description: "In this episode of Approaching Infinity, host Justin Roopnarine speaks with Dean Guida, Founder and CEO of Infragistics, about building and scaling an enterprise software company through nearly four decades of technological shifts. Dean shares his journey from early founder grit to developing structured governance, delegation systems, and sustainable operational rhythms."
 pubDate: 2026-10-08
@@ -17,6 +17,8 @@ appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e27-why-o
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/a31ad017-c65e-4a19-92b6-a41e31439dca/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e27-why-overworking-kills-business-recovery-strategy-with-dean-guida
 youtubeUrl: https://www.youtube.com/watch?v=zl6n3OR1Gd0
 ---
+
+Season 1, Episode 27
 
 In this episode of Approaching Infinity, host Justin Roopnarine speaks with Dean Guida, Founder and CEO of Infragistics, about building and scaling an enterprise software company through nearly four decades of technological shifts. Dean shares his journey from early founder grit to developing structured governance, delegation systems, and sustainable operational rhythms.
 

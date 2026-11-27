@@ -1,5 +1,5 @@
 ---
-title: "From Data to Decisions: Crafting Data Strategies that Drive Business Growth"
+title: "Building a Data Strategy That Gets Used with Maria C. Villar"
 episodeNumber: 17
 guest: "Maria C. Villar"
 description: "In this episode of Approaching Infinity, we're honored to host Maria C. Villar, co-founder and managing partner at Business Data Leadership, a trailblazer in enterprise data strategy, governance, and transformation. With a distinguished career leading data initiatives at SAP and IBM, Maria brings a wealth of experience to the conversation."
@@ -15,6 +15,8 @@ listenerQuestion: "How do enterprise data leaders approach data management, gove
 episodeVisuals: [{"src": "/guests/maria-villar-instructor.webp", "alt": "Maria C. Villar", "kind": "portrait", "position": "center 35%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/76d89ac4-0fa8-45ba-a23a-ae8fcdb295b9/approaching-infinity-%F0%9F%9A%80-from-data-to-decisions-crafting-data-strategies-that-drive-business-growth-with-maria-villar
 ---
+
+Season 1, Episode 17
 
 In this episode of Approaching Infinity, we're honored to host Maria C. Villar, co-founder and managing partner at Business Data Leadership, a trailblazer in enterprise data strategy, governance, and transformation. With a distinguished career leading data initiatives at SAP and IBM, Maria brings a wealth of experience to the conversation.
 

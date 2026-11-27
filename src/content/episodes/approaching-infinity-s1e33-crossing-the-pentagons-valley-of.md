@@ -1,5 +1,5 @@
 ---
-title: "Creating the Industrial Base of the Future"
+title: "Creating the Industrial Base of the Future with Dr. Arun Seraphin"
 episodeNumber: 33
 guest: "Dr. Arun Seraphin"
 listenerQuestion: "Why do promising defense startups struggle to turn a successful pilot into a funded contract?"
@@ -15,6 +15,8 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/129668040/https%3A%2F%2Fd3ct
 artwork: https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/28576498/28576498-1793488047582-4f09899aa7d1e.jpg
 guid: "e4861d1d-e2bb-4662-a21a-920dcb6e52c3"
 ---
+
+Season 1, Episode 33
 
 In this episode of Approaching Infinity, host Justin Roopnarine speaks with Dr. Arun Seraphin, Executive Director at the Emerging Technologies Institute. While the defense sector has opened more entry points for startups and private capital through innovation hubs like DIU and AFWERX, Dr. Seraphin explains that most commercial innovators still get stuck in the lobby after an initial pilot because they struggle to unlock funded programs of record.
 

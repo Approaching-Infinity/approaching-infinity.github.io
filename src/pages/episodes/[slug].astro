@@ -1,4 +1,5 @@
 ---
+import { titleCreditsGuest } from '../../lib/episodes';
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import { resolveEpisodeVisuals } from '../../lib/episode-visuals';
@@ -55,7 +56,7 @@ const platforms = listeningPlatforms.flatMap(platform => {
       <div class="ep-num-ghost" aria-hidden="true">{num}</div>
       <span class="eyebrow">{d.bonus ? 'Bonus episode' : `Episode ${d.episodeNumber}`} &middot; {dateStr}{d.duration ? ` · ${d.duration}` : ''}</span>
       <h1>{d.title}</h1>
-      {d.guestAppearance ? <p class="ep-hero-guest">Justin featured on <a href={d.guestAppearance.url} target="_blank" rel="noopener">{d.guestAppearance.show}</a> · hosted by {d.guestAppearance.host}</p> : d.guest && <p class="ep-hero-guest">with {d.guest}</p>}
+      {d.guestAppearance ? <p class="ep-hero-guest">Justin featured on <a href={d.guestAppearance.url} target="_blank" rel="noopener">{d.guestAppearance.show}</a> · hosted by {d.guestAppearance.host}</p> : d.guest && !titleCreditsGuest(d.title, d.guest) && <p class="ep-hero-guest">with {d.guest}</p>}
     </header>
 
     <div class="player-tabs reveal" data-player>

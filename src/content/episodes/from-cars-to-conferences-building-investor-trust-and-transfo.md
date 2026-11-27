@@ -1,5 +1,5 @@
 ---
-title: "From Cars to Conferences: Building Investor Trust and Transforming Conferences"
+title: "How Conferences Build Investor Trust with Eric Radez"
 episodeNumber: 24
 guest: "Eric Radez"
 description: "In this episode of Approaching Infinity, guest Eric Radez, President of Strategic Media & Public Relations, shares insights from his multifaceted career across entrepreneurship, financial advising, and investor relations. Radez reflects on his journey from founding an aftermarket auto business to entering financial markets, where he co-chaired the Chicago Resource Expo and helped growth companies connect with targeted investor audiences."
@@ -16,6 +16,8 @@ listenerQuestion: "How do finance and public relations come together when buildi
 episodeVisuals: [{"src": "/guests/eric-radez-official.webp", "alt": "Eric Radez", "kind": "portrait", "position": "center 28%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3b5cd902-4f63-4e6d-9b83-7525d6b56d75/approaching-infinity-%F0%9F%9A%80-from-cars-to-conferences-building-investor-trust-and-transforming-conferences-with-eric-radez
 ---
+
+Season 1, Episode 24
 
 In this episode of Approaching Infinity, guest Eric Radez, President of Strategic Media & Public Relations, shares insights from his multifaceted career across entrepreneurship, financial advising, and investor relations. Radez reflects on his journey from founding an aftermarket auto business to entering financial markets, where he co-chaired the Chicago Resource Expo and helped growth companies connect with targeted investor audiences.
 

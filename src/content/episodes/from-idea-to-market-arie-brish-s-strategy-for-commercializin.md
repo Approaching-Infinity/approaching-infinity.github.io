@@ -1,5 +1,5 @@
 ---
-title: "From Idea to Market: Arie Brish's Strategy for Commercializing Innovation"
+title: "How to Turn an Idea Into a Product People Want with Arie Brish"
 episodeNumber: 14
 guest: "Arie Brish"
 description: "In this episode of Approaching Infinity, we are honored to host Arie Brish, a renowned expert in the realm of business innovation and strategy. Arie delves into the critical importance of execution in innovation, sharing insights drawn from both historical successes and his vast experience. He sheds light on the distinction between technology and true innovation, emphasizing the necessity of understanding customer needs to achieve success."
@@ -15,6 +15,8 @@ listenerQuestion: "How do you turn a technology idea into innovation that addres
 episodeVisuals: [{"src": "/guests/arie-brish-official.webp", "alt": "Arie Brish", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/07578873-018d-4358-81b8-ea58d68d02ea/approaching-infinity-%F0%9F%9A%80-from-idea-to-market-arie-brish's-strategy-for-commercializing-innovation
 ---
+
+Season 1, Episode 14
 
 In this episode of Approaching Infinity, we are honored to host Arie Brish, a renowned expert in the realm of business innovation and strategy. Arie delves into the critical importance of execution in innovation, sharing insights drawn from both historical successes and his vast experience. He sheds light on the distinction between technology and true innovation, emphasizing the necessity of understanding customer needs to achieve success.
 

@@ -16,3 +16,13 @@ export async function getEpisodesNewestFirst() {
       b.data.episodeNumber - a.data.episodeNumber,
   );
 }
+
+export function titleCreditsGuest(title: string, guest: string) {
+  const normalize = (value: string) => value
+    .toLowerCase()
+    .replace(/\band\b|[&,]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const name = normalize(guest.replace(/\s+\([^)]*\)$/, ''));
+  return Boolean(name) && normalize(title).endsWith(' ' + name);
+}

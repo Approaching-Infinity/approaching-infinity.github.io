@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity & CEO Responsibility: Engineering Discipline & Risk Control with Gresh Harkless"
+title: "Engineering Discipline and Risk Control | I AM CEO with Gresh W. Harkless Jr."
 episodeNumber: 0
 description: "I was a guest on the I AM CEO Podcast, hosted by Gresh W. Harkless Jr. Re-uploading here with credit to Gresh and his team so our audience can catch it."
 pubDate: 2026-09-28

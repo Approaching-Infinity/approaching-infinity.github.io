@@ -1,5 +1,5 @@
 ---
-title: "Dream Big, Act Bold: Joe Rinderknecht on Entrepreneurship and Philanthropy"
+title: "From Cattle Ranching to Real Estate and Giving Back with Joe Rinderknecht"
 episodeNumber: 20
 guest: "Joe Rinderknecht (Cowboy Capital)"
 description: "In this episode of Approaching Infinity, guest Joe Rinderknecht, Principal and Co-Founder of Cowboy Capital, joins host Justin Roopnarine to share his path from cattle ranching to multifamily real estate fund management. Rinderknecht attributes his operational foundation to his roots in ranching and construction, where he learned core values of hard work and ethics. He discusses the crucial role complementary partnerships and a distinct team-made, rather than self-made, mentality played in his journey, allowing him to navigate the steep learning curves of early business ventures and eventual success in the real estate sector."
@@ -16,6 +16,8 @@ listenerQuestion: "How can community support shape a founder's response to adver
 episodeVisuals: [{"src": "/guests/joe-rinderknecht-official.webp", "alt": "Joe Rinderknecht", "kind": "portrait", "position": "center 35%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/ece6660f-f75c-441f-9d99-40511a858407/approaching-infinity-%F0%9F%9A%80-dream-big-act-bold-joe-rinderknecht-on-entrepreneurship-and-philanthropy
 ---
+
+Season 1, Episode 20
 
 In this episode of Approaching Infinity, guest Joe Rinderknecht, Principal and Co-Founder of Cowboy Capital, joins host Justin Roopnarine to share his path from cattle ranching to multifamily real estate fund management. Rinderknecht attributes his operational foundation to his roots in ranching and construction, where he learned core values of hard work and ethics. He discusses the crucial role complementary partnerships and a distinct team-made, rather than self-made, mentality played in his journey, allowing him to navigate the steep learning curves of early business ventures and eventual success in the real estate sector.
 

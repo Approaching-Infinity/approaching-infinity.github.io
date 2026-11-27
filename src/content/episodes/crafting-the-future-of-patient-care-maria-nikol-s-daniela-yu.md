@@ -1,5 +1,5 @@
 ---
-title: "Crafting the Future of Patient Care: Maria Nikol's & Daniela Yusufbekova's Approach to Value-Based Care"
+title: "How Value-Based Care Works with Maria Nikol and Daniela Yusufbekova"
 episodeNumber: 12
 guest: "Maria Nikol & Daniela Yusufbekova"
 description: "In this episode of Approaching Infinity, we are privileged to feature Daniela Yusufbekova and Maria Nikol, forefront innovators in value based healthcare. Their pioneering work is steering the healthcare industry towards a future where the emphasis is on quality care and patient centric approaches. Daniela and Maria unravel the intricacies of value based healthcare, illustrating its benefits over traditional models, and emphasizing the critical role of patient and physician engagement."
@@ -15,6 +15,8 @@ listenerQuestion: "How does value-based care change the role of patient and phys
 episodeVisuals: [{"src": "/guests/maria-nikol-official.webp", "alt": "Maria Nikol", "kind": "portrait", "position": "center 30%", "zoom": 1}, {"src": "/guests/daniela-yusufbekova-official.webp", "alt": "Daniela Yusufbekova", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3c71cadc-f9cf-44b0-8195-2799204a1e2b/approaching-infinity-%F0%9F%9A%80-crafting-the-future-of-patient-care-maria-nikol's-daniela-yusufbekova's-approach-to-value-based-care
 ---
+
+Season 1, Episode 12
 
 In this episode of Approaching Infinity, we are privileged to feature Daniela Yusufbekova and Maria Nikol, forefront innovators in value based healthcare. Their pioneering work is steering the healthcare industry towards a future where the emphasis is on quality care and patient centric approaches. Daniela and Maria unravel the intricacies of value based healthcare, illustrating its benefits over traditional models, and emphasizing the critical role of patient and physician engagement.
 

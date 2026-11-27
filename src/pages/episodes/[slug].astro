@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import { resolveEpisodeVisuals } from '../../lib/episode-visuals';
 import { siteSupport } from '../../config/site';
+import { listeningHub, listeningPlatforms } from '../../data/platforms.mjs';
 
 export async function getStaticPaths() {
   const eps = await getCollection('episodes');
@@ -35,6 +36,12 @@ if (d.audioUrl) tabs.push({ key: 'listen', label: 'Listen', kind: 'native', src:
 if (appleEmbed) tabs.push({ key: 'apple', label: 'Apple', kind: 'frame', src: appleEmbed, h: 175 });
 if (spotifyEmbed) tabs.push({ key: 'spotify', label: 'Spotify', kind: 'frame', src: spotifyEmbed, h: 152 });
 const defKey = tabs.length ? tabs[0].key : null;
+const episodeLinks: Record<string, string | undefined> = {
+  apple: d.appleUrl,
+  amazon: d.amazonUrl,
+  spotify: d.spotifyEpisodeId ? `https://open.spotify.com/episode/${d.spotifyEpisodeId}` : d.spotifyUrl,
+  youtube: d.youtubeUrl ?? (d.youtubeId ? `https://www.youtube.com/watch?v=${d.youtubeId}` : undefined),
+};
 ---
 <Layout title={pageTitle} description={d.description}>
   <article class="ep-page wrap">
@@ -47,67 +54,74 @@ const defKey = tabs.length ? tabs[0].key : null;
       {d.guestAppearance ? <p class="ep-hero-guest">Justin featured on <a href={d.guestAppearance.url} target="_blank" rel="noopener">{d.guestAppearance.show}</a> · hosted by {d.guestAppearance.host}</p> : d.guest && <p class="ep-hero-guest">with {d.guest}</p>}
     </header>
 
-    {tabs.length > 0 && (
-      <div class="player-tabs reveal" data-player>
-        {tabs.length > 1 && (
-          <div class="tab-bar" role="tablist" aria-label="Choose a player">
+    <div class="player-tabs reveal" data-player>
+      <nav class="episode-platforms" aria-labelledby="episode-platforms-label">
+        <span id="episode-platforms-label">Follow the show</span>
+        <ul>
+          {listeningPlatforms.map(platform => (
+            <li>
+              <a href={episodeLinks[platform.id] ?? platform.url} target="_blank" rel="noopener"
+                aria-label={`${platform.name} (opens in a new tab)`}>
+                <img src={platform.icon} width="20" height="20" alt="" />
+                <span>{platform.name}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      {tabs.length > 0 && (
+        <>
+          {tabs.length > 1 && (
+            <div class="tab-bar" role="tablist" aria-label="Choose a player">
+              {tabs.map((t) => (
+                <button
+                  class:list={['tab', { 'is-active': t.key === defKey }]}
+                  data-tab={t.key}
+                  role="tab"
+                  type="button"
+                  aria-selected={t.key === defKey ? 'true' : 'false'}>{t.label}</button>
+              ))}
+            </div>
+          )}
+          <div class="tab-panels">
             {tabs.map((t) => (
-              <button
-                class:list={['tab', { 'is-active': t.key === defKey }]}
-                data-tab={t.key}
-                role="tab"
-                type="button"
-                aria-selected={t.key === defKey ? 'true' : 'false'}>{t.label}</button>
+              <div
+                class:list={['tab-panel', t.kind === 'video' && 'player-16x9', { 'is-active': t.key === defKey }]}
+                data-panel={t.key}>
+                {t.kind === 'native' ? (
+                  <div class="audio-inline">
+                    {(showArt || d.artwork) && <img class="player-art" src={showArt?.image.src ?? d.artwork} alt={showArt?.alt ?? ''} width="88" height="88" loading="lazy" />}
+                    <div class="player-audio-main">
+                      <span class="eyebrow">{d.bonus ? 'Bonus' : `Episode ${d.episodeNumber}`}</span>
+                      <audio class="ep-audio" controls preload="none" src={t.src}>Your browser does not support the audio element.</audio>
+                    </div>
+                  </div>
+                ) : t.kind === 'video' ? (
+                  <iframe
+                    src={t.key === defKey ? t.src : undefined}
+                    data-src={t.src}
+                    title={d.title}
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                ) : (
+                  <iframe
+                    src={t.key === defKey ? t.src : undefined}
+                    data-src={t.src}
+                    title={`${d.title} — ${t.label}`}
+                    loading="lazy"
+                    height={t.h}
+                    style="width:100%;border:0;display:block"
+                    allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                )}
+              </div>
             ))}
           </div>
-        )}
-        <div class="tab-panels">
-          {tabs.map((t) => (
-            <div
-              class:list={['tab-panel', t.kind === 'video' && 'player-16x9', { 'is-active': t.key === defKey }]}
-              data-panel={t.key}>
-              {t.kind === 'native' ? (
-                <div class="audio-inline">
-                  {(showArt || d.artwork) && <img class="player-art" src={showArt?.image.src ?? d.artwork} alt={showArt?.alt ?? ''} width="88" height="88" loading="lazy" />}
-                  <div class="player-audio-main">
-                    <span class="eyebrow">{d.bonus ? 'Bonus' : `Episode ${d.episodeNumber}`}</span>
-                    <audio class="ep-audio" controls preload="none" src={t.src}>Your browser does not support the audio element.</audio>
-                  </div>
-                </div>
-              ) : t.kind === 'video' ? (
-                <iframe
-                  src={t.key === defKey ? t.src : undefined}
-                  data-src={t.src}
-                  title={d.title}
-                  loading="lazy"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              ) : (
-                <iframe
-                  src={t.key === defKey ? t.src : undefined}
-                  data-src={t.src}
-                  title={`${d.title} — ${t.label}`}
-                  loading="lazy"
-                  height={t.h}
-                  style="width:100%;border:0;display:block"
-                  allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    )}
-
-    <div class="ep-listen-row reveal">
-      <span class="ep-listen-label">Follow the show</span>
-      <div class="ep-listen">
-        {d.appleUrl && <a class="btn btn-ghost" href={d.appleUrl} target="_blank" rel="noopener">Apple Podcasts</a>}
-        {d.spotifyUrl && <a class="btn btn-ghost" href={d.spotifyUrl} target="_blank" rel="noopener">Spotify</a>}
-        {d.youtubeUrl && <a class="btn btn-ghost" href={d.youtubeUrl} target="_blank" rel="noopener">YouTube</a>}
-      </div>
+        </>
+      )}
     </div>
 
-    <div class="prose">
+    <div class="prose episode-show-notes">
       <Content />
     </div>
 
@@ -119,12 +133,54 @@ const defKey = tabs.length ? tabs[0].key : null;
 
     <div class="ep-foot reveal">
       <a class="btn btn-ghost" href="/episodes/">&larr; All episodes</a>
-      <a class="btn btn-red" href="https://linktr.ee/approachinginfinityshow">Listen everywhere</a>
+      <a class="btn btn-red" href={listeningHub}>Listen everywhere</a>
     </div>
   </article>
 </Layout>
 
 <style>
+  .episode-platforms {
+    display: flex;
+    align-items: center;
+    gap: .35rem 1.2rem;
+    flex-wrap: wrap;
+    padding: .65rem clamp(1.1rem, 2.5vw, 1.6rem);
+  }
+  .episode-platforms:has(+ .tab-bar, + .tab-panels) { border-bottom: 1px solid var(--line); }
+  #episode-platforms-label {
+    color: var(--muted);
+    font: .72rem/1.4 var(--mono);
+    text-transform: uppercase;
+    letter-spacing: .15em;
+  }
+  .episode-platforms ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .episode-platforms a {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    min-height: 44px;
+    padding: .25rem .6rem;
+    color: var(--text);
+    font-size: .83rem;
+    font-weight: 600;
+  }
+  .episode-platforms a:hover { background: var(--surface-2); }
+  .episode-platforms img { width: 20px; height: 20px; object-fit: contain; }
+  .episode-platforms img[src$="applepodcasts.svg"] { border-radius: 4px; background: #fff; }
+  .episode-show-notes :global(li) { margin: .18rem 0; }
+  @media (max-width: 600px) {
+    .episode-platforms { padding-block: .8rem; }
+    .episode-platforms ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+    .episode-platforms a { display: flex; padding-inline: .25rem; }
+    .player-audio-main { width: 100%; }
+  }
   .episode-tip { max-width: 68ch; margin: 2.5rem 0; padding: 1.1rem 1.2rem; background: var(--surface); border: 1px solid var(--line-strong); border-left: 3px solid var(--red); }
   .episode-tip h2 { font: 700 1.15rem/1.3 var(--body); text-transform: none; }
   .episode-tip p { color: var(--muted); margin: .3rem 0 .75rem; }

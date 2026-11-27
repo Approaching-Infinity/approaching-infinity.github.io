@@ -29,6 +29,7 @@ const episodes = defineCollection({
     spotifyUrl: z.string().url().optional(),
     appleUrl: z.string().url().optional(),
     youtubeUrl: z.string().url().optional(),
+    amazonUrl: z.string().url().optional(),
     // Inline player sources (optional). youtubeId -> video embed; audioUrl -> audio player.
     youtubeId: z.string().optional(),
     spotifyEpisodeId: z.string().optional(),

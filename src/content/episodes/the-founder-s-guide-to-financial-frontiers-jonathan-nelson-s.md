@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/82737417/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What makes access to public capital markets difficult for smaller companies and developing regions?"
 episodeVisuals: [{"src": "/guests/jonathan-nelson-official.webp", "alt": "Jonathan Nelson", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/b93294ca-42e2-42a6-81b8-686d16d44648/approaching-infinity-%F0%9F%9A%80-the-founder's-guide-to-financial-frontiers-jonathan-nelson's-capital-revolution
 ---
 
 In this episode of Approaching Infinity, we're thrilled to welcome Jonathan Nelson, a vanguard in the venture capital world and a pivotal figure in global startup ecosystems. Jonathan shares his expert insights on the complexities smaller companies encounter when attempting to list on U.S. stock markets, underscoring the necessity for robust capital markets in developing regions such as South America and Africa. His deep dive into the historical and current dynamics of capital markets reveals the challenges and opportunities that lie within.

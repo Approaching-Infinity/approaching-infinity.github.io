@@ -14,6 +14,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/97436308/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can an energy business match its existing capabilities to emerging sustainability markets?"
 episodeVisuals: [{"src": "/guests/john-mossop-official.webp", "alt": "John Mossop", "kind": "portrait", "position": "center 35%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/44828c7a-3022-4d9c-aacb-5d94a46908f7/approaching-infinity-%F0%9F%9A%80-fueling-the-future-transforming-energy-markets-with-john-mossop
 ---
 
 In this episode, we sit down with John Mossop, Vice President of Technology and Energy Transition at Dril-Quip and CEO of MomentumX. Mossop details his extensive engineering career, starting in the UK before transitioning through General Electric across global industries, including automotive sensing, healthcare, and power. He shares his recent shift from technical engineering roles into commercial product management in the United States, ultimately leading to his current role spearheading energy transition strategies.

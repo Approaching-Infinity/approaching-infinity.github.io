@@ -12,6 +12,10 @@ guid: "42e93653-0cc5-4014-8ab9-45150cbfd3d8"
 # youtubeUrl / youtubeId, guest.
 listenerQuestion: "How do you protect your judgment when everything is going right?"
 episodeVisuals: [{"src": "/guests/evan-marks-official-bio.webp", "alt": "Evan Marks", "kind": "portrait", "position": "center 28%", "zoom": 2.2}]
+spotifyUrl: https://open.spotify.com/episode/7B02M0SI493lUuPDvIsfsE
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e29-blind-spots-of-winning/id1641001955?i=1000798895311
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3c6421a7-7a9d-463e-b117-34fc27567c1d/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e29-blind-spots-of-winning-elite-operators-audit-success-with-evan-marks
+youtubeUrl: https://www.youtube.com/watch?v=hNnOVefO9zs
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Evan Marks, Founder of M1 Performance Group, to unpack the mental architecture required to execute under intense pressure. Marks presents the core framework that elite performance is built at the intersection of psychoanalytic conditioning and neuroplasticity. Rather than waiting for emotions to settle before taking action, Marks explains that operators must consciously change their behavior so that their feelings and internal narrative can follow, establishing a grounded baseline for critical decision-making.

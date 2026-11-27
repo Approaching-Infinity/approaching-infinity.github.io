@@ -42,6 +42,12 @@ const episodeLinks: Record<string, string | undefined> = {
   spotify: d.spotifyEpisodeId ? `https://open.spotify.com/episode/${d.spotifyEpisodeId}` : d.spotifyUrl,
   youtube: d.youtubeUrl ?? (d.youtubeId ? `https://www.youtube.com/watch?v=${d.youtubeId}` : undefined),
 };
+const platforms = listeningPlatforms.flatMap(platform => {
+  const episodeUrl = episodeLinks[platform.id];
+  const direct = Boolean(episodeUrl && episodeUrl !== platform.url);
+  if (platform.id === 'youtube' && !direct) return [];
+  return [{ ...platform, href: episodeUrl ?? platform.url, label: platform.name + (direct ? '' : ' show') }];
+});
 ---
 <Layout title={pageTitle} description={d.description}>
   <article class="ep-page wrap">
@@ -58,12 +64,12 @@ const episodeLinks: Record<string, string | undefined> = {
       <nav class="episode-platforms" aria-labelledby="episode-platforms-label">
         <span id="episode-platforms-label">Follow the show</span>
         <ul>
-          {listeningPlatforms.map(platform => (
+          {platforms.map(platform => (
             <li>
-              <a href={episodeLinks[platform.id] ?? platform.url} target="_blank" rel="noopener"
-                aria-label={`${platform.name} (opens in a new tab)`}>
+              <a href={platform.href} target="_blank" rel="noopener"
+                aria-label={`${platform.label} (opens in a new tab)`}>
                 <img src={platform.icon} width="20" height="20" alt="" />
-                <span>{platform.name}</span>
+                <span>{platform.label}</span>
               </a>
             </li>
           ))}

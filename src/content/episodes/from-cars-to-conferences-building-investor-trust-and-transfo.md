@@ -14,6 +14,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/106653322/https%3A%2F%2Fd3ct
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How do finance and public relations come together when building an investor conference?"
 episodeVisuals: [{"src": "/guests/eric-radez-official.webp", "alt": "Eric Radez", "kind": "portrait", "position": "center 28%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3b5cd902-4f63-4e6d-9b83-7525d6b56d75/approaching-infinity-%F0%9F%9A%80-from-cars-to-conferences-building-investor-trust-and-transforming-conferences-with-eric-radez
 ---
 
 In this episode of Approaching Infinity, guest Eric Radez, President of Strategic Media & Public Relations, shares insights from his multifaceted career across entrepreneurship, financial advising, and investor relations. Radez reflects on his journey from founding an aftermarket auto business to entering financial markets, where he co-chaired the Chicago Resource Expo and helped growth companies connect with targeted investor audiences.

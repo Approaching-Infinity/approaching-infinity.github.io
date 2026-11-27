@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/73935057/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can military values carry into leadership and decisions in the financial sector?"
 episodeVisuals: [{"src": "/guests/brian-rathjen-official.webp", "alt": "Brian Rathjen", "kind": "portrait", "position": "center 30%", "zoom": 1.5}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/2d39b284-b1ce-4ddb-9ce9-39739a24f79b/approaching-infinity-%F0%9F%9A%80-from-the-navy-to-wall-street-veterans-empowering-veterans-with-brian-rathjen-of-roberts-ryan-investments
 ---
 
 In this episode of Approaching Infinity, we have the privilege to chat with Brian Rathjen, an influential figurehead at Roberts & Ryan Investments, renowned for being a Service Disabled Veteran Owned Broker Dealer.

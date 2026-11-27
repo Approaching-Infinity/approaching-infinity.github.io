@@ -11,6 +11,7 @@ const episodes = defineCollection({
     guest: z.string().optional(),
     // Curated from approved show notes; never inferred by the feed sync.
     listenerQuestion: z.string().trim().min(10).max(140).optional(),
+    listenerSummary: z.string().trim().min(10).max(160).optional(),
     episodeVisuals: z.array(z.object({
       src: z.string().regex(/^\/(guests|shows)\/[a-z0-9-]+\.(jpg|jpeg|png|webp)$/),
       alt: z.string().trim().min(2).max(160),

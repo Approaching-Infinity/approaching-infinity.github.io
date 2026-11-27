@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/74089950/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What challenges shape the journey of building and backing women-led companies?"
 episodeVisuals: [{"src": "/guests/patricia-lizarraga-official.webp", "alt": "Patricia Lizarraga", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/62e8c402-c3c9-47a2-b22f-95adcb7da12f/approaching-infinity-%F0%9F%9A%80-championing-female-leadership-and-empowering-women-ceos-financial-inclusivity-with-patricia-lizarraga-of-hypatia-capital
 ---
 
 In this episode of Approaching Infinity, we're joined by Patricia Lizarraga, the managing partner at Hypatia Capital, known for its steadfast commitment to promoting gender equity in leadership roles across various financial platforms.

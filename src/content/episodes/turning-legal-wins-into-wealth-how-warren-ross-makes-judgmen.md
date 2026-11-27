@@ -14,6 +14,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/95968016/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can purchasing an uncollected judgment turn a legal claim into an investment asset?"
 episodeVisuals: [{"src": "/guests/warren-ross-testimonial.webp", "alt": "Warren Ross", "kind": "portrait", "position": "center 35%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/6549abd8-9429-49f9-b8e0-bd2f3089496e/approaching-infinity-%F0%9F%9A%80-turning-legal-wins-into-wealth-how-warren-ross-makes-judgments-pay-off
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine is joined by Warren Ross, Partner at JLC Income Fund and deal maker at Jets Capital. Ross explains the hidden market of uncollected civil court judgments, where an estimated 80 percent of awarded judgments in the United States go unpaid. He points out that while winning a lawsuit produces a court-approved debt, the legal system does not automatically enforce payment, leaving many creditors without recovery.

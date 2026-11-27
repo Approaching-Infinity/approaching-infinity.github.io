@@ -14,6 +14,10 @@ guid: "8b47a0d4-19e6-4e2f-badd-85ba44513289"
 listenerQuestion: "How can failure reshape a veteran's approach to leadership, resilience and service?"
 episodeVisuals: [{"src": "/shows/veterans-outlook.webp", "alt": "The Veterans Outlook Season III (2026) podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
 guestAppearance: {"show": "The Veterans Outlook", "host": "Pastor Robert Jordan", "url": "https://podcasts.apple.com/us/podcast/the-veterans-outlook-season-iii-2026/id1745944890"}
+spotifyUrl: https://open.spotify.com/episode/7prC9Oqu6lJbEv3tor8PIn
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-the-resilience-of-purpose/id1641001955?i=1000789050806
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/4ad069ef-62e6-45a5-a13c-381a34537778/approaching-infinity-%F0%9F%9A%80-approaching-infinity-the-resilience-of-purpose-from-failure-to-impact-with-pastor-robert-jordan
+youtubeUrl: https://www.youtube.com/watch?v=_lC93BvoqN4
 ---
 
 I was a guest on the Veterans Outlook Podcast, hosted by Pastor Robert Jordan. Re-uploading here with credit to Pastor Bob and his team so our audience can catch it.

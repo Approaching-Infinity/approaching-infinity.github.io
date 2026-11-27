@@ -12,6 +12,10 @@ guid: "dd71b657-87e7-4521-81ce-d73d8d065bcc"
 # youtubeUrl / youtubeId, guest.
 listenerQuestion: "How can you tell repeatable investing skill from a lucky run?"
 episodeVisuals: [{"src": "/guests/lanyon-blair-official.webp", "alt": "Lanyon Blair", "kind": "portrait", "position": "center 35%", "zoom": 1}]
+spotifyUrl: https://open.spotify.com/episode/5xrxISv8vOhKUIdGINuhYR
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e28-why-outperformance-rings/id1641001955?i=1000798851301
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/9ac7f0c8-a4b9-4bfe-b141-18cf985990d4/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e28-why-outperformance-rings-alarm-bells-with-lanyon-blair
+youtubeUrl: https://www.youtube.com/watch?v=q40_Fbb9WPA
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Lanyon Blair, Senior Vice President and Head of Manager Research at Voya Investment Management. Together, they examine the core tenets of institutional manager research, the strategic construction of multi-asset retirement portfolios, and how professional allocators establish frameworks designed to endure changing market environments.

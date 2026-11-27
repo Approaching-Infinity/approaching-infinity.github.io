@@ -8,12 +8,13 @@ duration: "33 min"
 appleUrl: https://podcasts.apple.com/us/podcast/from-chaos-to-clarity-rewiring-mindset-and-building/id1641001955?i=1000762157452
 spotifyUrl: https://open.spotify.com/episode/7D2zYsf8NNLLmTp4nseHWY
 spotifyEpisodeId: 7D2zYsf8NNLLmTp4nseHWY
-youtubeUrl: https://www.youtube.com/watch?v=UVozsz4tRFA
-youtubeId: UVozsz4tRFA
+youtubeUrl: https://www.youtube.com/watch?v=2_TOKAUfLtU
+youtubeId: 2_TOKAUfLtU
 audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/118657860/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-18%2F422338949-44100-2-ed0a2ea7f6afb.mp3
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can a founder's mindset and identity shape the way their business grows?"
 episodeVisuals: [{"src": "/guests/willard-barth-official.webp", "alt": "Willard Barth", "kind": "portrait", "position": "center 35%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3930616f-7237-426c-9715-1ae0a85d5581/approaching-infinity-%F0%9F%9A%80-from-chaos-to-clarity-rewiring-mindset-and-building-real-businesses-with-willard-barth
 ---
 
 In this episode of Approaching Infinity, we are honored to host Willard Barth, Founder and Owner of Data Pro Marketing LLC and Willard Barth Enterprises, who is widely recognized for developing actionable frameworks that help leaders create measurable business outcomes.

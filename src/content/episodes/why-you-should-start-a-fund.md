@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/56727336/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What are the reasons people consider a fund structure when building an investment business?"
 episodeVisuals: [{"src": "/guests/justin-roopnarine-retouched-4x5.webp", "alt": "Justin Roopnarine", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/bd185943-6f26-4bf3-9701-b60207677ddb/approaching-infinity-%F0%9F%9A%80-why-you-should-start-a-fund
 ---
 
 In this episode of Approaching Infinity, we delve deep into the reasons why you should consider starting your own fund and why it stands as the most lucrative, scalable, and profitable business model on the planet! Whether you're a budding entrepreneur or an established professional, the power of funds is undeniable.

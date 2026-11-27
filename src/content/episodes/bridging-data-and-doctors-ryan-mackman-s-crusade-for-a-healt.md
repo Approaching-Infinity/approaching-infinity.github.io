@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/75849424/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can business intelligence and collaboration support value-based healthcare?"
 episodeVisuals: [{"src": "/guests/ryan-mackman-official.webp", "alt": "Ryan Mackman", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3a7515f5-85e0-4cbc-b84c-83a5487936da/approaching-infinity-%F0%9F%9A%80-bridging-data-and-doctors-ryan-mackman's-crusade-for-a-healthier-america-through-business-intelligence
 ---
 
 In this episode of Approaching Infinity, we are thrilled to be joined by Mr. Ryan Mackman, a trailblazer in U.S. healthcare innovation and strategy. Ryan's dedication to transforming the American healthcare system through groundbreaking methodologies and intelligent collaborations is nothing short of inspiring.

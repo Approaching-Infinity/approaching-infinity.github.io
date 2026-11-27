@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/73446057/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What led an entrepreneur to build an AI business focused on influencer marketing?"
 episodeVisuals: [{"src": "/guests/jeremy-barnett-official.webp", "alt": "Jeremy Barnett", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/d76a87a9-f749-464a-b403-53b368176690/approaching-infinity-%F0%9F%9A%80-redefining-ai-in-influencer-marketing-insights-and-innovations-with-jeremy-barnett-ceo-of-rad-ai
 ---
 
 In this episode of Approaching Infinity, we are thrilled to host Jeremy Barnett, the innovative CEO of RAD AI, a trailblazer in the realm of data informed influencer marketing and content authenticity.

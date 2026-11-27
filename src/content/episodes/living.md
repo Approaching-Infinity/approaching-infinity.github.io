@@ -14,6 +14,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/96236305/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What role do emotional awareness and organizational values play in addressing burnout?"
 episodeVisuals: [{"src": "/guests/gaby-cora-official.webp", "alt": "Dr. Gaby Cora", "kind": "portrait", "position": "center 15%", "zoom": 1.5}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/60603681-3a6d-4620-9f0d-a4f74775e331/approaching-infinity-%F0%9F%9A%80-living-with-love-empowering-emotional-awareness-with-dr-gaby-cora-and-ema
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine speaks with Dr. Gaby Cora, CEO and founder of CoraLG Inc. and co-founder and Chief Medical Officer at Empathy Encoded. Dr. Cora is a physician, executive coach, and international speaker with decades of experience advancing neuroscience research, pioneering digital health innovation, and helping leaders manage burnout. The conversation explores her career path and her work bridging the gaps between healthcare, human behavior, and artificial intelligence.

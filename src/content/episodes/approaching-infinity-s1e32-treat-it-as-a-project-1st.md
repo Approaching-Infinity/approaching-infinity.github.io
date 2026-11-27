@@ -13,6 +13,10 @@ guid: "6ffea9b1-82cc-4899-85bc-7202158b43c3"
 guest: "Rod Loges"
 listenerQuestion: "What should founders put in place before they seek capital or turn a new idea into a business?"
 episodeVisuals: [{"src": "/guests/rod-loges-official.webp", "alt": "Rod Loges", "kind": "portrait", "position": "center 15%", "zoom": 1}]
+spotifyUrl: https://open.spotify.com/episode/3H9etLuxy4PAxLiiGmrhWb
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e32-treat-it-as-a-project/id1641001955?i=1000801707288
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/ace52fc3-51f7-496f-922e-fcbded934b8b/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e32-treat-it-as-a-project-1st-building-resilient-foundations-with-rod-loges
+youtubeUrl: https://www.youtube.com/watch?v=9HuN_9yvgio
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Rod Loges, Founder and CEO of One Degree Financial, to discuss capital strategy and financial readiness. According to Loges, businesses rarely struggle due to an absolute shortage of capital in the market, but rather because founders fail to build operational readiness before seeking capital or facing an unexpected crisis. He emphasizes that true readiness requires establishing clean financial foundations and developing organizational maturity well in advance.

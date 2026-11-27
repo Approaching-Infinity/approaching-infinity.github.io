@@ -12,6 +12,10 @@ guid: "e5345ef2-95f1-4bb0-8c0a-acceb2196b13"
 # youtubeUrl / youtubeId, guest.
 listenerQuestion: "How can founders build for the long term without burning out?"
 episodeVisuals: [{"src": "/guests/dean-guida-official.webp", "alt": "Dean Guida", "kind": "portrait", "position": "center 15%", "zoom": 2.2}]
+spotifyUrl: https://open.spotify.com/episode/2uWOwMy9sQ3MdcIJLYWLc4
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e27-why-overworking-kills-business/id1641001955?i=1000793825894
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/a31ad017-c65e-4a19-92b6-a41e31439dca/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e27-why-overworking-kills-business-recovery-strategy-with-dean-guida
+youtubeUrl: https://www.youtube.com/watch?v=zl6n3OR1Gd0
 ---
 
 In this episode of Approaching Infinity, host Justin Roopnarine speaks with Dean Guida, Founder and CEO of Infragistics, about building and scaling an enterprise software company through nearly four decades of technological shifts. Dean shares his journey from early founder grit to developing structured governance, delegation systems, and sustainable operational rhythms.

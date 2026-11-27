@@ -2,9 +2,9 @@
 /**
  * Sync episodes from the podcast RSS feed into src/content/episodes/.
  *
- * The feed is the source of truth for *which* episodes exist and how they are
- * numbered. Existing markdown files are never modified, so any hand-written
- * body copy, guest credits, or embed IDs added later survive every sync.
+ * The feed controls episode identity and numbering. New pages include publisher
+ * artwork, a sourced listener excerpt and safe show notes. Later runs fill
+ * missing provider links as directories catch up and preserve editorial fields.
  *
  * Numbering follows the convention already in the feed:
  *   - <itunes:episode> present  -> mainline episode, that number
@@ -19,29 +19,14 @@ import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { XMLParser } from 'fast-xml-parser';
+import { episodeNotes } from './episode-feed-content.mjs';
+import { loadEpisodeCatalog } from './episode-catalog.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const EPISODES_DIR = join(ROOT, 'src/content/episodes');
 const FEED_URL =
   process.env.PODCAST_FEED_URL ?? 'https://anchor.fm/s/aaecdd08/podcast/rss';
 const DRY_RUN = process.argv.includes('--dry-run');
-
-/** Collapse HTML to readable plain text. */
-function htmlToText(html) {
-  return String(html ?? '')
-    .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<\/p>/gi, '\n\n')
-    .replace(/<[^>]+>/g, '')
-    .replace(/&nbsp;/gi, ' ')
-    .replace(/&amp;/gi, '&')
-    .replace(/&lt;/gi, '<')
-    .replace(/&gt;/gi, '>')
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;|&apos;/gi, "'")
-    .replace(/[ \t]+\n/g, '\n')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim();
-}
 
 /** "00:31:33" or "1893" -> "32 min" (nearest minute, matching existing files). */
 function toDuration(raw) {
@@ -83,22 +68,30 @@ function readFrontmatterField(text, field) {
 
 async function existingKeys() {
   const files = (await readdir(EPISODES_DIR)).filter((f) => f.endsWith('.md'));
-  const keys = new Set();
-  const guids = new Set();
+  const keys = new Map();
+  const guids = new Map();
   for (const file of files) {
     const text = await readFile(join(EPISODES_DIR, file), 'utf8');
-    const guid = readFrontmatterField(text, 'guid');
-    if (guid) guids.add(guid);
-    const bonus = readFrontmatterField(text, 'bonus') === 'true';
-    const episodeNumber = Number(readFrontmatterField(text, 'episodeNumber'));
-    const pubDate = (readFrontmatterField(text, 'pubDate') ?? '').slice(0, 10);
-    keys.add(dedupeKey({ episodeNumber, bonus, pubDate }));
+    const frontmatter = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/)?.[1] ?? '';
+    const guid = readFrontmatterField(frontmatter, 'guid');
+    const entry = { file, text };
+    if (guid) guids.set(guid, entry);
+    const bonus = readFrontmatterField(frontmatter, 'bonus') === 'true';
+    const episodeNumber = Number(readFrontmatterField(frontmatter, 'episodeNumber'));
+    const pubDate = (readFrontmatterField(frontmatter, 'pubDate') ?? '').slice(0, 10);
+    keys.set(dedupeKey({ episodeNumber, bonus, pubDate }), entry);
   }
   return { keys, guids, filenames: new Set(files) };
 }
 
 /** YAML-safe double-quoted scalar (JSON string syntax is valid YAML). */
 const yamlString = (v) => JSON.stringify(String(v));
+
+function platformFields(links, existing = '') {
+  return Object.entries(links)
+    .filter(([field, url]) => url && !readFrontmatterField(existing, field))
+    .map(([field, url]) => field + ': ' + url);
+}
 
 function buildMarkdown(ep) {
   const lines = ['---', `title: ${yamlString(ep.title)}`, `episodeNumber: ${ep.episodeNumber}`];
@@ -108,17 +101,20 @@ function buildMarkdown(ep) {
   if (ep.duration) lines.push(`duration: ${yamlString(ep.duration)}`);
   if (ep.audioUrl) lines.push(`audioUrl: ${ep.audioUrl}`);
   if (ep.artwork) lines.push(`artwork: ${ep.artwork}`);
+  else lines.push('episodeVisuals: ' + JSON.stringify([{
+    src: '/guests/approaching-infinity-logo.webp', alt: 'Approaching Infinity logo', kind: 'episode-artwork',
+  }]));
+  if (ep.listenerSummary) lines.push('listenerSummary: ' + yamlString(ep.listenerSummary));
+  lines.push(...platformFields(ep.links));
   if (ep.bonus) lines.push('bonus: true');
   lines.push(`guid: ${yamlString(ep.guid)}`);
-  lines.push('# Synced from the podcast feed. Safe to enrich by hand: this file is never');
-  lines.push('# overwritten. Optional extras: spotifyEpisodeId / spotifyUrl, appleUrl,');
-  lines.push('# youtubeUrl / youtubeId, guest.');
+  lines.push('# Imported from the feed. Editorial fields are preserved on later syncs.');
   lines.push('---', '', ep.body, '');
   return lines.join('\n');
 }
 
 async function main() {
-  const res = await fetch(FEED_URL, { headers: { 'user-agent': 'approaching-infinity-site' } });
+  const res = await fetch(FEED_URL, { headers: { 'user-agent': 'approaching-infinity-site' }, signal: AbortSignal.timeout(15000) });
   if (!res.ok) throw new Error(`Feed fetch failed: ${res.status} ${res.statusText}`);
   const xml = await res.text();
 
@@ -134,25 +130,40 @@ async function main() {
 
   const { keys, guids, filenames } = await existingKeys();
   const created = [];
+  const enriched = [];
+  const findLinks = await loadEpisodeCatalog(items);
 
   for (const item of items) {
     const guid = String(item.guid?.['#text'] ?? item.guid ?? '').trim();
-    if (guid && guids.has(guid)) continue;
 
     const rawEp = item['itunes:episode'];
     const bonus = rawEp === undefined || rawEp === null || rawEp === '';
     const episodeNumber = bonus ? 0 : Number(rawEp);
     const pubDate = new Date(item.pubDate).toISOString().slice(0, 10);
 
-    if (keys.has(dedupeKey({ episodeNumber, bonus, pubDate }))) continue;
-
     const title = String(item.title ?? '').trim();
     if (!title) continue;
 
-    const summary = htmlToText(
-      item['content:encoded'] ?? item.description ?? item['itunes:summary'] ?? ''
-    );
-    const description = summary.split('\n')[0].slice(0, 400).trim() || title;
+    const links = findLinks(item);
+    const key = dedupeKey({ episodeNumber, bonus, pubDate });
+    const existing = guids.get(guid) ?? keys.get(key);
+    if (existing) {
+      // Legacy files may match by date/number. Never cross-wire a different GUID.
+      const existingFront = existing.text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/)?.[1];
+      if (!existingFront || (readFrontmatterField(existingFront, 'guid') ?? guid) !== guid) continue;
+      const fields = platformFields(links, existingFront);
+      if (!fields.length) continue;
+      const updated = existing.text.replace(/^(---\r?\n[\s\S]*?)(\r?\n---\r?\n)/,
+        (_all, front, close) => front + '\n' + fields.join('\n') + close);
+      if (!DRY_RUN) await writeFile(join(EPISODES_DIR, existing.file), updated, 'utf8');
+      existing.text = updated;
+      enriched.push(existing.file);
+      continue;
+    }
+
+    const notes = episodeNotes(item['content:encoded'] || item.description || item['itunes:summary']);
+    const description = notes.text.slice(0, 400).trim() || title;
+    const artUrl = URL.parse(item['itunes:image']?.['@_href'] ?? '');
 
     let slug = slugify(title);
     let filename = `${slug}.md`;
@@ -168,20 +179,26 @@ async function main() {
       pubDate,
       duration: toDuration(item['itunes:duration']),
       audioUrl: item.enclosure?.['@_url'],
-      artwork: item['itunes:image']?.['@_href'],
+      artwork: artUrl?.protocol === 'https:' && !artUrl.username && !artUrl.password ? artUrl.href : undefined,
+      listenerSummary: notes.summary,
+      links,
       guid,
-      body: summary || description,
+      body: '<div>' + notes.html.replace(/\s*\r?\n\s*/g, ' ') + '</div>',
     };
 
-    if (!DRY_RUN) await writeFile(join(EPISODES_DIR, filename), buildMarkdown(ep), 'utf8');
+    const entry = { file: filename, text: buildMarkdown(ep) };
+    if (!DRY_RUN) await writeFile(join(EPISODES_DIR, filename), entry.text, 'utf8');
     created.push({ filename, title, episodeNumber, bonus, pubDate });
-    keys.add(dedupeKey(ep));
+    keys.set(key, entry);
+    if (guid) guids.set(guid, entry);
   }
 
-  if (created.length === 0) {
+  if (enriched.length) console.log((DRY_RUN ? 'Would enrich ' : 'Enriched ') + enriched.length + ' existing episode(s) with provider links.');
+  if (created.length === 0 && enriched.length === 0) {
     console.log(`Up to date. ${items.length} items in feed, nothing new.`);
     return;
   }
+  if (!created.length) return;
   console.log(`${DRY_RUN ? 'Would add' : 'Added'} ${created.length} episode file(s):`);
   for (const c of created) {
     const label = c.bonus ? 'Bonus' : `Episode ${c.episodeNumber}`;

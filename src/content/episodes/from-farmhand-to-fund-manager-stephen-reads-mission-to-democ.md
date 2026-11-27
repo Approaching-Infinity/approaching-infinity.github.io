@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/94004092/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "What can early investing experiences teach us about financial literacy and independence?"
 episodeVisuals: [{"src": "/guests/stephen-read-official.webp", "alt": "Stephen Read", "kind": "portrait", "position": "center 35%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/6123d765-19f6-4ff5-98fa-2dfaa45dcb5c/approaching-infinity-%F0%9F%9A%80-from-farmhand-to-fund-manager-stephen-read%E2%80%99s-mission-to-democratizing-wealth
 ---
 
 In this episode of Approaching Infinity, we are delighted to host Stephen Read, founder of HIT Investments, a trailblazer in financial independence and wealth democratization. Stephen shares his journey from humble beginnings as a farmhand, through a career as a professional baseball player and engineer, to leading an investment firm dedicated to empowering individuals to achieve their financial goals.

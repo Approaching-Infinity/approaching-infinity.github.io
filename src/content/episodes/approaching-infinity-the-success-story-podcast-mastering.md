@@ -14,6 +14,10 @@ guid: "78384965-5de3-406b-b7de-95b76e938462"
 listenerQuestion: "What should you clarify before putting capital to work?"
 episodeVisuals: [{"src": "/shows/success-story.webp", "alt": "Success Story with Scott Clary podcast artwork", "kind": "show", "position": "center", "zoom": 1}]
 guestAppearance: {"show": "Success Story", "host": "Scott D. Clary", "url": "https://podcasts.apple.com/us/podcast/success-story-with-scott-clary/id1484783544"}
+spotifyUrl: https://open.spotify.com/episode/6hUL7H7ztebDFlZFd3nvQH
+appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-the-success-story-podcast/id1641001955?i=1000796104426
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/ec74ce5f-56fa-424a-831b-1a0949408852/approaching-infinity-%F0%9F%9A%80-approaching-infinity-the-success-story-podcast-mastering-capital-allocation-betting-on-yourself
+youtubeUrl: https://www.youtube.com/watch?v=XzP9ZrSazQ8
 ---
 
 I was a guest on the Success Story Podcast, hosted by Scott D. Clary. Re-uploading here with credit to Scott and his team so our audience can catch it.

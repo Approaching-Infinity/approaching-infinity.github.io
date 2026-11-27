@@ -13,6 +13,7 @@ audioUrl: https://anchor.fm/s/aaecdd08/podcast/play/56420743/https%3A%2F%2Fd3ctx
 artwork: https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/be/49/69/be496945-586b-93cc-13dc-09a9b5c019b7/mza_6284782655436190888.jpg/600x600bb.jpg
 listenerQuestion: "How can experience across engineering, military service and finance shape a founder's direction?"
 episodeVisuals: [{"src": "/guests/justin-roopnarine-retouched-4x5.webp", "alt": "Justin Roopnarine", "kind": "portrait", "position": "center 30%", "zoom": 1}]
+amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/83325d60-0654-456f-a5f8-69a98971c449/approaching-infinity-%F0%9F%9A%80-the-journey-so-far
 ---
 
 In this episode of Approaching Infinity, join me, a seasoned engineer and finance professional with over eight years of cross-sector experience, as I discuss my journey and passion for innovation, technology, and finance.

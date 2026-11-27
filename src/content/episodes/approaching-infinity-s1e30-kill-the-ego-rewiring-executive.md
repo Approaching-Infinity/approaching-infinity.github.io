@@ -27,12 +27,28 @@ For leaders accustomed to operating with extreme drive, Dr. Gneiting points out 
 
 To prevent the common tendency of reverting to old habits after a transformative experience, Dr. Gneiting stresses the necessity of intentional reorientation. He highlights that lasting change requires leaders to actively enroll colleagues, peers, and family members in their evolving identity rather than conforming to outdated social expectations. By committing to continuous learning and community support, leaders can convert short-term revelations into permanent, life-changing habits.
 
-Support and Connect with Layne
+## Support and connect with Layne
 
-LinkedIn: https://www.linkedin.com/in/wayofthehero/YouTube: https://www.youtube.com/@wayofthehero1441Facebook: https://www.facebook.com/wayoftheherocoachingX: https://x.com/wayoftheheroPortal Way of the Hero: https://portal.wayofthehero.com/Way of the Hero Consulting: https://www.wayofthehero.com/Follow Approaching Infinity
+- [LinkedIn](https://www.linkedin.com/in/wayofthehero/)
+- [YouTube](https://www.youtube.com/@wayofthehero1441)
+- [Facebook](https://www.facebook.com/wayoftheherocoaching)
+- [X](https://x.com/wayofthehero)
+- [Portal Way of the Hero](https://portal.wayofthehero.com/)
+- [Way of the Hero Consulting](https://www.wayofthehero.com/)
 
-YouTube: https://www.youtube.com/@approachinginfinityshowInstagram: https://www.instagram.com/approachinginfinityshow/TikTok: https://www.tiktok.com/@approachinginfinityshowX: https://x.com/Justin_777_LinkedIn: https://www.linkedin.com/company/approaching-infinity/Facebook: https://www.facebook.com/profile.php?id=61576572194605Hosted by Justin Roopnarine
+## Follow Approaching Infinity
 
-LinkedIn: https://www.linkedin.com/in/justin-roopnarine/Thank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
+- [YouTube](https://www.youtube.com/@approachinginfinityshow)
+- [Instagram](https://www.instagram.com/approachinginfinityshow/)
+- [TikTok](https://www.tiktok.com/@approachinginfinityshow)
+- [X](https://x.com/Justin_777_)
+- [LinkedIn](https://www.linkedin.com/company/approaching-infinity/)
+- [Facebook](https://www.facebook.com/profile.php?id=61576572194605)
+
+## Hosted by Justin Roopnarine
+
+- [LinkedIn](https://www.linkedin.com/in/justin-roopnarine/)
+
+Thank you for tuning into Approaching Infinity! Stay engaged for more thought-provoking discussions that redefine finance, technology, and innovation. 🚀
 
  Disclaimer: Approaching Infinity is an independent media production for educational and entertainment purposes only. Nothing in this episode is investment, legal, or tax advice, or an offer or solicitation to buy or sell any security. The host and guests may be principals of, or affiliated with, investment firms and may hold positions in the securities or instruments discussed; their views are their own as of the recording date. Mention of any company, security, or strategy is not a recommendation or endorsement. Do your own research and consult a qualified professional about your circumstances. Past performance is no guarantee of future results.

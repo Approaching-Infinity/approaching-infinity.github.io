@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity & the Success Story Podcast: Mastering Capital Allocation & Betting on Yourself"
+title: "Capital Allocation and Betting on Yourself | Success Story with Scott D. Clary"
 episodeNumber: 0
 description: "I was a guest on the Success Story Podcast, hosted by Scott D. Clary. Re-uploading here with credit to Scott and his team so our audience can catch it."
 pubDate: 2026-10-13

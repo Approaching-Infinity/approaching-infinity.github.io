@@ -1,5 +1,5 @@
 ---
-title: "From the Navy to Wall Street: Veterans Empowering Veterans"
+title: "From the Navy to Wall Street: Veterans Helping Veterans with Brian Rathjen"
 episodeNumber: 7
 guest: "Brian Rathjen (Roberts & Ryan)"
 description: "In this episode of Approaching Infinity, we have the privilege to chat with Brian Rathjen, an influential figurehead at Roberts & Ryan Investments, renowned for being a Service Disabled Veteran Owned Broker Dealer."
@@ -15,6 +15,8 @@ listenerQuestion: "How can military values carry into leadership and decisions i
 episodeVisuals: [{"src": "/guests/brian-rathjen-official.webp", "alt": "Brian Rathjen", "kind": "portrait", "position": "center 30%", "zoom": 1.5}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/2d39b284-b1ce-4ddb-9ce9-39739a24f79b/approaching-infinity-%F0%9F%9A%80-from-the-navy-to-wall-street-veterans-empowering-veterans-with-brian-rathjen-of-roberts-ryan-investments
 ---
+
+Season 1, Episode 7
 
 In this episode of Approaching Infinity, we have the privilege to chat with Brian Rathjen, an influential figurehead at Roberts & Ryan Investments, renowned for being a Service Disabled Veteran Owned Broker Dealer.
 

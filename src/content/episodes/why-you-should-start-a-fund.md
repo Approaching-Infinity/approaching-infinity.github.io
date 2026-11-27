@@ -1,5 +1,5 @@
 ---
-title: "Why You Should Start a Fund!"
+title: "Should You Start an Investment Fund? | Justin Roopnarine"
 episodeNumber: 2
 guest: "Justin Roopnarine (solo)"
 description: "In this episode of Approaching Infinity, we delve deep into the reasons why you should consider starting your own fund and why it stands as the most lucrative, scalable, and profitable business model on the planet! Whether you're a budding entrepreneur or an established professional, the power of funds is undeniable."
@@ -15,6 +15,8 @@ listenerQuestion: "What are the reasons people consider a fund structure when bu
 episodeVisuals: [{"src": "/guests/justin-roopnarine-retouched-4x5.webp", "alt": "Justin Roopnarine", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/bd185943-6f26-4bf3-9701-b60207677ddb/approaching-infinity-%F0%9F%9A%80-why-you-should-start-a-fund
 ---
+
+Episode 2
 
 In this episode of Approaching Infinity, we delve deep into the reasons why you should consider starting your own fund and why it stands as the most lucrative, scalable, and profitable business model on the planet! Whether you're a budding entrepreneur or an established professional, the power of funds is undeniable.
 

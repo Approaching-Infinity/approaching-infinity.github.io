@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity S1E32: Treat It as a Project 1st: Building Resilient Foundations with Rod Loges"
+title: "Build a Business That’s Ready for Capital with Rod Loges"
 episodeNumber: 32
 description: "In this episode of Approaching Infinity, host Justin Roopnarine sits down with Rod Loges, Founder and CEO of One Degree Financial, to discuss capital strategy and financial readiness. According to Loges, businesses rarely struggle due to an absolute shortage of capital in the market, but rather because founders fail to build operational readiness before seeking capital or facing an unexpected cris"
 pubDate: 2026-11-13
@@ -18,6 +18,8 @@ appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e32-treat
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/ace52fc3-51f7-496f-922e-fcbded934b8b/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e32-treat-it-as-a-project-1st-building-resilient-foundations-with-rod-loges
 youtubeUrl: https://www.youtube.com/watch?v=9HuN_9yvgio
 ---
+
+Season 1, Episode 32
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Rod Loges, Founder and CEO of One Degree Financial, to discuss capital strategy and financial readiness. According to Loges, businesses rarely struggle due to an absolute shortage of capital in the market, but rather because founders fail to build operational readiness before seeking capital or facing an unexpected crisis. He emphasizes that true readiness requires establishing clean financial foundations and developing organizational maturity well in advance.
 

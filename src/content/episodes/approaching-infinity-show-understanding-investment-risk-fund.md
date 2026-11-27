@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity & The Thoughtful Entrepreneur | Understanding Risk & Fund Management Style"
+title: "How Investors Think About Risk | The Thoughtful Entrepreneur with Josh Elledge"
 episodeNumber: 0
 bonus: true
 description: "I was a guest on The Thoughtful Entrepreneur, episode 2427, hosted by Josh Elledge. Re-uploading here with credit to Josh and his team so our audience can catch it."

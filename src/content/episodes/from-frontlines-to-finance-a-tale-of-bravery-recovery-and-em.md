@@ -1,5 +1,5 @@
 ---
-title: "From Frontlines to Finance: A Tale of Bravery, Recovery, and Empowerment"
+title: "From Frontlines to Finance with Jerry Majetich"
 episodeNumber: 9
 guest: "Jerry Majetich (Drexel Hamilton)"
 description: "In this episode of Approaching Infinity, we're honored to have Jerry Majetich, Vice President of Business Development & Veteran Initiatives at Drexel Hamilton, a man whose remarkable military and professional journey is the epitome of resilience and dedication."
@@ -15,6 +15,8 @@ listenerQuestion: "What can a military-to-finance transition teach veterans plan
 episodeVisuals: [{"src": "/guests/jerry-majetich-official.webp", "alt": "Jerry Majetich", "kind": "portrait", "position": "center 15%", "zoom": 1.5}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/eb935679-424d-4cd9-b181-7a1d697874b2/approaching-infinity-%F0%9F%9A%80-from-frontlines-to-finance-a-tale-of-bravery-recovery-and-empowerment-with-jerry-majetich-of-drexel-hamilton
 ---
+
+Season 1, Episode 9
 
 In this episode of Approaching Infinity, we're honored to have Jerry Majetich, Vice President of Business Development & Veteran Initiatives at Drexel Hamilton, a man whose remarkable military and professional journey is the epitome of resilience and dedication.
 

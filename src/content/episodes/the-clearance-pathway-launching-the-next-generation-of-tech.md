@@ -1,5 +1,5 @@
 ---
-title: "The Clearance Pathway: Launching the Next Generation of Tech Patriots"
+title: "Building the Defense Tech Workforce with Devon Stephenson, Don Randall and Evan Mills"
 episodeNumber: 23
 guest: "Devon Stephenson, Don Randall, Evan Mills (Zera TechBridge)"
 description: "In this episode of Approaching Infinity, host Justin Roopnarine sits down with Andrew Devon Stephenson, Don Randall, and Evan Mills from Zera TechBridge to examine the widening technical talent gap across the Department of Defense and federal government agencies. Stephenson explains that the rapid acceleration of technology, particularly in artificial intelligence and cloud computing, has outpaced traditional workforce pipeline capacities. This gap leaves critical national security roles unfilled across uniform, civilian, and contractor sectors."
@@ -16,6 +16,8 @@ listenerQuestion: "How can veterans and aspiring technologists find a pathway in
 episodeVisuals: [{"src": "/guests/zera-techbridge-episode.webp", "alt": "Zera TechBridge episode artwork", "kind": "episode-artwork", "position": "center", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/0ea6b8d9-4333-445a-ba7d-6c1f542ede38/approaching-infinity-%F0%9F%9A%80-the-clearance-pathway-launching-the-next-generation-of-tech-patriots-with-zera-techbridge
 ---
+
+Season 1, Episode 23
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Andrew Devon Stephenson, Don Randall, and Evan Mills from Zera TechBridge to examine the widening technical talent gap across the Department of Defense and federal government agencies. Stephenson explains that the rapid acceleration of technology, particularly in artificial intelligence and cloud computing, has outpaced traditional workforce pipeline capacities. This gap leaves critical national security roles unfilled across uniform, civilian, and contractor sectors.
 

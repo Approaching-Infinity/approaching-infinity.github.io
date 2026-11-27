@@ -1,5 +1,5 @@
 ---
-title: "From the Internet to AI: Investing Through Technology Revolutions with Jeff Camp"
+title: "From the Internet to AI: Investing Through Tech Shifts with Jeff Camp"
 episodeNumber: 26
 guest: "Jeff Camp (JC Venture Capital)"
 description: "In this episode of Approaching Infinity, we are honored to host Jeff Camp, Founder & CEO at JC Venture Capital, an investor with an extraordinary 35 year career spanning Morgan Stanley in Tokyo and co founding a long short equity fund in London. Jeff’s journey has given him a front row seat to multiple technological revolutions, where he developed a probability based framework for distinguishing long term value from temporary market hype."
@@ -18,6 +18,8 @@ appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e26-from-
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/73c6de29-5e4e-49a0-8608-af81d550ee0b/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e26-from-the-internet-to-ai-investing-through-technology-revolutions-with-jeff-camp
 youtubeUrl: https://www.youtube.com/watch?v=6b8xQpNAmLk
 ---
+
+Season 1, Episode 26
 
 In this episode of Approaching Infinity, we are honored to host Jeff Camp, Founder & CEO at JC Venture Capital, an investor with an extraordinary 35 year career spanning Morgan Stanley in Tokyo and co founding a long short equity fund in London. Jeff’s journey has given him a front row seat to multiple technological revolutions, where he developed a probability based framework for distinguishing long term value from temporary market hype.
 

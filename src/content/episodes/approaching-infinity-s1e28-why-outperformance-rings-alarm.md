@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity S1E28: Why Outperformance Rings Alarm Bells with Lanyon Blair"
+title: "When Outperformance Is a Red Flag with Lanyon Blair"
 episodeNumber: 28
 description: "In this episode of Approaching Infinity, host Justin Roopnarine sits down with Lanyon Blair, Senior Vice President and Head of Manager Research at Voya Investment Management. Together, they examine the core tenets of institutional manager research, the strategic construction of multi-asset retirement portfolios, and how professional allocators establish frameworks designed to endure changing market environments."
 pubDate: 2026-10-30
@@ -17,6 +17,8 @@ appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e28-why-o
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/9ac7f0c8-a4b9-4bfe-b141-18cf985990d4/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e28-why-outperformance-rings-alarm-bells-with-lanyon-blair
 youtubeUrl: https://www.youtube.com/watch?v=q40_Fbb9WPA
 ---
+
+Season 1, Episode 28
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Lanyon Blair, Senior Vice President and Head of Manager Research at Voya Investment Management. Together, they examine the core tenets of institutional manager research, the strategic construction of multi-asset retirement portfolios, and how professional allocators establish frameworks designed to endure changing market environments.
 

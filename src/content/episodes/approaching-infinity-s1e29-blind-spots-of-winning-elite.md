@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity S1E29: Blind Spots of Winning: Elite Operators Audit Success with Evan Marks"
+title: "Why Winning Creates Blind Spots with Evan Marks"
 episodeNumber: 29
 description: "In this episode of Approaching Infinity, host Justin Roopnarine sits down with Evan Marks, Founder of M1 Performance Group, to unpack the mental architecture required to execute under intense pressure. Marks presents the core framework that elite performance is built at the intersection of psychoanalytic conditioning and neuroplasticity. Rather than waiting for emotions to settle before taking action, Marks explains that operators must consciously change their behavior so that their feelings and internal narrative can follow, establishing a grounded baseline for critical decision-making."
 pubDate: 2026-10-30
@@ -17,6 +17,8 @@ appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e29-blind
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3c6421a7-7a9d-463e-b117-34fc27567c1d/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e29-blind-spots-of-winning-elite-operators-audit-success-with-evan-marks
 youtubeUrl: https://www.youtube.com/watch?v=hNnOVefO9zs
 ---
+
+Season 1, Episode 29
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Evan Marks, Founder of M1 Performance Group, to unpack the mental architecture required to execute under intense pressure. Marks presents the core framework that elite performance is built at the intersection of psychoanalytic conditioning and neuroplasticity. Rather than waiting for emotions to settle before taking action, Marks explains that operators must consciously change their behavior so that their feelings and internal narrative can follow, establishing a grounded baseline for critical decision-making.
 

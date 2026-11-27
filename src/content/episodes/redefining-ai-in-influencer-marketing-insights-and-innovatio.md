@@ -1,5 +1,5 @@
 ---
-title: "Redefining AI in Influencer Marketing: Insights and Innovations"
+title: "How AI Changes Influencer Marketing with Jeremy Barnett"
 episodeNumber: 6
 guest: "Jeremy Barnett (CEO, RAD AI)"
 description: "In this episode of Approaching Infinity, we are thrilled to host Jeremy Barnett, the innovative CEO of RAD AI, a trailblazer in the realm of data informed influencer marketing and content authenticity."
@@ -15,6 +15,8 @@ listenerQuestion: "What led an entrepreneur to build an AI business focused on i
 episodeVisuals: [{"src": "/guests/jeremy-barnett-official.webp", "alt": "Jeremy Barnett", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/d76a87a9-f749-464a-b403-53b368176690/approaching-infinity-%F0%9F%9A%80-redefining-ai-in-influencer-marketing-insights-and-innovations-with-jeremy-barnett-ceo-of-rad-ai
 ---
+
+Season 1, Episode 6
 
 In this episode of Approaching Infinity, we are thrilled to host Jeremy Barnett, the innovative CEO of RAD AI, a trailblazer in the realm of data informed influencer marketing and content authenticity.
 

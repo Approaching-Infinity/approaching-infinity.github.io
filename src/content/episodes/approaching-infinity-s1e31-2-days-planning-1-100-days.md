@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity S1E31: 2 Days Planning, 1,100 Days Execution with Anthony C. Taylor"
+title: "Two Days to Plan, 1,100 Days to Execute with Anthony C. Taylor"
 episodeNumber: 31
 description: "In this episode of Approaching Infinity, host Justin Roopnarine sits down with Anthony Taylor, Chief Executive Officer at SME Strategy Consulting, to examine what separates high-performing leadership teams from those that struggle to execute. Taylor shares his perspective on the mechanics of strategic alignment, explaining why moving from implied assumptions to explicit clarity is vital for turnin"
 pubDate: 2026-11-12
@@ -18,6 +18,8 @@ appleUrl: https://podcasts.apple.com/us/podcast/approaching-infinity-s1e31-2-day
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/fa38dcc5-cfba-4e9d-a7ad-328570f2611a/approaching-infinity-%F0%9F%9A%80-approaching-infinity-s1e31-2-days-planning-1-100-days-execution-with-anthony-c-taylor
 youtubeUrl: https://www.youtube.com/watch?v=tGJKi30krcA
 ---
+
+Season 1, Episode 31
 
 In this episode of Approaching Infinity, host Justin Roopnarine sits down with Anthony Taylor, Chief Executive Officer at SME Strategy Consulting, to examine what separates high-performing leadership teams from those that struggle to execute. Taylor shares his perspective on the mechanics of strategic alignment, explaining why moving from implied assumptions to explicit clarity is vital for turning long-term vision into measurable outcomes.
 

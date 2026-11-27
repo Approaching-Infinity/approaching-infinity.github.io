@@ -1,5 +1,5 @@
 ---
-title: "Continuing the Call of Duty: David Kim’s Tale of Valor, Venture, and Virtue"
+title: "From Military Service to Business and Giving Back with David Kim"
 episodeNumber: 11
 guest: "David Kim"
 description: "In this episode of Approaching Infinity, we are honored to host Mr. David Kim, a decorated military veteran and a formidable presence in the global business arena. David's exemplary life, shaped by his personal motto - God, country, family, displays a transition from distinguished military service to an entrepreneur and philanthropist with a significant imprint in global business ventures."
@@ -15,6 +15,8 @@ listenerQuestion: "How can a veteran's service values shape a later career in bu
 episodeVisuals: [{"src": "/guests/david-kim-official.webp", "alt": "David Kim", "kind": "portrait", "position": "center 15%", "zoom": 1.6}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/eefe4cbd-bb8a-426a-8dc6-ac7df433383b/approaching-infinity-%F0%9F%9A%80-continuing-the-call-of-duty-david-kim%E2%80%99s-tale-of-valor-venture-and-virtue
 ---
+
+Season 1, Episode 11
 
 In this episode of Approaching Infinity, we are honored to host Mr. David Kim, a decorated military veteran and a formidable presence in the global business arena. David's exemplary life, shaped by his personal motto - God, country, family, displays a transition from distinguished military service to an entrepreneur and philanthropist with a significant imprint in global business ventures.
 

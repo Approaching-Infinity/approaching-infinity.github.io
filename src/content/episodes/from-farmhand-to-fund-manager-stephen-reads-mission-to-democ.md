@@ -1,5 +1,5 @@
 ---
-title: "From Farmhand to Fund Manager: Stephen Read’s Mission to Democratizing Wealth"
+title: "From Farmhand to Fund Manager: Lessons on Investing with Stephen Read"
 episodeNumber: 15
 guest: "Stephen Read (HIT Investments)"
 description: "In this episode of Approaching Infinity, we are delighted to host Stephen Read, founder of HIT Investments, a trailblazer in financial independence and wealth democratization. Stephen shares his journey from humble beginnings as a farmhand, through a career as a professional baseball player and engineer, to leading an investment firm dedicated to empowering individuals to achieve their financial goals."
@@ -15,6 +15,8 @@ listenerQuestion: "What can early investing experiences teach us about financial
 episodeVisuals: [{"src": "/guests/stephen-read-official.webp", "alt": "Stephen Read", "kind": "portrait", "position": "center 35%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/6123d765-19f6-4ff5-98fa-2dfaa45dcb5c/approaching-infinity-%F0%9F%9A%80-from-farmhand-to-fund-manager-stephen-read%E2%80%99s-mission-to-democratizing-wealth
 ---
+
+Season 1, Episode 15
 
 In this episode of Approaching Infinity, we are delighted to host Stephen Read, founder of HIT Investments, a trailblazer in financial independence and wealth democratization. Stephen shares his journey from humble beginnings as a farmhand, through a career as a professional baseball player and engineer, to leading an investment firm dedicated to empowering individuals to achieve their financial goals.
 

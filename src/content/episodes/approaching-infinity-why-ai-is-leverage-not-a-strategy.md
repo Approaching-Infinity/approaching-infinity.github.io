@@ -1,5 +1,5 @@
 ---
-title: "Approaching Infinity & Why AI Is Leverage, Not a Strategy: Navigating Uncertainty in Modern Asset with Dean Guida."
+title: "Using AI as Leverage for Better Decisions | AI & Data Driven Leadership with Dean Guida"
 episodeNumber: 0
 description: "I was a guest on the AI & Data Driven Leadership Podcast, hosted by Dean Guida. Re-uploading here with credit to Dean and his team so our audience can catch it."
 pubDate: 2026-08-20

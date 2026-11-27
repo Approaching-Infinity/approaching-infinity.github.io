@@ -1,5 +1,5 @@
 ---
-title: "The Founder's Guide to Financial Frontiers: Jonathan Nelson's Capital Revolution"
+title: "Why Startups Struggle to Access Public Markets with Jonathan Nelson"
 episodeNumber: 13
 guest: "Jonathan Nelson"
 description: "In this episode of Approaching Infinity, we're thrilled to welcome Jonathan Nelson, a vanguard in the venture capital world and a pivotal figure in global startup ecosystems. Jonathan shares his expert insights on the complexities smaller companies encounter when attempting to list on U.S. stock markets, underscoring the necessity for robust capital markets in developing regions such as South America and Africa. His deep dive into the historical and current dynamics of capital markets reveals the challenges and opportunities that lie within."
@@ -15,6 +15,8 @@ listenerQuestion: "What makes access to public capital markets difficult for sma
 episodeVisuals: [{"src": "/guests/jonathan-nelson-official.webp", "alt": "Jonathan Nelson", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/b93294ca-42e2-42a6-81b8-686d16d44648/approaching-infinity-%F0%9F%9A%80-the-founder's-guide-to-financial-frontiers-jonathan-nelson's-capital-revolution
 ---
+
+Season 1, Episode 13
 
 In this episode of Approaching Infinity, we're thrilled to welcome Jonathan Nelson, a vanguard in the venture capital world and a pivotal figure in global startup ecosystems. Jonathan shares his expert insights on the complexities smaller companies encounter when attempting to list on U.S. stock markets, underscoring the necessity for robust capital markets in developing regions such as South America and Africa. His deep dive into the historical and current dynamics of capital markets reveals the challenges and opportunities that lie within.
 

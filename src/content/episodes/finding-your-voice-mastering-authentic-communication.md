@@ -1,5 +1,5 @@
 ---
-title: "Finding Your Voice: Mastering Authentic Communication"
+title: "How to Speak So Your Audience Listens with Tom Cobin"
 episodeNumber: 22
 guest: "Tom Cobin (DynamiCoach)"
 description: "This episode welcomes Tom Cobin, the founder of Dynamicoach, for a conversation on communication mastery. Bringing experience from television newsrooms and pharmaceutical boardrooms, Cobin shares his approach to helping leaders elevate their presence."
@@ -16,6 +16,8 @@ listenerQuestion: "How can founders turn complex investor material into a story 
 episodeVisuals: [{"src": "/guests/tom-cobin-official.webp", "alt": "Tom Cobin", "kind": "portrait", "position": "center 35%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/04032ebc-ee3b-4170-955c-c43eb45dc96d/approaching-infinity-%F0%9F%9A%80-finding-your-voice-mastering-authentic-communication-with-tom-cobin
 ---
+
+Season 1, Episode 22
 
 This episode welcomes Tom Cobin, the founder of Dynamicoach, for a conversation on communication mastery. Bringing experience from television newsrooms and pharmaceutical boardrooms, Cobin shares his approach to helping leaders elevate their presence.
 

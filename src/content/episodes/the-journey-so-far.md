@@ -1,5 +1,5 @@
 ---
-title: "The Journey So Far"
+title: "Why I Started Approaching Infinity | Justin Roopnarine"
 episodeNumber: 1
 guest: "Justin Roopnarine (solo)"
 description: "In this episode of Approaching Infinity, join me, a seasoned engineer and finance professional with over eight years of cross-sector experience, as I discuss my journey and passion for innovation, technology, and finance."
@@ -15,6 +15,8 @@ listenerQuestion: "How can experience across engineering, military service and f
 episodeVisuals: [{"src": "/guests/justin-roopnarine-retouched-4x5.webp", "alt": "Justin Roopnarine", "kind": "portrait", "position": "center 30%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/83325d60-0654-456f-a5f8-69a98971c449/approaching-infinity-%F0%9F%9A%80-the-journey-so-far
 ---
+
+Episode 1
 
 In this episode of Approaching Infinity, join me, a seasoned engineer and finance professional with over eight years of cross-sector experience, as I discuss my journey and passion for innovation, technology, and finance.
 

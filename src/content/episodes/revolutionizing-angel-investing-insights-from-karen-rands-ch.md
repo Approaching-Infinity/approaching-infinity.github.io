@@ -1,5 +1,5 @@
 ---
-title: "Revolutionizing Angel Investing: Insights from Karen Rands, Champion of Compassionate Capitalism"
+title: "How Angel Investors Evaluate Startups with Karen Rands"
 episodeNumber: 5
 guest: "Karen Rands"
 description: "In this episode of Approaching Infinity, we welcome Karen Rands, President of Kugarand Capital Holdings, a seasoned business consultant, strategic advisor, and passionate advocate of the Compassionate Capitalist Movement. With over two decades of experience working with diverse stakeholders, from entrepreneurs and angel investors to venture capitalists, Karen offers a unique insight into the mechanisms of successful investment and business growth."
@@ -15,6 +15,8 @@ listenerQuestion: "How does angel investing connect entrepreneurial success with
 episodeVisuals: [{"src": "/guests/karen-rands-official.webp", "alt": "Karen Rands", "kind": "portrait", "position": "center 15%", "zoom": 1.5}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/902483d7-f958-4152-b34d-423083570476/approaching-infinity-%F0%9F%9A%80-revolutionizing-angel-investing-insights-from-karen-rands-champion-of-compassionate-capitalism
 ---
+
+Season 1, Episode 5
 
 In this episode of Approaching Infinity, we welcome Karen Rands, President of Kugarand Capital Holdings, a seasoned business consultant, strategic advisor, and passionate advocate of the Compassionate Capitalist Movement. With over two decades of experience working with diverse stakeholders, from entrepreneurs and angel investors to venture capitalists, Karen offers a unique insight into the mechanisms of successful investment and business growth.
 

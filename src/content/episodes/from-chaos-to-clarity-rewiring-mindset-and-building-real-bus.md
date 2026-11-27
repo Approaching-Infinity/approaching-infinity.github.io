@@ -1,5 +1,5 @@
 ---
-title: "From Chaos to Clarity: Rewiring Mindset and Building Real Businesses"
+title: "How to Build a Business That Runs Without You with Willard Barth"
 episodeNumber: 25
 guest: "Willard Barth"
 description: "In this episode of Approaching Infinity, we are honored to host Willard Barth, Founder and Owner of Data Pro Marketing LLC and Willard Barth Enterprises, who is widely recognized for developing actionable frameworks that help leaders create measurable business outcomes."
@@ -16,6 +16,8 @@ listenerQuestion: "How can a founder's mindset and identity shape the way their 
 episodeVisuals: [{"src": "/guests/willard-barth-official.webp", "alt": "Willard Barth", "kind": "portrait", "position": "center 35%", "zoom": 1}]
 amazonUrl: https://music.amazon.com/podcasts/26d3fcae-8251-4ec1-a09f-b39bc58819f7/episodes/3930616f-7237-426c-9715-1ae0a85d5581/approaching-infinity-%F0%9F%9A%80-from-chaos-to-clarity-rewiring-mindset-and-building-real-businesses-with-willard-barth
 ---
+
+Season 1, Episode 25
 
 In this episode of Approaching Infinity, we are honored to host Willard Barth, Founder and Owner of Data Pro Marketing LLC and Willard Barth Enterprises, who is widely recognized for developing actionable frameworks that help leaders create measurable business outcomes.
 
